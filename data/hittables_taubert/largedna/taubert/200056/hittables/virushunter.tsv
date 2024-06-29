@@ -1,0 +1,3 @@
+run_id	num_hits	best_E	best_query	ViralRefSeq_E	ViralRefSeq_ident	ViralRefSeq_aLen/sLen	ViralRefSeq_contigs	ViralRefSeq_subject	ViralRefSeq_taxonomy	date_analyzed
+HAN16_S17_R2_001	1	8.80e+00	NCLDV_ssuRiboReduc	8.02e-04	93.8	48 / 51	1	DQ377945.1|Vaccinia virus strain 3737, complete genome	taxid:10245|Orthopoxvirus|Chordopoxvirinae|Poxviridae|Chitovirales|Pokkesviricetes|Nucleocytoviricota|Bamfordvirae|Varidnaviria	2024-06-09
+HAN19_S20_R2_001	2	1.90e+00	NCLDV_ssuRiboReduc	2.00e-03	100.0	45 / 51	1	DQ377945.1|Vaccinia virus strain 3737, complete genome	taxid:10245|Orthopoxvirus|Chordopoxvirinae|Poxviridae|Chitovirales|Pokkesviricetes|Nucleocytoviricota|Bamfordvirae|Varidnaviria	2024-06-09

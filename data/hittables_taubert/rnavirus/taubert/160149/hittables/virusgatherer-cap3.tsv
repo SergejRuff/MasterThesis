@@ -1,0 +1,2 @@
+run_id	contig_id	contig_len	ViralRefSeq_E	ViralRefSeq_ident	ViralRefSeq_aLen	ViralRefSeq_subject	ViralRefSeq_taxonomy	date_analyzed
+21320_13_S5_L002_R1_001	21320_13_S5_L002_R1_001_cap3_Contig-1	59	2.95e-08	94.737000	19	acc:YP_010799168|putative nonstructural polyprotein [Paslahepevirus balayani]	taxid:1678143|Paslahepevirus|Orthohepevirinae|Hepeviridae|Hepelivirales|Alsuviricetes|Kitrinoviricota|Orthornavirae|Riboviria	2024-06-11

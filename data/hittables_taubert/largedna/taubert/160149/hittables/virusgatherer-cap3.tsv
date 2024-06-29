@@ -1,0 +1,2 @@
+run_id	contig_id	contig_len	ViralRefSeq_E	ViralRefSeq_ident	ViralRefSeq_aLen	ViralRefSeq_subject	ViralRefSeq_taxonomy	date_analyzed
+21320_13_S5_L002_R1_001	21320_13_S5_L002_R1_001_cap3_Contig-1	52	4.79e-05	100.000000	17	acc:YP_803312|hypothetical protein TNAV2c_gp089 [Trichoplusia ni ascovirus 2c]	taxid:328615|Ascovirus|Ascoviridae|Pimascovirales|Megaviricetes|Nucleocytoviricota|Bamfordvirae|Varidnaviria	2024-06-07

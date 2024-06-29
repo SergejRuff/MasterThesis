@@ -1,0 +1,9 @@
+run_id	num_hits	best_E	best_query	ViralRefSeq_E	ViralRefSeq_ident	ViralRefSeq_aLen/sLen	ViralRefSeq_contigs	ViralRefSeq_subject	ViralRefSeq_taxonomy	date_analyzed
+10545_11_C11_R2_001	2	1.10e+00	Tombus-Noda_RdRp	4.90e-04	100.0	45 / 51	1	NC_032230.1|Changjiang tombus-like virus 15 strain CJLX30583 hypothetical protein 1 and hypothetical protein 2 genes, complete cds	taxid:1922808|Riboviria	2024-06-12
+10545_11_C11_R2_001	1	1.40e+00	Tombus-Noda_RdRp	7.64e-04	93.3	45 / 51	1	NC_002187.1|Japanese iris necrotic ring virus, complete genome	taxid:77344|Betacarmovirus iridis|Betacarmovirus|Procedovirinae|Tombusviridae|Tolivirales|Tolucaviricetes|Kitrinoviricota|Orthornavirae|Riboviria	2024-06-12
+10545_11_C11_R2_001	1	1.70e+00	Tombus-Noda_RdRp	3.57e-04	84.6	39 / 51	1	|N/A		2024-06-12
+10545_11_C11_R2_001	1	5.30e+00	Tombus-Noda_RdRp	9.00e-03	93.3	45 / 51	1	NC_033427.1|Wenzhou tombus-like virus 6 strain WZFSL85189 hypothetical protein 1, hypothetical protein 2, and hypothetical protein 3 genes, complete cds	taxid:1923676|Riboviria	2024-06-12
+13534_09_C64_R1_001	1	6.00e-02	Tombus-Noda_RdRp	2.81e-05	93.8	48 / 51	1	NC_002187.1|Japanese iris necrotic ring virus, complete genome	taxid:77344|Betacarmovirus iridis|Betacarmovirus|Procedovirinae|Tombusviridae|Tolivirales|Tolucaviricetes|Kitrinoviricota|Orthornavirae|Riboviria	2024-06-12
+13534_09_C64_R1_001	1	4.40e+00	Tombus-Noda_RdRp	7.29e-05	100.0	48 / 51	1	NC_033435.1|Wenzhou tombus-like virus 1 strain WZFSL78713 hypothetical protein 1 and hypothetical protein 2 genes, complete cds	taxid:1923662|Riboviria	2024-06-12
+13534_09_C64_R2_001	1	1.00e+00	Tombus-Noda_RdRp	1.38e-04	100.0	45 / 51	1	|N/A		2024-06-12
+38239_13_C67_R2_001	1	8.60e-02	Tombus-Noda_RdRp	1.49e-05	100.0	51 / 51	1	|N/A		2024-06-12

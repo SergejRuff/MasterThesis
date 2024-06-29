@@ -1,0 +1,2 @@
+run_id	contig_id	contig_len	ViralRefSeq_E	ViralRefSeq_ident	ViralRefSeq_aLen	ViralRefSeq_subject	ViralRefSeq_taxonomy	date_analyzed
+15577_16_S25_R1_001	15577_16_S25_R1_001_cap3_Contig-1	54	2.19e-05	100.000000	17	acc:YP_009165726|Ribonucleotide reductase 2a [Perigonia lusca single nucleopolyhedrovirus]	taxid:1675865|Alphabaculovirus peluscae|Alphabaculovirus|Baculoviridae|Lefavirales|Naldaviricetes	2024-06-07
