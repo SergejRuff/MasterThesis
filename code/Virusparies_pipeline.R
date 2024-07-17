@@ -19,11 +19,11 @@ vhPipeline <- function(vh_file,sra_name,virustype,path){
   srarun_bar <- VhgRunsBarplot(file = vh_file,groupby = "ViralRefSeq_taxonomy",
                                title = paste0(sra_name," - ",virustype,
                                               ": Distribution of viral groups detected across query sequences")
-                               ,title_size = 12 )
+                               ,title_size = 12,facet_ncol = 2 )
   
   # - sum of hits plot
   sumhitbar <- VhSumHitsBarplot(vh_file,groupby = "ViralRefSeq_taxonomy",title = 
-                                  paste0(sra_name," - ",virustype,": Distribution of hits for each virus group"),title_size = 12)
+                                  paste0(sra_name," - ",virustype,": Distribution of hits for each virus group"),title_size = 12,facet_ncol = 2)
   
   # - scatter plot e value vs identity
   identityplot <-  VhgIdentityScatterPlot(file = vh_file,groupby = "ViralRefSeq_taxonomy",title = 
@@ -40,13 +40,14 @@ vhPipeline <- function(vh_file,sra_name,virustype,path){
   box_evalue <- VhgBoxplot(file = vh_file,x_column  = "ViralRefSeq_taxonomy",title = 
                              paste0(sra_name," - ",virustype,
                                     ": Boxplot of viral reference e-values for each group")
-                           ,title_size = 16, y_column = "ViralRefSeq_E",subtitle_size = 10)
+                           ,title_size = 16, y_column = "ViralRefSeq_E",subtitle_size = 10,facet_ncol = 2)
   
   # - boxplot for identity
   iden_boxp <- VhgBoxplot(file = vh_file,x_column  = "ViralRefSeq_taxonomy",title = 
                             paste0(sra_name," - ",virustype,
                                    ": Boxplot of viral reference identity for each group")
-                          ,title_size = 16, y_column = "ViralRefSeq_ident")
+                          ,title_size = 16, y_column = "ViralRefSeq_ident",facet_ncol = 
+                            2)
   
   
   # --- Generate tables --- #
@@ -125,7 +126,7 @@ vgPipeline <- function(vg_file,sra_name,virustype,path){
   srarun_bar <- VhgRunsBarplot(file = vg_file,groupby = "ViralRefSeq_taxonomy",
                                title = paste0(sra_name," - ",virustype,
                                               ": Distribution of viral groups detected across query sequences")
-                               ,title_size = 12 )
+                               ,title_size = 12,facet_ncol = 2 )
   
   
   # - scatter plot e value vs identity
@@ -143,18 +144,18 @@ vgPipeline <- function(vg_file,sra_name,virustype,path){
   box_evalue <- VhgBoxplot(file = vg_file,x_column  = "ViralRefSeq_taxonomy",title = 
                              paste0(sra_name," - ",virustype,
                                     ": Boxplot of viral reference e-values for each group")
-                           ,title_size = 16, y_column = "ViralRefSeq_E",subtitle_size = 10)
+                           ,title_size = 16, y_column = "ViralRefSeq_E",subtitle_size = 10,facet_ncol = 2)
   
   # - boxplot for identity
   iden_boxp <- VhgBoxplot(file = vg_file,x_column  = "ViralRefSeq_taxonomy",title = 
                             paste0(sra_name," - ",virustype,
                                    ": Boxplot of viral reference identity for each group")
-                          ,title_size = 16, y_column = "ViralRefSeq_ident")
+                          ,title_size = 16, y_column = "ViralRefSeq_ident",facet_ncol = 2)
   
   violin_contiglen <- VgConLenViolin(vg_file,title = 
                                        paste0(sra_name," - ",virustype,
                                               ": Violinplot of contig length for each group")
-                                     ,title_size = 16)
+                                     ,title_size = 16,facet_ncol = 2)
   
   
   # --- Generate tables --- #
@@ -242,16 +243,16 @@ vgPipeline <- function(vg_file,sra_name,virustype,path){
 # --- Import and parameters --- #
 
 path_to_hunter <- 
-  "data/RNAvirus_Mammals_newJan2023/mammals/Flavi/virushunter.tsv"
-path_to_gatherer <- ""
+  "data/RNAvirus_Mammals_newJan2023/mammals/hepevirga/virushunter.tsv"
+path_to_gatherer <- "data/RNAvirus_Mammals_newJan2023/mammals/hepevirga/virusgatherer-cap3.tsv"
 
 
 
-sra_name <- "Flavi Data"
+sra_name <- "Hepe Data"
 virustype <- "RNA viruses (Hunter)"
 virustype_gatherer <- "RNA viruses (Gatherer)"
-hunter_export_path <- "output/Flavi/plots/Hunter"
-gatherer_export_path <- "output/Flavi/plots/Gatherer"
+hunter_export_path <- "output/Hepe/plots/Hunter"
+gatherer_export_path <- "output/Hepe/plots/Gatherer"
 
 
 # sra_name <- "Florian´s Data"
