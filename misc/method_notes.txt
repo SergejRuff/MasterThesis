@@ -1,0 +1,54 @@
+2.1
+
+	Code und Daten bei Chris
+	Link für Virusparies. Erwähnen, dass im Rahmen der Masterarbeit ein R package erstellt wurde.
+	Pipeline für Downstream Analyse bei Chris.
+
+2.2
+
+
+	Tabelle an Dependencies und ihre Fassung auflisten.
+	Erwähnen, dass es auf Aeternitas lief.
+	Multi Threaded -> 6 Threads.
+	Erwähne, dass virusHunterGatherer auf Aeternitas installiert war
+	Erwähnen, dass VirusHunterGatherer in Perl umgesetzte wurde
+	Aber es ist mit Snakemake aufrugfbar, was Python basiert ist. Erläre, dass es dann Regeln entsprechen in einer bestimmten Reihenfolge gemacht wird.
+	Erwähnen, dass es einen Config-File gibt. Kurz erkären, was im Config File angegeben wird: Die Paths zu den Filter Datenbanken, Paths zu den Input Daten. Erklären, dass leere Stirngs für SRA lokale Daten nutzt. Das mann damit angeben kann, dass Filter 2 optional wird. Definiert Struktur für Output Path.
+	Link zu VirusHunterGatherer
+	Link zu Virusparies.
+
+2.4.1
+
+	Erwähnen, dass im Falle, wo SRA Dateien und nicht lokale Dateien benutzt werden, SRAs heruntergeladen und über fastqdump in FASTq konvertiert werden.
+	Erwähnen, falls keine SRA-Dateien liste als txt im Config_file angegeben ist (leerer String), dass dann von lokalen FASTQ Files ausgegangen wird.
+
+2.4.2
+
+Default values used for the rest. Vielleicht Default Werte doch nennen?
+Quality control and preprocessing was performed using fastp implemented in VirusHunter.
+Takes fastq files as input.
+
+?   if ( $r1id eq $r2id ){
+                $fastp_cmd .= " --interleaved_in --stdout > $resdir/$sraid.trim.fastq";
+        }else{
+                $fastp_cmd .= " -o $resdir/$sraid.trim.fastq";
+        }
+indicate that <in1> is an interleaved FASTQ which contains both read1 and read2.
+
+Json and html report files are generatedand a trimmed fastq file. 
+	Input erwähnen: SRA Daten oder locale FASTQ-Daten
+	Erwähnen, dass FASTQ Dateien transformiert werden zu FASTA
+	Preprocessing: Fastp als Qaulitätskontrolle, Translation der Sequenzen und Aufspaltung in 6 frames
+	Genutzte Parameter erwähnen.
+
+
+2.6
+
+	Erwähnen, das sim Rahmen der Masterarbeit Virusparies erstellt wurde. Betone, dass es im Rahmen der Masterarbeit passierte, weil es einer der Ergebnisse der Masterarbeit ist.
+	Erwähnen, dass es in R umgesetzt wurde, anders als VirusHunterGatherer.
+	Features nennen: Plots, Subset, Tables, Import,Export.
+	Erwähnen, dass alle Plots und Tables damit generiert wurde.
+	Erwähne, welcher Cut off genutzt wurde: 1e-5.
+	Erwähne, welche Plots generiert wurden, was Sie zeigen und welche Rolle die cutoffs haben. Aber mache es kurz.
+	Erwähne, dass es nicht nur Plots, sondern auch gefilterte Hittables und Summary Stats zurückgibt.
+	Virusparies setzt E-values, wo E-values mit –log10 geplottet werden auf minimalen Wert 
