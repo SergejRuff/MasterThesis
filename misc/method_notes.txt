@@ -41,6 +41,20 @@ Json and html report files are generatedand a trimmed fastq file.
 	Preprocessing: Fastp als Qaulitätskontrolle, Translation der Sequenzen und Aufspaltung in 6 frames
 	Genutzte Parameter erwähnen.
 
+2.4.4
+
+	Parameter für Filter 1 und 3 erklären.
+	Erklären, woraus Filter 1 besteht (Ubiquitin C).
+	Erwähnen,dass Filter 2 übersprungen wurde und warum.
+	Duplikate entfernt mit vsearch. Paramater erwähnen.
+
+2.4.5
+
+	Hittable und andere Dateien erwähnen.
+	Logs
+	Resukts folde erklären
+
+
 
 2.6
 
