@@ -15,6 +15,8 @@ library(Virusparies)
 
 vhPipeline <- function(vh_file,sra_name,virustype,path){
   
+  vh_file <- VhgPreprocessTaxa(vh_file,"Family")
+  
   # Run Bar Chart - Number of viral groups detected across query sequences
   srarun_bar <- VhgRunsBarplot(file = vh_file,groupby = "ViralRefSeq_taxonomy",
                                title = paste0(sra_name," - ",virustype,
@@ -121,6 +123,8 @@ vhPipeline <- function(vh_file,sra_name,virustype,path){
 # --- Pipeline for Gatherer --- #
 
 vgPipeline <- function(vg_file,sra_name,virustype,path){
+  
+  vg_file <- VhgPreprocessTaxa(vg_file,"Family")
   
   # Run Bar Chart - Number of viral groups detected across query sequences
   srarun_bar <- VhgRunsBarplot(file = vg_file,groupby = "ViralRefSeq_taxonomy",
