@@ -1,0 +1,3 @@
+run_id	contig_id	contig_len	ViralRefSeq_E	ViralRefSeq_ident	ViralRefSeq_aLen	ViralRefSeq_subject	ViralRefSeq_taxonomy	date_analyzed
+4141-I08_S5_R2_001	4141-I08_S5_R2_001_cap3_Contig-1	52	0.001	93.750000	16	acc:YP_009173866|polymerase [Hepatitis B virus]	taxid:10407|Orthohepadnavirus|Hepadnaviridae|Blubervirales|Revtraviricetes|Artverviricota|Pararnavirae|Riboviria	2024-05-30
+7264-I07_S6_R1_001	7264-I07_S6_R1_001_cap3_Contig-1	70	7.76e-08	95.455000	22	acc:YP_009173866|polymerase [Hepatitis B virus]	taxid:10407|Orthohepadnavirus|Hepadnaviridae|Blubervirales|Revtraviricetes|Artverviricota|Pararnavirae|Riboviria	2024-05-30

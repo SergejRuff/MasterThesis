@@ -66,3 +66,35 @@ Json and html report files are generatedand a trimmed fastq file.
 	Erwähne, welche Plots generiert wurden, was Sie zeigen und welche Rolle die cutoffs haben. Aber mache es kurz.
 	Erwähne, dass es nicht nur Plots, sondern auch gefilterte Hittables und Summary Stats zurückgibt.
 	Virusparies setzt E-values, wo E-values mit –log10 geplottet werden auf minimalen Wert 
+
+
+DATA
+
+
+	Taubert data: Tabell emit Daten einfügen (vorher vielleicht den leeren Datensatz entfernen 19031.
+	Mammals Data
+	Florian Pfaff Data
+	Anzahl an Daten erwähnen.
+	Erwähnen, dass Taubert und Pfaff für smalldna,large dna und RNAvirus liefen, während Mammals nur RNAviruses waren.
+	Erwähnen, was lokal und was SRA Daten waren. Datentypen erwähnen (FASTQ).
+Mammals data:
+du findest die Virushunter Suchergebnisse in Mammals im Anhang und auf dem Linux server unter:
+/mnt/twincore/compvironas/share/11_virushunter_RNAvirusUpdate_mammals/
+
+Die Tabelle ist gross und du wirst es vermutlich nicht schaffen alle Treffer mit Virusgatherer zu assemblieren (wie besprochen kannst du beides, Hunter und Gatherer, laufen lassen). Ich schlage auch vor, erstmal zu Filtern, damit eine machbare Anzahl von SRA runs uebrig bleibt, die du dann analysieren kannst. Deshalb nur Treffer einbeziehen, die alle folgenden Kriterien erfuellen:
+
+1) Treffer mit 'best_query' gegen eine bestimmte Virusgruppe (siehe unten)
+2) 'num_hits' > 4
+3) 'ViralRefSeq_E' < 1e-5
+4) 'ViralRefSeq_ident' < 90
+
+Ausserdem hier ein Ranking nach 'best_query' (also der Reihenfolge nach abarbeiten):
+
+1) Flavi_RdRp
+2) Hepe-Virga_RdRp
+3) Nido_RdRp
+4) Negative_Bunya-Arena_RdRp, Negative_Mono-Chu_RdRp, Negative_Orthomyxo_RdRp
+
+[danach die anderen 'best_query' Gruppen falls die Zeit es erlaubt, was ich nicht erwarte]
+
+	Eine Liste an genutzten SRAs für alle Gruppen einfügen. Also eine Spalte für für jeden Run oder eine Observation für jeden Run.

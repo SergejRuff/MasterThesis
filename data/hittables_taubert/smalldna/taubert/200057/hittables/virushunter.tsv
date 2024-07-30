@@ -1,0 +1,2 @@
+run_id	num_hits	best_E	best_query	ViralRefSeq_E	ViralRefSeq_ident	ViralRefSeq_aLen/sLen	ViralRefSeq_contigs	ViralRefSeq_subject	ViralRefSeq_taxonomy	date_analyzed
+30219_17_S60_R2_001	1	5.70e+00	Circo_Rep	3.60e-01	92.3	39 / 51	1	NC_077221.1|Prymnesium kappa virus genome assembly, chromosome: 1	taxid:1499987|Biavirus raunefjordenense|Biavirus|Schizomimiviridae|Imitervirales|Megaviricetes|Nucleocytoviricota|Bamfordvirae|Varidnaviria	2024-05-24

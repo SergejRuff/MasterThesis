@@ -13,19 +13,28 @@ library(Virusparies)
 
 # --- Pipeline for Hunter --- #
 
-vhPipeline <- function(vh_file,sra_name,virustype,path){
+vhPipeline <- function(vh_file,sra_name,virustype,path,facet_column=NULL){
   
+  message("\n Performing VhgPreprocessTaxa for Hunter.\n")
   vh_file <- VhgPreprocessTaxa(vh_file,"Family")
+  
+  message("\n VhgRunsBarplot for Hunter.\n")
   
   # Run Bar Chart - Number of viral groups detected across query sequences
   srarun_bar <- VhgRunsBarplot(file = vh_file,groupby = "ViralRefSeq_taxonomy",
                                title = paste0(sra_name," - ",virustype,
                                               ": Distribution of viral groups detected across query sequences")
-                               ,title_size = 12,facet_ncol = 2 )
+                               ,title_size = 12,facet_ncol = facet_column )
+  
+  message("\n VhSumHitsBarplot for Hunter.\n") 
   
   # - sum of hits plot
   sumhitbar <- VhSumHitsBarplot(vh_file,groupby = "ViralRefSeq_taxonomy",title = 
-                                  paste0(sra_name," - ",virustype,": Distribution of hits for each virus group"),title_size = 12,facet_ncol = 2)
+                                  paste0(sra_name," - ",virustype,": Distribution of hits for each virus group"),title_size = 12,facet_ncol = facet_column)
+  
+   
+  
+  message("\n VhgIdentityScatterPlot for Hunter.\n")
   
   # - scatter plot e value vs identity
   identityplot <-  VhgIdentityScatterPlot(file = vh_file,groupby = "ViralRefSeq_taxonomy",title = 
@@ -33,47 +42,104 @@ vhPipeline <- function(vh_file,sra_name,virustype,path){
                                             ": Scatterplot of viral reference e-values and identity")
                                           ,title_size = 16,legend_title = "Group")
   
+  message("\n VhgIdenFacetedScatterPlot for Hunter.\n")
+  
   # - faceted scatter plot identity vs e values faceted by viral group
   facetedscatterplot <- VhgIdenFacetedScatterPlot(file = vh_file,groupby = "ViralRefSeq_taxonomy",title = 
                                                     paste0(sra_name," - ",virustype,
                                                            ": Faceted scatterplot of viral reference e-values and identity")
                                                   ,title_size = 16,wrap_ncol = 3)
+  
+  message("\n  VhgBoxplot E-Value for Hunter.\n")
+  
   # - boxplot for e values
   box_evalue <- VhgBoxplot(file = vh_file,x_column  = "ViralRefSeq_taxonomy",title = 
                              paste0(sra_name," - ",virustype,
                                     ": Boxplot of viral reference e-values for each group")
-                           ,title_size = 16, y_column = "ViralRefSeq_E",subtitle_size = 10,facet_ncol = 2)
+                           ,title_size = 16, y_column = "ViralRefSeq_E",subtitle_size = 10,facet_ncol = facet_column)
+  
+  message("\n  VhgBoxplot identity for Hunter.\n")
   
   # - boxplot for identity
   iden_boxp <- VhgBoxplot(file = vh_file,x_column  = "ViralRefSeq_taxonomy",title = 
                             paste0(sra_name," - ",virustype,
                                    ": Boxplot of viral reference identity for each group")
                           ,title_size = 16, y_column = "ViralRefSeq_ident",facet_ncol = 
-                            2)
+                            facet_column)
   
   
   # --- Generate tables --- #
   
-  # - table of viral groups detected - in which data set were they detected?
-  run_table <- VhgRunsTable(vh_file,groupby  = "ViralRefSeq_taxonomy",
-               title = paste0(sra_name," - ",virustype,
-                              ": Table of viral groups detected across query sequences"),
-              col_everyrow = TRUE,column_colour = "white",cell_colour = "white",title_colour ="black",
-              title_weight = "normal",title_size = 20)
+  if (!dir.exists(path)) {
+    dir.create(path, recursive = TRUE)
+  }
   
-  evalues <- VhgTabularRasa(box_evalue$summary_stats,
-                            col_everyrow = TRUE,column_colour = "white",cell_colour = "white",title_colour ="black",
-                            title_weight = "normal",title_size = 20,title = 
-                              paste0(sra_name," - ",virustype,": E-values for each group"),
-                            names_ = c("group","median","Q1","Q3","mean","sd","max","min"))
+  message("\n  Generating Tables for Hunter.\n")
+  
+  if(!is.null(vh_file) ){
+    
+    
+    message("\n  VhgRunsTable for Hunter.\n")
+    
+    # - table of viral groups detected - in which data set were they detected?
+    run_table <- VhgRunsTable(vh_file,groupby  = "ViralRefSeq_taxonomy",
+                              title = paste0(sra_name," - ",virustype,
+                                             ": Table of viral groups detected across query sequences"),
+                              col_everyrow = TRUE,column_colour = "white",cell_colour = "white",title_colour ="black",
+                              title_weight = "normal",title_size = 20)
+    
+    ExportVirusGt(gtable=run_table,filename="vh_runtable.docx",path = path)
+    
+  }else{
+    
+    message("\n  Skipping VhgRunsTable for Hunter ( 0 obs.).\n")
+    
+  }
+  
+ 
+  
+  if(!is.null(box_evalue$summary_stats)){
+    
+    
+    message("\n  VhgTabularRasa for e-value sum stats for Hunter.\n")
+    
+    evalues <- VhgTabularRasa(box_evalue$summary_stats,
+                              col_everyrow = TRUE,column_colour = "white",cell_colour = "white",title_colour ="black",
+                              title_weight = "normal",title_size = 20,title = 
+                                paste0(sra_name," - ",virustype,": E-values for each group"),
+                              names_ = c("group","median","Q1","Q3","mean","sd","min","max"))
+    
+    ExportVirusGt(gtable=evalues,filename="vh_evaluestable.docx",path = path)
+    
+  }else{
+    
+    message("\n  Skipping VhgTabularRasa for e-value sum stats for Hunter ( 0 obs.).\n")
+    
+  }
   
   
   
-  identity <- VhgTabularRasa(iden_boxp$summary_stats,
-                            col_everyrow = TRUE,column_colour = "white",cell_colour = "white",title_colour ="black",
-                            title_weight = "normal",title_size = 20,title = 
-                              paste0(sra_name," - ",virustype,": Identity [%] for each group"),
-                            names_ = c("group","median","Q1","Q3","mean","sd","max","min"))
+  if(!is.null(iden_boxp$summary_stats)){
+    
+    
+    message("\n  VhgTabularRasa for identity sum stats for Hunter.\n")
+    
+    identity <- VhgTabularRasa(iden_boxp$summary_stats,
+                               col_everyrow = TRUE,column_colour = "white",cell_colour = "white",title_colour ="black",
+                               title_weight = "normal",title_size = 20,title = 
+                                 paste0(sra_name," - ",virustype,": Identity [%] for each group"),
+                               names_ = c("group","median","Q1","Q3","mean","sd","min","max"))
+    
+    ExportVirusGt(gtable=identity,filename="vh_identitytable.docx",path = path)
+    
+  }else{
+    
+    message("\n  Skipping VhgTabularRasa for identity sum stats for Hunter ( 0 obs.).\n")
+    
+  }
+  
+  
+
   
   
   
@@ -82,9 +148,7 @@ vhPipeline <- function(vh_file,sra_name,virustype,path){
   
   # Export plots
   
-  if (!dir.exists(path)) {
-    dir.create(path, recursive = TRUE)
-  }
+
   
   ExportVirusPlot(plot = srarun_bar$plot,file_name = "hunter_srarun.png",path=path,export_plotobj = TRUE,
                   width = 13,height = 10,units = "in")
@@ -104,13 +168,10 @@ vhPipeline <- function(vh_file,sra_name,virustype,path){
   ExportVirusPlot(plot = iden_boxp$boxp,file_name = "hunter_identboxp.png",path=path,export_plotobj = TRUE,
                   width = 12,height = 10,units = "in")
   
-  # export tables
+ 
   
-  ExportVirusGt(gtable=run_table,filename="vh_runtable.docx",path = path)
   
-  ExportVirusGt(gtable=evalues,filename="vh_evaluestable.docx",path = path)
-  
-  ExportVirusGt(gtable=identity,filename="vh_identitytable.docx",path = path)
+
   
   
  
@@ -122,78 +183,139 @@ vhPipeline <- function(vh_file,sra_name,virustype,path){
 
 # --- Pipeline for Gatherer --- #
 
-vgPipeline <- function(vg_file,sra_name,virustype,path){
+vgPipeline <- function(vg_file,sra_name,virustype,path,facet_column=NULL){
   
+  message("\n Performing VhgPreprocessTaxa for Gatherer.\n")
   vg_file <- VhgPreprocessTaxa(vg_file,"Family")
   
+  message("\n VhgRunsBarplot for Gatherer.\n")
   # Run Bar Chart - Number of viral groups detected across query sequences
   srarun_bar <- VhgRunsBarplot(file = vg_file,groupby = "ViralRefSeq_taxonomy",
                                title = paste0(sra_name," - ",virustype,
                                               ": Distribution of viral groups detected across query sequences")
-                               ,title_size = 12,facet_ncol = 2 )
+                               ,title_size = 12,facet_ncol = facet_column )
   
-  
+  message("\n VhgIdentityScatterPlot for Gatherer.\n")
   # - scatter plot e value vs identity
   identityplot <-  VhgIdentityScatterPlot(file = vg_file,groupby = "ViralRefSeq_taxonomy",conlen_bubble_plot = TRUE,title = 
                                             paste0(sra_name," - ",virustype,
                                                    ": Scatterplot of viral reference e-values and identity")
                                           ,title_size = 16,legend_title = "Group",legend_position = "right")
   
+  message("\n VhgIdenFacetedScatterPlot for Gatherer.\n")
   # - faceted scatter plot identity vs e values faceted by viral group
   facetedscatterplot <- VhgIdenFacetedScatterPlot(file = vg_file,groupby = "ViralRefSeq_taxonomy",conlen_bubble_plot = TRUE,title = 
                                                     paste0(sra_name," - ",virustype,
                                                            ": Faceted scatterplot of viral reference e-values and identity")
-                                                  ,title_size = 16,wrap_ncol = 3)
+                                                 ,title_size = 16,wrap_ncol = 3)
+  
+  message("\n VhgBoxplot E-Value for Gatherer.\n")
   # - boxplot for e values
   box_evalue <- VhgBoxplot(file = vg_file,x_column  = "ViralRefSeq_taxonomy",title = 
                              paste0(sra_name," - ",virustype,
                                     ": Boxplot of viral reference e-values for each group")
-                           ,title_size = 16, y_column = "ViralRefSeq_E",subtitle_size = 10,facet_ncol = 2)
+                           ,title_size = 16, y_column = "ViralRefSeq_E",subtitle_size = 10,facet_ncol = facet_column)
   
+  message("\n VhgBoxplot Identity for Gatherer.\n")
   # - boxplot for identity
   iden_boxp <- VhgBoxplot(file = vg_file,x_column  = "ViralRefSeq_taxonomy",title = 
                             paste0(sra_name," - ",virustype,
                                    ": Boxplot of viral reference identity for each group")
-                          ,title_size = 16, y_column = "ViralRefSeq_ident",facet_ncol = 2)
+                          ,title_size = 16, y_column = "ViralRefSeq_ident",facet_ncol = facet_column)
   
   violin_contiglen <- VgConLenViolin(vg_file,title = 
                                        paste0(sra_name," - ",virustype,
                                               ": Violinplot of contig length for each group")
-                                     ,title_size = 16,facet_ncol = 2)
+                                     ,title_size = 16,facet_ncol = facet_column)
   
   
   # --- Generate tables --- #
   
-  # - table of viral groups detected - in which data set were they detected?
-  run_table <- VhgRunsTable(vg_file,groupby  = "ViralRefSeq_taxonomy",
-               title = paste0(sra_name," - ",virustype,
-                              ": Table of viral groups detected across query sequences"),
-               ,
-               col_everyrow = TRUE,column_colour = "white",cell_colour = "white",title_colour ="black",
-               title_weight = "normal",title_size = 20)
+  if (!dir.exists(path)) {
+    dir.create(path, recursive = TRUE)
+  }
+  
+  message("\n  Generating Tables for Hunter.\n")
+  
+  if(!is.null(vg_file) ){
+    
+    message("\n  VhgRunsTable for Gatherer.\n")
+    
+    # - table of viral groups detected - in which data set were they detected?
+    run_table <- VhgRunsTable(vg_file,groupby  = "ViralRefSeq_taxonomy",
+                              title = paste0(sra_name," - ",virustype,
+                                             ": Table of viral groups detected across query sequences"),
+                              
+                              col_everyrow = TRUE,column_colour = "white",cell_colour = "white",title_colour ="black",
+                              title_weight = "normal",title_size = 20)
+    
+    ExportVirusGt(gtable=run_table,filename="vg_runtable.docx",path = path)
+    
+  }else{
+    
+    message("\n  Skipping VhgRunsTable for Gatherer ( 0 obs.).\n")
+    
+  }
+  
+  if(!is.null(box_evalue$summary_stats)){
+    
+    message("\n  VhgTabularRasa for e-value sum stats for Hunter.\n")
+    
+    evalues <- VhgTabularRasa(box_evalue$summary_stats,
+                              col_everyrow = TRUE,column_colour = "white",cell_colour = "white",title_colour ="black",
+                              title_weight = "normal",title_size = 20,title = 
+                                paste0(sra_name," - ",virustype,": E-values for each group"),
+                              names_ = c("group","median","Q1","Q3","mean","sd","min","max"))
+    
+    ExportVirusGt(gtable=evalues,filename="vg_evaluestable.docx",path = path)
+  }else{
+    
+    message("\n  Skipping VhgTabularRasa for e-value sum stats for Hunter ( 0 obs.).\n")
+    
+  }
   
   
-  evalues <- VhgTabularRasa(box_evalue$summary_stats,
-                            col_everyrow = TRUE,column_colour = "white",cell_colour = "white",title_colour ="black",
-                            title_weight = "normal",title_size = 20,title = 
-                              paste0(sra_name," - ",virustype,": E-values for each group"),
-                            names_ = c("group","median","Q1","Q3","mean","sd","max","min"))
+ 
+  if(!is.null(iden_boxp$summary_stats)){
+    
+    message("\n  VhgTabularRasa for identity sum stats for Hunter.\n")
+    
+    identity <- VhgTabularRasa(iden_boxp$summary_stats,
+                               col_everyrow = TRUE,column_colour = "white",cell_colour = "white",title_colour ="black",
+                               title_weight = "normal",title_size = 20,title = 
+                                 paste0(sra_name," - ",virustype,": Identity [%] for each group"),
+                               names_ = c("group","median","Q1","Q3","mean","sd","min","max"))
+    
+    ExportVirusGt(gtable=identity,filename="vg_identitytable.docx",path = path)
+    
+    
+    
+  }else{
+    
+    message("\n  Skipping VhgTabularRasa for identity sum stats for Hunter ( 0 obs.).\n")
+    
+  }
   
   
+  if(!is.null(violin_contiglen$contiglen_stats)){
+    
+    message("\n  VhgTabularRasa for contig length sum stats for Hunter.\n")
+    
+    contig_len <- VhgTabularRasa(violin_contiglen$contiglen_stats,
+                                 col_everyrow = TRUE,column_colour = "white",cell_colour = "white",title_colour ="black",
+                                 title_weight = "normal",title_size = 20,title = 
+                                   paste0(sra_name," - ",virustype,": Contig Length [nt] for each group"),
+                                 names_ = c("group","median","Q1","Q3","mean","sd","min","max"))
+    
+    ExportVirusGt(gtable=contig_len,filename="vg_contig_lentable.docx",path = path)
+    
+  }else{
+    
+    message("\n  Skipping VhgTabularRasa for contig length sum stats for Hunter ( 0 obs.).\n")
+    
+  }
   
-  identity <- VhgTabularRasa(iden_boxp$summary_stats,
-                             col_everyrow = TRUE,column_colour = "white",cell_colour = "white",title_colour ="black",
-                             title_weight = "normal",title_size = 20,title = 
-                               paste0(sra_name," - ",virustype,": Identity [%] for each group"),
-                             names_ = c("group","median","Q1","Q3","mean","sd","max","min"))
-  
-  
-  contig_len <- VhgTabularRasa(violin_contiglen$contiglen_stats,
-                             col_everyrow = TRUE,column_colour = "white",cell_colour = "white",title_colour ="black",
-                             title_weight = "normal",title_size = 20,title = 
-                               paste0(sra_name," - ",virustype,": Contig Length [nt] for each group"),
-                             names_ = c("group","median","Q1","Q3","mean","sd","max","min"))
-  
+ 
   
   
   # --- export --- #
@@ -224,15 +346,7 @@ vgPipeline <- function(vg_file,sra_name,virustype,path){
   ExportVirusPlot(plot = iden_boxp$boxp,file_name = "gatherer_box_identity.png",path=path,export_plotobj = TRUE,
                   width = 12,height = 10,units = "in")
   
-  # export tables
   
-  ExportVirusGt(gtable=run_table,filename="vg_runtable.docx",path = path)
-  
-  ExportVirusGt(gtable=evalues,filename="vg_evaluestable.docx",path = path)
-  
-  ExportVirusGt(gtable=identity,filename="vg_identitytable.docx",path = path)
-  
-  ExportVirusGt(gtable=contig_len,filename="vg_contig_lentable.docx",path = path)
   
   
 
@@ -247,16 +361,18 @@ vgPipeline <- function(vg_file,sra_name,virustype,path){
 # --- Import and parameters --- #
 
 path_to_hunter <- 
-  "data/RNAvirus_Mammals_newJan2023/mammals/hepevirga/virushunter.tsv"
-path_to_gatherer <- "data/RNAvirus_Mammals_newJan2023/mammals/hepevirga/virusgatherer-cap3.tsv"
+  "data/hittables_taubert/rnavirus/combined_virushunter.tsv"
+path_to_gatherer <- "data/hittables_taubert/rnavirus/combined_virusgatherer-cap3.tsv"
 
 
 
-sra_name <- "Hepe Data"
+sra_name <- "Taubert Data combined"
 virustype <- "RNA viruses (Hunter)"
 virustype_gatherer <- "RNA viruses (Gatherer)"
-hunter_export_path <- "output/Hepe/plots/Hunter"
-gatherer_export_path <- "output/Hepe/plots/Gatherer"
+hunter_export_path <- "output/TaubertDatacombined/plots/rnavirus/Hunter"
+gatherer_export_path <- "output/TaubertDatacombined/plots/rnavirus/Gatherer"
+
+facet_column <- NULL
 
 
 # sra_name <- "Florian´s Data"
@@ -272,7 +388,7 @@ if(path_to_hunter != ""){
   vh_file <- 
     ImportVirusTable(path_to_hunter)
   
-  vh_results <- vhPipeline(vh_file,sra_name = sra_name,virustype = virustype,path = hunter_export_path)
+  vh_results <- vhPipeline(vh_file,sra_name = sra_name,virustype = virustype,path = hunter_export_path,facet_column=facet_column)
   
 }
 
@@ -282,6 +398,6 @@ if(path_to_gatherer != ""){
   vg_file <- 
     ImportVirusTable(path_to_gatherer)
   
-  vg_results <- vgPipeline(vg_file,sra_name = sra_name,virustype = virustype_gatherer,path = gatherer_export_path)
+  vg_results <- vgPipeline(vg_file,sra_name = sra_name,virustype = virustype_gatherer,path = gatherer_export_path,facet_column=facet_column)
   
 }

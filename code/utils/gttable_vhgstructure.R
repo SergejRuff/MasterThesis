@@ -1,3 +1,19 @@
+library(gt)
+library(Virusparies)
+library(dplyr)
+
+test <- ImportVirusTable("data/RNAvirus_Mammals_newJan2023/mammals/Bunya/virushunter.tsv")
+test2 <- ImportVirusTable("data/Florian_data/RNA/virushunter.tsv")
+
+test <- head(test,5)
+test2 <- head(test2,5)
+
+
+test$run_id <- test2$run_id
+
+# vg_file <- test[,c(16,1:15)] for hunter
+vg_file <- test[,c(14,1:13)] # for gatherer
+
 # Function to get example values
 get_examples <- function(column) {
   if (is.factor(column) || is.character(column)) {
@@ -51,3 +67,6 @@ gt_table <- column_info %>%
 
 # Print the gt table
 print(gt_table)
+
+path <- "misc/vhg_structure/"
+ExportVirusGt(gtable=gt_table,filename="vg_structure.docx",path = path)
