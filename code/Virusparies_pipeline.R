@@ -24,13 +24,16 @@ vhPipeline <- function(vh_file,sra_name,virustype,path,facet_column=NULL){
   srarun_bar <- VhgRunsBarplot(file = vh_file,groupby = "ViralRefSeq_taxonomy",
                                title = paste0(sra_name," - ",virustype,
                                               ": Distribution of viral groups detected across query sequences")
-                               ,title_size = 12,facet_ncol = facet_column )
+                               ,title_size = 16,facet_ncol = facet_column,ytext_size = 15,xtext_size = 15,plot_text_size = 3.5,axis_title_size = 16,
+                               subtitle_size = 16,legend_text_size = 14,legend_title_size = 16)
   
   message("\n VhSumHitsBarplot for Hunter.\n") 
   
   # - sum of hits plot
   sumhitbar <- VhSumHitsBarplot(vh_file,groupby = "ViralRefSeq_taxonomy",title = 
-                                  paste0(sra_name," - ",virustype,": Distribution of hits for each virus group"),title_size = 12,facet_ncol = facet_column)
+                                  paste0(sra_name," - ",virustype,": Distribution of hits for each virus group"),
+                                title_size = 20,facet_ncol = facet_column,ytext_size = 15,xtext_size = 15,plot_text_size = 3.5,axis_title_size = 16,
+                                subtitle_size = 16,legend_text_size = 14,legend_title_size = 16)
   
   
   
@@ -40,7 +43,8 @@ vhPipeline <- function(vh_file,sra_name,virustype,path,facet_column=NULL){
   identityplot <-  VhgIdentityScatterPlot(file = vh_file,groupby = "ViralRefSeq_taxonomy",title = 
                                             paste0(sra_name," - ",virustype,
                                                    ": Scatterplot of viral reference e-values and identity")
-                                          ,title_size = 16,legend_title = "Group")
+                                          ,title_size = 20,legend_title = "Group",ytext_size = 15,xtext_size = 15,axis_title_size = 16,
+                                          subtitle_size = 16,legend_text_size = 14,legend_title_size = 16)
   
   message("\n VhgIdenFacetedScatterPlot for Hunter.\n")
   
@@ -48,7 +52,8 @@ vhPipeline <- function(vh_file,sra_name,virustype,path,facet_column=NULL){
   facetedscatterplot <- VhgIdenFacetedScatterPlot(file = vh_file,groupby = "ViralRefSeq_taxonomy",title = 
                                                     paste0(sra_name," - ",virustype,
                                                            ": Faceted scatterplot of viral reference e-values and identity")
-                                                  ,title_size = 16,wrap_ncol = 3)
+                                                  ,title_size = 20,wrap_ncol = 3,ytext_size = 15,xtext_size = 15,axis_title_size = 16,
+                                                  subtitle_size = 16,legend_text_size = 14,legend_title_size = 16)
   
   message("\n  VhgBoxplot E-Value for Hunter.\n")
   
@@ -56,7 +61,8 @@ vhPipeline <- function(vh_file,sra_name,virustype,path,facet_column=NULL){
   box_evalue <- VhgBoxplot(file = vh_file,x_column  = "ViralRefSeq_taxonomy",title = 
                              paste0(sra_name," - ",virustype,
                                     ": Boxplot of viral reference e-values for each group")
-                           ,title_size = 16, y_column = "ViralRefSeq_E",subtitle_size = 10,facet_ncol = facet_column)
+                           ,title_size = 20, y_column = "ViralRefSeq_E",facet_ncol = facet_column,ytext_size = 13,xtext_size = 15,axis_title_size = 16,
+                           subtitle_size = 16,legend_text_size = 14,legend_title_size = 16)
   
   message("\n  VhgBoxplot identity for Hunter.\n")
   
@@ -64,8 +70,9 @@ vhPipeline <- function(vh_file,sra_name,virustype,path,facet_column=NULL){
   iden_boxp <- VhgBoxplot(file = vh_file,x_column  = "ViralRefSeq_taxonomy",title = 
                             paste0(sra_name," - ",virustype,
                                    ": Boxplot of viral reference identity for each group")
-                          ,title_size = 16, y_column = "ViralRefSeq_ident",facet_ncol = 
-                            facet_column)
+                          ,title_size = 20, y_column = "ViralRefSeq_ident",facet_ncol = 
+                            facet_column,ytext_size = 15,xtext_size = 15,axis_title_size = 16,
+                          subtitle_size = 16,legend_text_size = 14,legend_title_size = 16)
   
   
   # --- Generate tables --- #
@@ -87,7 +94,7 @@ vhPipeline <- function(vh_file,sra_name,virustype,path,facet_column=NULL){
                                              ": Table of viral groups detected across query sequences"),
                               title_size = 20)
     
-    ExportVirusGt(gtable=run_table,filename="vh_runtable.png",path = path)
+    ExportVirusGt(gtable=run_table,filename="vh_runtable.docx",path = path)
     
   }else{
     
@@ -108,7 +115,7 @@ vhPipeline <- function(vh_file,sra_name,virustype,path,facet_column=NULL){
                               names_ = c("group","median","Q1","Q3","mean","sd","min","max"),
                               title_size = 20)
     
-    ExportVirusGt(gtable=evalues,filename="vh_evaluestable.png",path = path)
+    ExportVirusGt(gtable=evalues,filename="vh_evaluestable.docx",path = path)
     
   }else{
     
@@ -129,7 +136,7 @@ vhPipeline <- function(vh_file,sra_name,virustype,path,facet_column=NULL){
                                names_ = c("group","median","Q1","Q3","mean","sd","min","max"),
                                title_size = 20)
     
-    ExportVirusGt(gtable=identity,filename="vh_identitytable.png",path = path)
+    ExportVirusGt(gtable=identity,filename="vh_identitytable.docx",path = path)
     
   }else{
     
@@ -180,6 +187,19 @@ vhPipeline <- function(vh_file,sra_name,virustype,path,facet_column=NULL){
 }
 
 
+
+
+######################################################################################
+######################################################################################
+######################################################################################
+######################################################################################
+######################################################################################
+######################################################################################
+######################################################################################
+######################################################################################
+######################################################################################
+
+
 # --- Pipeline for Gatherer --- #
 
 vgPipeline <- function(vg_file,sra_name,virustype,path,facet_column=NULL){
@@ -192,40 +212,46 @@ vgPipeline <- function(vg_file,sra_name,virustype,path,facet_column=NULL){
   srarun_bar <- VhgRunsBarplot(file = vg_file,groupby = "ViralRefSeq_taxonomy",
                                title = paste0(sra_name," - ",virustype,
                                               ": Distribution of viral groups detected across query sequences")
-                               ,title_size = 12,facet_ncol = facet_column )
+                               ,title_size = 16,facet_ncol = facet_column,ytext_size = 15,xtext_size = 15,plot_text_size = 3.5,axis_title_size = 16,
+                               subtitle_size = 16,legend_text_size = 14,legend_title_size = 16 )
   
   message("\n VhgIdentityScatterPlot for Gatherer.\n")
   # - scatter plot e value vs identity
   identityplot <-  VhgIdentityScatterPlot(file = vg_file,groupby = "ViralRefSeq_taxonomy",conlen_bubble_plot = TRUE,title = 
                                             paste0(sra_name," - ",virustype,
                                                    ": Scatterplot of viral reference e-values and identity")
-                                          ,title_size = 16,legend_title = "Group",legend_position = "right")
+                                          ,title_size = 20,legend_title = "Group",legend_position = "right",ytext_size = 15,xtext_size = 15,axis_title_size = 16,
+                                          subtitle_size = 16,legend_text_size = 14,legend_title_size = 16)
   
   message("\n VhgIdenFacetedScatterPlot for Gatherer.\n")
   # - faceted scatter plot identity vs e values faceted by viral group
   facetedscatterplot <- VhgIdenFacetedScatterPlot(file = vg_file,groupby = "ViralRefSeq_taxonomy",conlen_bubble_plot = TRUE,title = 
                                                     paste0(sra_name," - ",virustype,
                                                            ": Faceted scatterplot of viral reference e-values and identity")
-                                                  ,title_size = 16,wrap_ncol = 3)
+                                                  ,title_size = 20,wrap_ncol = 3,ytext_size = 15,xtext_size = 15,axis_title_size = 16,
+                                                  subtitle_size = 16,legend_text_size = 14,legend_title_size = 16)
   
   message("\n VhgBoxplot E-Value for Gatherer.\n")
   # - boxplot for e values
   box_evalue <- VhgBoxplot(file = vg_file,x_column  = "ViralRefSeq_taxonomy",title = 
                              paste0(sra_name," - ",virustype,
                                     ": Boxplot of viral reference e-values for each group")
-                           ,title_size = 16, y_column = "ViralRefSeq_E",subtitle_size = 10,facet_ncol = facet_column)
+                           ,title_size = 20, y_column = "ViralRefSeq_E",facet_ncol = facet_column,ytext_size = 15,xtext_size = 15,axis_title_size = 16,
+                           subtitle_size = 16,legend_text_size = 14,legend_title_size = 16)
   
   message("\n VhgBoxplot Identity for Gatherer.\n")
   # - boxplot for identity
   iden_boxp <- VhgBoxplot(file = vg_file,x_column  = "ViralRefSeq_taxonomy",title = 
                             paste0(sra_name," - ",virustype,
                                    ": Boxplot of viral reference identity for each group")
-                          ,title_size = 16, y_column = "ViralRefSeq_ident",facet_ncol = facet_column)
+                          ,title_size = 20, y_column = "ViralRefSeq_ident",facet_ncol = facet_column,ytext_size = 15,xtext_size = 15,axis_title_size = 16,
+                          subtitle_size = 16,legend_text_size = 14,legend_title_size = 16)
   
   violin_contiglen <- VgConLenViolin(vg_file,title = 
                                        paste0(sra_name," - ",virustype,
                                               ": Violinplot of contig length for each group")
-                                     ,title_size = 16,facet_ncol = facet_column)
+                                     ,title_size = 20,facet_ncol = facet_column,ytext_size = 15,xtext_size = 15,axis_title_size = 16,
+                                     subtitle_size = 16,legend_text_size = 14,legend_title_size = 16)
   
   
   # --- Generate tables --- #
@@ -246,7 +272,7 @@ vgPipeline <- function(vg_file,sra_name,virustype,path,facet_column=NULL){
                                              ": Table of viral groups detected across query sequences"),
                               title_size = 20)
     
-    ExportVirusGt(gtable=run_table,filename="vg_runtable.png",path = path)
+    ExportVirusGt(gtable=run_table,filename="vg_runtable.docx",path = path)
     
   }else{
     
@@ -264,7 +290,7 @@ vgPipeline <- function(vg_file,sra_name,virustype,path,facet_column=NULL){
                               names_ = c("group","median","Q1","Q3","mean","sd","min","max"),
                              title_size = 20)
     
-    ExportVirusGt(gtable=evalues,filename="vg_evaluestable.png",path = path)
+    ExportVirusGt(gtable=evalues,filename="vg_evaluestable.docx",path = path)
   }else{
     
     message("\n  Skipping VhgTabularRasa for e-value sum stats for Hunter ( 0 obs.).\n")
@@ -283,7 +309,7 @@ vgPipeline <- function(vg_file,sra_name,virustype,path,facet_column=NULL){
                                names_ = c("group","median","Q1","Q3","mean","sd","min","max"),
                               title_size = 20)
     
-    ExportVirusGt(gtable=identity,filename="vg_identitytable.png",path = path)
+    ExportVirusGt(gtable=identity,filename="vg_identitytable.docx",path = path)
     
     
     
@@ -304,7 +330,7 @@ vgPipeline <- function(vg_file,sra_name,virustype,path,facet_column=NULL){
                                  names_ = c("group","median","Q1","Q3","mean","sd","min","max"),
                                 title_size = 20)
     
-    ExportVirusGt(gtable=contig_len,filename="vg_contig_lentable.png",path = path)
+    ExportVirusGt(gtable=contig_len,filename="vg_contig_lentable.docx",path = path)
     
   }else{
     
@@ -358,16 +384,16 @@ vgPipeline <- function(vg_file,sra_name,virustype,path,facet_column=NULL){
 # --- Import and parameters --- #
 
 path_to_hunter <- 
-  "data/RNAvirus_Mammals_newJan2023/mammals/orthomyxo_20july_RNAvirus_nofil_1/virushunter.tsv"
-path_to_gatherer <- "data/RNAvirus_Mammals_newJan2023/mammals/orthomyxo_20july_RNAvirus_nofil_1/virusgatherer-cap3.tsv"
+  "data/RNAvirus_Mammals_newJan2023/mammals/Mono_chu_08july_RNAvirus_nofil_1/virushunter.tsv"
+path_to_gatherer <- "data/RNAvirus_Mammals_newJan2023/mammals/Mono_chu_08july_RNAvirus_nofil_1/virusgatherer-cap3.tsv"
 
 
 
-sra_name <- "Orthomyxo"
+sra_name <- "Mono_chu"
 virustype <- "Hunter"
 virustype_gatherer <- "Gatherer"
-hunter_export_path <- "output/mammals/Orthomyxo/plots/rnavirus/Hunter"
-gatherer_export_path <- "output/mammals/Orthomyxo/plots/rnavirus/Gatherer"
+hunter_export_path <- "output/mammals/Mono_chu/plots/rnavirus/Hunter"
+gatherer_export_path <- "output/mammals/Mono_chu/plots/rnavirus/Gatherer"
 
 facet_column <- NULL
 
