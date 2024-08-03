@@ -358,16 +358,16 @@ vgPipeline <- function(vg_file,sra_name,virustype,path,facet_column=NULL){
 # --- Import and parameters --- #
 
 path_to_hunter <- 
-  "data/RNAvirus_Mammals_newJan2023/mammals/Flavi/virushunter.tsv"
-path_to_gatherer <- ""
+  "data/RNAvirus_Mammals_newJan2023/mammals/orthomyxo_20july_RNAvirus_nofil_1/virushunter.tsv"
+path_to_gatherer <- "data/RNAvirus_Mammals_newJan2023/mammals/orthomyxo_20july_RNAvirus_nofil_1/virusgatherer-cap3.tsv"
 
 
 
-sra_name <- "Flavi_RdRp"
+sra_name <- "Orthomyxo"
 virustype <- "Hunter"
 virustype_gatherer <- "Gatherer"
-hunter_export_path <- "output/mammals/Flavi_RdRp/plots/rnavirus/Hunter"
-gatherer_export_path <- "output/mammals/Flavi_RdRp/plots/rnavirus/Gatherer"
+hunter_export_path <- "output/mammals/Orthomyxo/plots/rnavirus/Hunter"
+gatherer_export_path <- "output/mammals/Orthomyxo/plots/rnavirus/Gatherer"
 
 facet_column <- NULL
 
