@@ -205,8 +205,17 @@ results <- microbenchmark(
   times = 10
 )
 
-bench::mark(
-            Parallel4Cores = VhgPreprocessTaxa2(file, taxa_rank = "Family", num_cores = 6),memory = FALSE)
+for (i in 1:7){
+  
+  
+  cat("\n cores:", i, "\n")
+  
+  res <-bench::mark(
+    Parallel4Cores = VhgPreprocessTaxa2(file, taxa_rank = "Family", num_cores = i),memory = FALSE)
+  
+  print(res)
+}
+
 
 bench::mark(
   SingleThreaded = VhgPreprocessTaxa(file, taxa_rank = "Family"))
@@ -216,5 +225,5 @@ print(results)
 # test current package version.
 profvis::profvis(VhgPreprocessTaxa(file, taxa_rank = "Family"))
 
-profvis::profvis(VhgPreprocessTaxa2(file, taxa_rank = "Family"))
+profvis::profvis(VhgPreprocessTaxa2(file, taxa_rank = "Family", num_cores = 7))
 
