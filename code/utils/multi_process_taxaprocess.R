@@ -3,13 +3,16 @@ library(dplyr)
 library(stringr)
 library(parallel)
 
+
 # Define the function to process each chunk
 process_chunk <- function(chunk, ictv_formatted, taxa_rank) {
   taxon_filter <- paste(unique(ictv_formatted$name), collapse = "|")
   
   chunk_processed <- chunk %>%
     mutate(
+      # Remove taxid and two-word taxon names from the taxonomy string
       ViralRefSeq_taxonomy = str_remove_all(ViralRefSeq_taxonomy, "taxid:\\d+\\||\\w+\\s\\w+\\|"),
+      # Extract the name based on the taxon_filter
       name = str_extract(ViralRefSeq_taxonomy, taxon_filter),
       ViralRefSeq_taxonomy = str_extract(ViralRefSeq_taxonomy, paste0("\\w+", taxa_rank))
     ) %>%

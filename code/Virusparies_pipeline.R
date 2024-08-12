@@ -13,7 +13,7 @@ library(Virusparies)
 
 # --- Pipeline for Hunter --- #
 
-vhPipeline <- function(vh_file,sra_name,virustype,path,facet_column=NULL){
+vhPipeline <- function(vh_file,sra_name,virustype,path,facet_column=NULL,groupby){
   
   message("\n Performing VhgPreprocessTaxa for Hunter.\n")
   vh_file <- VhgPreprocessTaxa(vh_file,"Family")
@@ -21,7 +21,7 @@ vhPipeline <- function(vh_file,sra_name,virustype,path,facet_column=NULL){
   message("\n VhgRunsBarplot for Hunter.\n")
   
   # Run Bar Chart - Number of viral groups detected across query sequences
-  srarun_bar <- VhgRunsBarplot(file = vh_file,groupby = "ViralRefSeq_taxonomy",
+  srarun_bar <- VhgRunsBarplot(file = vh_file,groupby = groupby,
                                title = paste0(sra_name," - ",virustype,
                                               ": Distribution of viral groups detected across query sequences")
                                ,title_size = 16,facet_ncol = facet_column,ytext_size = 15,xtext_size = 15,plot_text_size = 3.5,axis_title_size = 16,
@@ -30,7 +30,7 @@ vhPipeline <- function(vh_file,sra_name,virustype,path,facet_column=NULL){
   message("\n VhSumHitsBarplot for Hunter.\n") 
   
   # - sum of hits plot
-  sumhitbar <- VhSumHitsBarplot(vh_file,groupby = "ViralRefSeq_taxonomy",title = 
+  sumhitbar <- VhSumHitsBarplot(vh_file,groupby = groupby,title = 
                                   paste0(sra_name," - ",virustype,": Distribution of hits for each virus group"),
                                 title_size = 20,facet_ncol = facet_column,ytext_size = 15,xtext_size = 15,plot_text_size = 3.5,axis_title_size = 16,
                                 subtitle_size = 16,legend_text_size = 14,legend_title_size = 16,theme_choice = "linedraw_dotted")
@@ -40,7 +40,7 @@ vhPipeline <- function(vh_file,sra_name,virustype,path,facet_column=NULL){
   message("\n VhgIdentityScatterPlot for Hunter.\n")
   
   # - scatter plot e value vs identity
-  identityplot <-  VhgIdentityScatterPlot(file = vh_file,groupby = "ViralRefSeq_taxonomy",title = 
+  identityplot <-  VhgIdentityScatterPlot(file = vh_file,groupby = groupby,title = 
                                             paste0(sra_name," - ",virustype,
                                                    ": Scatterplot of viral reference e-values and identity")
                                           ,title_size = 20,legend_title = "Group",ytext_size = 15,xtext_size = 15,axis_title_size = 16,
@@ -49,7 +49,7 @@ vhPipeline <- function(vh_file,sra_name,virustype,path,facet_column=NULL){
   message("\n VhgIdenFacetedScatterPlot for Hunter.\n")
   
   # - faceted scatter plot identity vs e values faceted by viral group
-  facetedscatterplot <- VhgIdenFacetedScatterPlot(file = vh_file,groupby = "ViralRefSeq_taxonomy",title = 
+  facetedscatterplot <- VhgIdenFacetedScatterPlot(file = vh_file,groupby = groupby,title = 
                                                     paste0(sra_name," - ",virustype,
                                                            ": Faceted scatterplot of viral reference e-values and identity")
                                                   ,title_size = 20,wrap_ncol = 3,ytext_size = 15,xtext_size = 15,axis_title_size = 16,
@@ -58,7 +58,7 @@ vhPipeline <- function(vh_file,sra_name,virustype,path,facet_column=NULL){
   message("\n  VhgBoxplot E-Value for Hunter.\n")
   
   # - boxplot for e values
-  box_evalue <- VhgBoxplot(file = vh_file,x_column  = "ViralRefSeq_taxonomy",title = 
+  box_evalue <- VhgBoxplot(file = vh_file,x_column  = groupby,title = 
                              paste0(sra_name," - ",virustype,
                                     ": Boxplot of viral reference e-values for each group")
                            ,title_size = 20, y_column = "ViralRefSeq_E",facet_ncol = facet_column,ytext_size = 13,xtext_size = 15,axis_title_size = 16,
@@ -67,7 +67,7 @@ vhPipeline <- function(vh_file,sra_name,virustype,path,facet_column=NULL){
   message("\n  VhgBoxplot identity for Hunter.\n")
   
   # - boxplot for identity
-  iden_boxp <- VhgBoxplot(file = vh_file,x_column  = "ViralRefSeq_taxonomy",title = 
+  iden_boxp <- VhgBoxplot(file = vh_file,x_column  = groupby,title = 
                             paste0(sra_name," - ",virustype,
                                    ": Boxplot of viral reference identity for each group")
                           ,title_size = 20, y_column = "ViralRefSeq_ident",facet_ncol = 
@@ -89,7 +89,7 @@ vhPipeline <- function(vh_file,sra_name,virustype,path,facet_column=NULL){
     message("\n  VhgRunsTable for Hunter.\n")
     
     # - table of viral groups detected - in which data set were they detected?
-    run_table <- VhgRunsTable(vh_file,groupby  = "ViralRefSeq_taxonomy",
+    run_table <- VhgRunsTable(vh_file,groupby  = "best_query",
                               title = paste0(sra_name," - ",virustype,
                                              ": Table of viral groups detected across query sequences"),
                               title_size = 20)
@@ -396,6 +396,7 @@ hunter_export_path <- "output/mammals/TaubertDatacombined/plots/smalldna/Hunter"
 gatherer_export_path <- "output/mammals/TaubertDatacombined/plots/smalldna/Gatherer"
 
 facet_column <- NULL
+group_ <- "best_query"
 
 
 # sra_name <- "Florian´s Data"
@@ -411,7 +412,7 @@ if(path_to_hunter != ""){
   vh_file <- 
     ImportVirusTable(path_to_hunter)
   
-  vh_results <- vhPipeline(vh_file,sra_name = sra_name,virustype = virustype,path = hunter_export_path,facet_column=facet_column)
+  vh_results <- vhPipeline(vh_file,sra_name = sra_name,virustype = virustype,path = hunter_export_path,facet_column=facet_column,groupby=group_)
   
 }
 
