@@ -25,7 +25,7 @@ taubert_gt <- taubert %>%
   ) %>% 
   cols_label(
     Folder = "Folder",
-    Number_of_FASTQfiles = "Number of FASTQ files",
+    Number_of_FASTQfiles = "Number of Samples",
     comp1 = "Small DNA viruses",
     comp2 = "Large DNA viruses",
     comp3 = "RNA viruses"
@@ -49,4 +49,4 @@ taubert_gt <- taubert %>%
 
 print(taubert_gt)
 
-gtsave(taubert_gt,"taubert_uberblick.png",path = "data/hittables_taubert")
+gtsave(taubert_gt,"taubert_uberblick.png",path = "data/hittables_taubert/")

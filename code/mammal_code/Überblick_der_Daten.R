@@ -8,12 +8,12 @@ file_filter <- VhgSubsetHittable(file,num_hits_min = 4,ViralRefSeq_E_criteria = 
 
 
 
-sra_runfil <- VhgRunsBarplot(file_filter,plot_text = 1,theme_choice = "linedraw_dotted",title = "Mammal data: Distribution of viral groups",
-               title_size = 14,axis_title_size = 12,xtext_size = 12)
+sra_runfil <- VhgRunsBarplot(file_filter,plot_text = 1,theme_choice = "linedraw_dotted",title = "Overview of all profiles in Mammal data\nDistribution of viral groups detected across query sequences",
+               title_size = 11,axis_title_size = 12,xtext_size = 12,subtitle_size = 11)
 
 
 path <- "output/mammals/"
 
 
 ExportVirusPlot(plot = sra_runfil$plot,file_name = "gesamtuberblick_mammals.png",path=path,
-                width = 7,height = 7,units = "in")
+                width = 8,height = 7,units = "in")

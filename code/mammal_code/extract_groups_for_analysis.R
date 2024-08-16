@@ -49,6 +49,11 @@ Negative_Mono_Chu_RdRp <- mammal_raw %>%
 Negative_Orthomyxo_RdRp <- mammal_raw %>% 
   filter(best_query=="Negative_Orthomyxo_RdRp",num_hits > 4,ViralRefSeq_E < 1e-5,ViralRefSeq_ident < 90)
 
+Nido_NiRAN <- mammal_raw %>% 
+  filter(best_query=="Nido_NiRAN",num_hits > 4,ViralRefSeq_E < 1e-5,ViralRefSeq_ident < 90)
+
+NidoAstro_RdRp <- mammal_raw %>% 
+  filter(best_query=="NidoAstro_RdRp",num_hits > 4,ViralRefSeq_E < 1e-5,ViralRefSeq_ident < 90)
 
 # --- extract SRA_run --- #
 
@@ -58,6 +63,8 @@ nido_sra <- unique(Nido_RdRp$SRA_run)
 bunya <- unique(Negative_Bunya_Arena_RdRp$SRA_run)
 mono_chu <- unique(Negative_Mono_Chu_RdRp$SRA_run)
 orthomyxo <- unique(Negative_Orthomyxo_RdRp$SRA_run)
+Nido_NiRAN <- unique(Nido_NiRAN$SRA_run)
+NidoAstro_RdRp <- unique(NidoAstro_RdRp$SRA_run)
 
 # --- export --- #
 
@@ -86,4 +93,12 @@ close(fileConn)
 
 fileConn<-file("data/RNAvirus_Mammals_newJan2023/sra_ids/orthomyxo.txt")
 writeLines(orthomyxo, fileConn)
+close(fileConn)
+
+fileConn<-file("data/RNAvirus_Mammals_newJan2023/sra_ids/Nido_NiRAN.txt")
+writeLines(Nido_NiRAN, fileConn)
+close(fileConn)
+
+fileConn<-file("data/RNAvirus_Mammals_newJan2023/sra_ids/NidoAstro_RdRp.txt")
+writeLines(NidoAstro_RdRp, fileConn)
 close(fileConn)

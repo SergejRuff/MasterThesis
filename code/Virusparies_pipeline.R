@@ -396,7 +396,7 @@ hunter_export_path <- "output/mammals/TaubertDatacombined/plots/smalldna/Hunter"
 gatherer_export_path <- "output/mammals/TaubertDatacombined/plots/smalldna/Gatherer"
 
 facet_column <- NULL
-group_ <- "best_query"
+group_ <- "ViralRefseq_taxonomy"
 
 
 # sra_name <- "Florian´s Data"

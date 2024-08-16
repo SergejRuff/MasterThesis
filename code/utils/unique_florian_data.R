@@ -61,19 +61,19 @@ rna <- VhgPreprocessTaxa(rna,"Family")
 smalldna <- VhgPreprocessTaxa(smalldna,"Family")
 
 # Summarize the number of unique ViralRefSeq_taxonomy for each run_id
-summary_result_rna <- aggregate(best_query ~ run_id, data = rna, function(x) length(unique(x)))
+summary_result_rna <- aggregate(ViralRefSeq_taxonomy ~ run_id, data = rna, function(x) length(unique(x)))
 
 # Print the summary result
 print(summary_result_rna)
 
 # Summarize the number of unique ViralRefSeq_taxonomy for each run_id
-summary_result_large <- aggregate(best_query ~ run_id, data = largedna, function(x) length(unique(x)))
+summary_result_large <- aggregate(ViralRefSeq_taxonomy ~ run_id, data = largedna, function(x) length(unique(x)))
 
 # Print the summary result
 print(summary_result_large)
 
 # Summarize the number of unique ViralRefSeq_taxonomy for each run_id
-summary_result_small <- aggregate(best_query ~ run_id, data = smalldna, function(x) length(unique(x)))
+summary_result_small <- aggregate(ViralRefSeq_taxonomy ~ run_id, data = smalldna, function(x) length(unique(x)))
 
 # Print the summary result
 print(summary_result_small)
@@ -113,11 +113,11 @@ combined_df <- combined_df %>%
     id = 'spannerA'
   ) %>% 
   cols_label(
-    test = "Experiment",
+    test = "Sample",
     pairend = "Pair-end?",
-    best_query.x = "Small DNA viruses",
-    best_query.y = "Large DNA viruses",
-    best_query = "RNA viruses"
+    ViralRefSeq_taxonomy.x = "Small DNA viruses",
+    ViralRefSeq_taxonomy.y = "Large DNA viruses",
+    ViralRefSeq_taxonomy = "RNA viruses"
   ) %>% 
   tab_header(
     title = md("***Florian Data***"),
