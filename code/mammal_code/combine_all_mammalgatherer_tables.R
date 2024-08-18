@@ -1,6 +1,7 @@
 rm(list=ls())
 
 library(Virusparies)
+library(ggplot2)
 
 
 m1 <- ImportVirusTable("data/RNAvirus_Mammals_newJan2023/mammals/Flavi/virusgatherer-cap3.tsv")
@@ -14,7 +15,49 @@ m6 <- ImportVirusTable("data/RNAvirus_Mammals_newJan2023/mammals/orthomyxo_20jul
 
 combined_ga <- CombineHittables(m1,m2,m3,m4,m5,m6)
 
+combined_ga <- ImportVirusTable("data/RNAvirus_Mammals_newJan2023/excel_with_alldata_unfiltered/RNAviruses-Mammals-RNA-newJan2023.tsv")
+
 combined_ga <- VhgPreprocessTaxa(combined_ga,taxa_rank = "Family")
+
+
+combined_ga$Category <- with(combined_ga, 
+                             ifelse(grepl("viridae$", ViralRefSeq_taxonomy, ignore.case = TRUE), "Classified", 
+                                    ifelse(grepl("^unclassified\\s+\\w+", ViralRefSeq_taxonomy, ignore.case = TRUE), "Unclassified + Phylum", 
+                                           "Unclassified")))
+
+combined_ga <- VhgSubsetHittable(combined_ga,num_hits_min = 4,ViralRefSeq_E_criteria = 1e-5,ViralRefSeq_ident_criteria = -90)
+
+combined_ga <- VhgSubsetHittable(combined_ga,ViralRefSeq_E_criteria = 1e-5)
+
+total_count <- nrow(combined_ga)
+
+# Define the updated color palette
+category_colors <- c("Classified" = "violet",  # Yellow
+                     "Unclassified" = "#999999",  
+                     "Unclassified + Phylum" = "#E69F00")  # Gray
+
+
+# Set up the base theme
+base_theme <- theme_linedraw()
+
+# Add dotted grid lines
+base_theme <- base_theme +
+  theme(
+    panel.grid.major = element_line(linewidth = 0.5, linetype = "dotted", colour = "grey50"),  # Dotted major grid lines
+    panel.grid.minor = element_line(linewidth = 0.25, linetype = "dotted", colour = "grey75")   # Dotted minor grid lines
+  )
+
+# Create the bar plot with the customized theme
+ggplot(combined_ga, aes(x = Category, fill = Category)) +
+  geom_bar(color = "black") +
+  scale_fill_manual(values = category_colors) +  # Apply custom colors
+  labs(title = "Mammal Data - Distribution of Classified vs. Unclassified Viral Observations",
+       subtitle = paste("Total count:", total_count),
+       x = "Category",
+       y = "Count") +
+  base_theme +  # Apply the customized theme
+  geom_text(stat = 'count', aes(label = paste0(..count.., " (", round(..count.. / total_count * 100, 1), "%)")), vjust = -0.5)
+
 
 ## Generate Gatherer Plots
 
