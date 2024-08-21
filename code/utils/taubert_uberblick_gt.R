@@ -2,6 +2,10 @@ rm(list = ls())
 
 # devtools::install_github("hadley/emo")
 
+# Sys.setenv(
+#   CHROMOTE_CHROME = "C:/Program Files/BraveSoftware/Brave-Browser/Application/brave.exe"
+# )
+
 library(readxl)
 library(gt)
 library(emo)
@@ -34,7 +38,7 @@ taubert_gt <- taubert %>%
   ) %>% 
   tab_header(
     title = md("***Taubert Data***"),
-    subtitle = md("Total Number of FASTQ Files: **323**")
+    subtitle = md("Total Number of Samples: **323** | Total Number of Files: **557**")
   ) %>% 
   opt_align_table_header(align = "left") %>% 
   tab_options(
