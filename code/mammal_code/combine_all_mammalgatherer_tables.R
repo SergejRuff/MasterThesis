@@ -58,7 +58,7 @@ ggplot(combined_ga, aes(x = Category, fill = Category)) +
        x = "Category",
        y = "Count") +
   base_theme +  # Apply the customized theme
-  geom_text(stat = 'count', aes(label = paste0(..count.., " (", round(..count.. / total_count * 100, 1), "%)")), vjust = -0.5)
+  geom_text(stat = 'count', aes(label = paste0(..count.., " (", round(..count.. / total_count * 100, 2), "%)")), vjust = -0.5)
 
 
 ## Generate Gatherer Plots
