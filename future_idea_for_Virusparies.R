@@ -17,9 +17,37 @@ vh_file <- VhgPreprocessTaxa(vh_file,taxa_rank = "Family")
 vh_file <- VhgSubsetHittable(vh_file,group_column = "ViralRefSeq_taxonomy",c("Flaviviridae","Myriaviridae",
                                                                              "Togaviridae","Bromoviridae"))
 
-vh_file %>% ggplot(mapping = aes(ViralRefSeq_ident,fill = ViralRefSeq_taxonomy))+
-  geom_histogram(bins = 100,position = "identity",alpha=0.7)
+vh_file %>% ggplot()+
+  geom_histogram(mapping = aes(ViralRefSeq_ident,fill = ViralRefSeq_taxonomy),bins = 100,position = "identity",alpha=0.7)
 
 
-vh_file %>% ggplot(mapping = aes(x = ViralRefSeq_ident,y=ViralRefSeq_taxonomy,fill = ViralRefSeq_taxonomy))+
-  geom_density_ridges(scale = 5,alpha=0.2)
+vh_file %>% ggplot()+
+  geom_density_ridges(mapping = aes(x = ViralRefSeq_ident,y=ViralRefSeq_taxonomy,fill = ViralRefSeq_taxonomy),scale = 0.9,alpha=0.2)
+
+VhgHist <- function(file,
+                    plot_type=NULL,
+                    ){
+  
+  p <- file %>% ggplot()
+  
+  if (is.null(plot_type) || plot_type == "simple_histogram") {
+    # Default case: Simple histogram without color differentiation
+    p <- p + 
+      geom_histogram(mapping = aes(ViralRefSeq_ident), bins = 100, alpha = 0.7)
+  } else if (plot_type == "taxa_colored_histogram") {
+    # Taxa-colored histogram: Bars are filled based on ViralRefSeq_taxonomy
+    p <- p + 
+      geom_histogram(mapping = aes(ViralRefSeq_ident, fill = ViralRefSeq_taxonomy), 
+                     bins = 100, position = "identity", alpha = 0.7)
+  } else if (plot_type == "ridge_plot") {
+    # Ridge plot: Visualizes the distribution of ViralRefSeq_ident across different taxa
+    p <- p + 
+      geom_density_ridges(mapping = aes(x = ViralRefSeq_ident, y = ViralRefSeq_taxonomy, 
+                                        fill = ViralRefSeq_taxonomy), 
+                          scale = 0.9, alpha = 0.2)
+  } else {
+    stop("Invalid plot_type. Choose either 'simple_histogram', 'taxa_colored_histogram', or 'ridge_plot'.")
+  }
+  
+
+}

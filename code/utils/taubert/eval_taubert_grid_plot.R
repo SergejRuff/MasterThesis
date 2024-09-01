@@ -20,13 +20,13 @@ taubert_rna <- VhgPreprocessTaxa(taubert_rna,taxa_rank = "Family")
 
 
 evalbox_large <- VhgBoxplot(taubert_largedna,x_column = "ViralRefSeq_taxonomy",theme_choice = "linedraw_dotted",reorder_criteria = NULL,legend_position = "right",xlabel = "Large DNA viruses",axis_title_size = 12,ytext_size = 12,
-                      xtext_size = 11,title = "Taubert data (Gatherer)\nViral group E-values")
+                      xtext_size = 11,title = NULL)
 
 evalbox_small <- VhgBoxplot(taubert_smalldna,x_column = "ViralRefSeq_taxonomy",theme_choice = "linedraw_dotted",reorder_criteria = NULL,legend_position = "right",xlabel = "Small DNA viruses",axis_title_size = 12,ytext_size = 12,
-                            xtext_size = 11,title = "Taubert data (Gatherer)\nViral group E-values")
+                            xtext_size = 11,title = NULL,subtitle = NULL)
 
 evalbox_rna <- VhgBoxplot(taubert_rna ,x_column = "ViralRefSeq_taxonomy",theme_choice = "linedraw_dotted",reorder_criteria = NULL,legend_position = "right",xlabel = "RNA viruses",axis_title_size = 12,ytext_size = 12,
-                            xtext_size = 11,title = "Taubert data (Gatherer)\nViral group E-values")
+                            xtext_size = 11,title = NULL,subtitle = NULL)
 
 
 

@@ -11,10 +11,11 @@ m3 <- ImportVirusTable("data/RNAvirus_Mammals_newJan2023/mammals/Nido/virusgathe
 m4 <- ImportVirusTable("data/RNAvirus_Mammals_newJan2023/mammals/Bunya/virusgatherer-cap3.tsv")
 m5 <- ImportVirusTable("data/RNAvirus_Mammals_newJan2023/mammals/Mono_chu_08july_RNAvirus_nofil_1/virusgatherer-cap3.tsv")
 m6 <- ImportVirusTable("data/RNAvirus_Mammals_newJan2023/mammals/orthomyxo_20july_RNAvirus_nofil_1/virusgatherer-cap3.tsv")
+m7 <- ImportVirusTable("data/RNAvirus_Mammals_newJan2023/mammals/NidoAstro_RdRp/virusgatherer-cap3.tsv")
+m8 <- ImportVirusTable("data/RNAvirus_Mammals_newJan2023/mammals/Nido_NiRAN/virusgatherer-cap3.tsv")
 
 
-
-combined_ga <- CombineHittables(m1,m2,m3,m4,m5,m6)
+combined_ga <- CombineHittables(m1,m2,m3,m4,m5,m6,m7,m8)
 
 # combined_ga <- ImportVirusTable("data/RNAvirus_Mammals_newJan2023/excel_with_alldata_unfiltered/RNAviruses-Mammals-RNA-newJan2023.tsv")
 
@@ -62,18 +63,20 @@ ggplot(combined_ga, aes(x = Category, fill = Category)) +
 
 ## Generate Gatherer Plots
 
+# title = "Mammal sequence data (Gatherer)\nDistribution of viral groups detected across query sequences"
 sra <- VhgRunsBarplot(combined_ga,groupby = "ViralRefSeq_taxonomy",theme_choice = "linedraw_dotted",
-               plot_text = 1,title = "Mammal sequence data (Gatherer)\nDistribution of viral groups detected across query sequences",group_unwanted_phyla = "rna")
+               plot_text = 1,title = NULL,group_unwanted_phyla = "rna",reorder_criteria = "phylum_max",xlabel = "RNA viruses")
 
+# title = "Mammal sequence data (Gatherer)\nBoxplot of viral reference E-values for each group"
 boxplot_ <- VhgBoxplot(combined_ga,x_column = "ViralRefSeq_taxonomy",y_column = "ViralRefSeq_E",
            theme_choice = "linedraw_dotted",legend_position = "right",
-           title = "Mammal sequence data (Gatherer)\nBoxplot of viral reference E-values for each group",group_unwanted_phyla = "rna")
+           title = NULL,group_unwanted_phyla = "rna",reorder_criteria = "phylum_median",xlabel = "RNA viruses")
 
 boxplot_iden <- VhgBoxplot(combined_ga,x_column = "ViralRefSeq_taxonomy",y_column = "ViralRefSeq_ident",
-           theme_choice = "linedraw_dotted",group_unwanted_phyla = "rna")
+           theme_choice = "linedraw_dotted",group_unwanted_phyla = "rna",reorder_criteria = "phylum_median",title = NULL,xlabel = "RNA viruses")
 
 boxplot_con <-VhgBoxplot(combined_ga,x_column = "ViralRefSeq_taxonomy",y_column = "contig_len",contiglen_log10_scale = TRUE,
-           theme_choice = "linedraw_dotted",group_unwanted_phyla = "rna")
+           theme_choice = "linedraw_dotted",group_unwanted_phyla = "rna",reorder_criteria = "phylum_median",title = NULL,xlabel = "RNA viruses")
 
 # VgConLenViolin(combined_ga)
 
@@ -135,10 +138,7 @@ gt_table <- df %>%
   ) %>%
   cols_label(
     V1 = "Family 1-5",
-    V2 = "Family 6-10",
-    V3 = "Family 11-15",
-    V4 = "Family 16-20",
-    V5 = "Family 20-25"
+    V2 = "Family 6-10"
   ) %>%
   fmt_markdown(
     columns = everything()
@@ -229,3 +229,36 @@ viral_co <- viral_co%>%
   )
 
 gtsave(viral_co,filename = "viral_co_mammal.png",path = "output/mammals/")
+
+
+
+
+
+################################################
+
+
+# sra <- VhgRunsBarplot(combined_ga,groupby = "ViralRefSeq_taxonomy",theme_choice = "linedraw_dotted",
+#                       plot_text = 1,title = NULL,group_unwanted_phyla = "rna",xlabel = "RNA viruses",legend_position = "none",reorder_criteria = NULL,
+#                       xtext_size = 8,plot_text_size = 3.5)
+# 
+# 
+# boxplot_iden <- VhgBoxplot(combined_ga,x_column = "ViralRefSeq_taxonomy",y_column = "ViralRefSeq_ident",
+#                            theme_choice = "linedraw_dotted",group_unwanted_phyla = "rna",xlabel = "",legend_position = "right",reorder_criteria = NULL,title = NULL,remove_group_labels = TRUE,
+#                            xtext_size = 8)
+# 
+# boxplot_con <-VhgBoxplot(combined_ga,x_column = "ViralRefSeq_taxonomy",y_column = "contig_len",contiglen_log10_scale = TRUE,
+#                          theme_choice = "linedraw_dotted",group_unwanted_phyla = "rna",xlabel = "RNA viruses",legend_position = "right",reorder_criteria = NULL,title = NULL,
+#                          xtext_size = 8)
+# 
+# 
+# plot_list <- list(sra$plot,boxplot_iden$boxp,boxplot_con$boxp)
+# 
+# # Adjust y-axis title margin
+# plot_list <- lapply(plot_list, function(p) {
+#   p + theme(axis.title.y = element_text(margin = margin(r = 10, unit = "pt")))
+# })
+# 
+# 
+# ExportVirusPlot("taubert_smalldna_grid.png",plot = plot_list,
+#                 width = 12,height = 13,units = "in",limitsize = FALSE,ncol = 2,nrow = 2,greedy = TRUE,align="h",
+#                 labels = c("A","B","C"))
