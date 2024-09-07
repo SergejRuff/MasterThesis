@@ -262,3 +262,30 @@ gtsave(viral_co,filename = "viral_co_mammal.png",path = "output/mammals/")
 # ExportVirusPlot("taubert_smalldna_grid.png",plot = plot_list,
 #                 width = 12,height = 13,units = "in",limitsize = FALSE,ncol = 2,nrow = 2,greedy = TRUE,align="h",
 #                 labels = c("A","B","C"))
+
+
+
+# Define a function to import the table and add the source column
+ImportVirusTableWithSource <- function(file_path, source_name) {
+  df <- ImportVirusTable(file_path)
+  df$source <- source_name
+  return(df)
+}
+
+# Import the tables with the source information
+m1 <- ImportVirusTableWithSource("data/RNAvirus_Mammals_newJan2023/mammals/Flavi/virusgatherer-cap3.tsv", "Flavi")
+m2 <- ImportVirusTableWithSource("data/RNAvirus_Mammals_newJan2023/mammals/hepevirga/virusgatherer-cap3.tsv", "hepevirga")
+m3 <- ImportVirusTableWithSource("data/RNAvirus_Mammals_newJan2023/mammals/Nido/virusgatherer-cap3.tsv", "Nido")
+m4 <- ImportVirusTableWithSource("data/RNAvirus_Mammals_newJan2023/mammals/Bunya/virusgatherer-cap3.tsv", "Bunya")
+m5 <- ImportVirusTableWithSource("data/RNAvirus_Mammals_newJan2023/mammals/Mono_chu_08july_RNAvirus_nofil_1/virusgatherer-cap3.tsv", "Mono_chu_08july_RNAvirus_nofil_1")
+m6 <- ImportVirusTableWithSource("data/RNAvirus_Mammals_newJan2023/mammals/orthomyxo_20july_RNAvirus_nofil_1/virusgatherer-cap3.tsv", "orthomyxo_20july_RNAvirus_nofil_1")
+m7 <- ImportVirusTableWithSource("data/RNAvirus_Mammals_newJan2023/mammals/NidoAstro_RdRp/virusgatherer-cap3.tsv", "NidoAstro_RdRp")
+m8 <- ImportVirusTableWithSource("data/RNAvirus_Mammals_newJan2023/mammals/Nido_NiRAN/virusgatherer-cap3.tsv", "Nido_NiRAN")
+
+# Combine the tables
+combined_ga <- CombineHittables(m1, m2, m3, m4, m5, m6, m7, m8)
+
+# View the first few rows of the combined data frame to check the results
+head(combined_ga)
+combined_ga <- VhgPreprocessTaxa(combined_ga,taxa_rank = "Family")
+ExportVirusDataFrame(combined_ga,file_name = "combined_ga_with_source.tsv",dir_path = "data/RNAvirus_Mammals_newJan2023/mammals")

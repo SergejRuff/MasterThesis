@@ -1,0 +1,12 @@
+NAME  Anello_ORF1core
+NAME  Circo_Rep
+NAME  Gemini_Rep
+NAME  Hepadna-Nackedna_TP
+NAME  Nano_MRep
+NAME  Nano_NSP
+NAME  Papilloma_E1
+NAME  Parvo_NS1
+NAME  Polyoma_LTag
+NAME  Genomo_Rep
+NAME  Redondo_Rep
+NAME  Smaco_Rep
