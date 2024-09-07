@@ -1,7 +1,7 @@
 "ViralRefSeq_taxonomy","less_than_90","equal_or_more_than_90","total","median","Q1","Q3"
 "unclassified",2070,37,2107,47.826,38.462,60.4455
 "Arteriviridae",391,691,1082,92.593,80.81475,100
-"Non-RNA-viruses",421,0,421,36.949,34.028,38.806
+"Non-RNA-viruses",424,0,424,36.936,33.921,38.806
 "Picobirnaviridae",310,2,312,67.4955,55.7045,74.0695
 "Fiersviridae",277,7,284,54.7785,45.704,65.3465
 "Astroviridae",135,99,234,82.587,73.88275,94.521
@@ -54,7 +54,6 @@
 "Chuviridae",4,0,4,45.739,40.85925,52.45575
 "Hypoviridae",4,0,4,45.7895,42.23725,46.296
 "Lispiviridae",4,0,4,56.517,36.784,76.25
-"Baculoviridae",3,0,3,30.8,27.2675,30.8
 "Chrysoviridae",0,3,3,90.909,90.909,90.909
 "Polycipiviridae",3,0,3,71.93,52.3365,71.93
 "Mesoniviridae",2,0,2,66.1795,59.98375,72.37525

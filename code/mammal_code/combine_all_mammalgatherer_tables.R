@@ -116,11 +116,53 @@ ExportVirusDataFrame(combined_ga,file_name = "combined_ga.tsv",dir_path = "data/
 
 ##########################################################
 
+# virus_list <- sra[["sample_run"]]$cyl[1]
+# virus_list <- strsplit(virus_list, ",\\s*")[[1]]
+# 
+# # Calculate the number of rows and columns for the 5x5 table
+# n_rows <- 6
+# n_cols <- ceiling(length(virus_list) / n_rows)
+# 
+# # Create a matrix for the table with NA for missing values
+# matrix_data <- matrix(NA, nrow = n_rows, ncol = n_cols)
+# matrix_data[1:length(virus_list)] <- virus_list
+# 
+# # Convert matrix to dataframe
+# df <- as.data.frame(matrix_data, stringsAsFactors = FALSE)
+# 
+# # Create a gt table
+# gt_table <- df %>%
+#   gt() %>%
+#   tab_header(
+#     title = "Non-RNA-viruses found in Mammal data"
+#   ) %>%
+#   cols_label(
+#     V1 = "Family 1-6",
+#     V2 = "Family 7-12"
+#   ) %>%
+#   fmt_markdown(
+#     columns = everything()
+#   )%>% 
+#   opt_align_table_header(align = "left") %>% 
+#   tab_options(
+#     # These were the ones we applied in the first chapter
+#     data_row.padding = px(2),
+#     summary_row.padding = px(3), # A bit more padding for summaries
+#     row_group.padding = px(4)    # And even more for our groups
+#   ) %>% opt_stylize(style = 4) %>% 
+#   tab_options(
+#     heading.title.font.size = px(20)
+#   )
+# 
+# # Print the gt table
+# print(gt_table)
+
+
 virus_list <- sra[["sample_run"]]$cyl[1]
 virus_list <- strsplit(virus_list, ",\\s*")[[1]]
 
-# Calculate the number of rows and columns for the 5x5 table
-n_rows <- 5
+# Calculate the number of rows and columns for the 6xN table
+n_rows <- 6
 n_cols <- ceiling(length(virus_list) / n_rows)
 
 # Create a matrix for the table with NA for missing values
@@ -137,25 +179,34 @@ gt_table <- df %>%
     title = "Non-RNA-viruses found in Mammal data"
   ) %>%
   cols_label(
-    V1 = "Family 1-5",
-    V2 = "Family 6-10"
+    V1 = "Family 1-6",
+    V2 = "Family 7-11"
   ) %>%
   fmt_markdown(
     columns = everything()
-  )%>% 
-  opt_align_table_header(align = "left") %>% 
+  ) %>%
+  fmt_missing(
+    columns = everything(),
+    missing_text = "—"  # Use a dash or another symbol to indicate missing data
+  ) %>%
+  tab_spanner(
+    label = "Virus Families",
+    columns = everything()
+  ) %>%
+  opt_align_table_header(align = "left") %>%
   tab_options(
-    # These were the ones we applied in the first chapter
     data_row.padding = px(2),
-    summary_row.padding = px(3), # A bit more padding for summaries
-    row_group.padding = px(4)    # And even more for our groups
-  ) %>% opt_stylize(style = 4) %>% 
+    summary_row.padding = px(3),
+    row_group.padding = px(4)
+  ) %>%
+  opt_stylize(style = 4) %>%
   tab_options(
     heading.title.font.size = px(20)
   )
 
 # Print the gt table
 print(gt_table)
+
 
 gtsave(gt_table,"non-rna-viruses-in-mammal.png",path = "output/mammals")
 
@@ -167,7 +218,7 @@ library(dplyr)
 
 # Your tibble data (assuming it's named 'data')
 filtered_data <- stats %>%
-  filter(!ViralRefSeq_taxonomy %in% c("unclassified", "Non-RNA-virus")) %>%
+  filter(!ViralRefSeq_taxonomy %in% c("unclassified", "Non-RNA-viruses")) %>%
   filter(ViralRefSeq_taxonomy != "Total") %>%
   arrange(desc(total)) %>%
   slice_head(n = 10)
