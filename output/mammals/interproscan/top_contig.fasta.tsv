@@ -1,0 +1,380 @@
+SRR16151768_cap3_Contig-1_orf747	20ddede02370edc65133566077e83be6	103	Pfam	PF07380	Pneumovirus M2 protein	14	102	5.3E-35	T	12-09-2024	IPR009969	Pneumovirus M2-2
+SRR13364363_cap3_Contig-11_orf3029	b4c75953e7da352e44a0828a5eed4eae	88	MobiDBLite	mobidb-lite	consensus disorder prediction	42	77	-	T	12-09-2024	-	-
+SRR13364363_cap3_Contig-11_orf3029	b4c75953e7da352e44a0828a5eed4eae	88	MobiDBLite	mobidb-lite	consensus disorder prediction	42	88	-	T	12-09-2024	-	-
+SRR19431078_cap3_Contig-1_orf2200	a28f605515de8e079e8548df35708b41	569	SUPERFAMILY	SSF161008	Viral glycoprotein ectodomain-like	77	373	3.4E-9	T	12-09-2024	-	-
+SRR19431078_cap3_Contig-1_orf2188	344d7e9f696c1536547557e1d9e6d1e7	618	SUPERFAMILY	SSF161008	Viral glycoprotein ectodomain-like	27	383	1.44E-70	T	12-09-2024	-	-
+SRR19431078_cap3_Contig-1_orf2188	344d7e9f696c1536547557e1d9e6d1e7	618	Pfam	PF00974	Rhabdovirus spike glycoprotein	12	358	1.4E-34	T	12-09-2024	IPR001903	Rhabdovirus  glycoprotein
+SRR19431078_cap3_Contig-1_orf2188	344d7e9f696c1536547557e1d9e6d1e7	618	Gene3D	G3DSA:2.30.29.130	-	202	286	1.3E-9	T	12-09-2024	-	-
+SRR19431078_cap3_Contig-1_orf2188	344d7e9f696c1536547557e1d9e6d1e7	618	Gene3D	G3DSA:6.10.140.740	-	292	357	2.8E-6	T	12-09-2024	-	-
+SRR19431078_cap3_Contig-1_orf2188	344d7e9f696c1536547557e1d9e6d1e7	618	Coils	Coil	Coil	618	618	-	T	12-09-2024	-	-
+SRR18779479_cap3_Contig-1_orf276	888354c3ecb0d8e14fbe01cf65ddf049	311	Pfam	PF16504	Putative virion membrane protein of plant and insect virus	43	192	1.1E-27	T	12-09-2024	IPR032441	Putative virion membrane protein
+SRR18779479_cap3_Contig-1_orf276	888354c3ecb0d8e14fbe01cf65ddf049	311	MobiDBLite	mobidb-lite	consensus disorder prediction	296	311	-	T	12-09-2024	-	-
+SRR18779479_cap3_Contig-1_orf276	888354c3ecb0d8e14fbe01cf65ddf049	311	MobiDBLite	mobidb-lite	consensus disorder prediction	255	311	-	T	12-09-2024	-	-
+SRR16151768_cap3_Contig-1_orf717	77ca8c636d67ea5962b3f8e7cc7f9913	128	MobiDBLite	mobidb-lite	consensus disorder prediction	1	47	-	T	12-09-2024	-	-
+SRR16151768_cap3_Contig-1_orf717	77ca8c636d67ea5962b3f8e7cc7f9913	128	MobiDBLite	mobidb-lite	consensus disorder prediction	106	128	-	T	12-09-2024	-	-
+SRR16151768_cap3_Contig-1_orf717	77ca8c636d67ea5962b3f8e7cc7f9913	128	MobiDBLite	mobidb-lite	consensus disorder prediction	59	128	-	T	12-09-2024	-	-
+SRR16151768_cap3_Contig-1_orf717	77ca8c636d67ea5962b3f8e7cc7f9913	128	MobiDBLite	mobidb-lite	consensus disorder prediction	69	97	-	T	12-09-2024	-	-
+SRR12430148_cap3_Contig-1_orf1718	fa7cd8baa1a48d10e43da73aabafb11c	276	Pfam	PF00973	Paramyxovirus nucleocapsid protein	2	147	2.2E-50	T	12-09-2024	IPR002021	Paramyxovirus nucleocapsid protein
+SRR12430148_cap3_Contig-1_orf1718	fa7cd8baa1a48d10e43da73aabafb11c	276	MobiDBLite	mobidb-lite	consensus disorder prediction	186	231	-	T	12-09-2024	-	-
+SRR19431078_cap3_Contig-1_orf2171	f214c771edb04210f47f09694e5c508c	241	Pfam	PF06326	Vesiculovirus matrix protein	59	235	1.2E-28	T	12-09-2024	IPR009397	Vesiculovirus matrix
+SRR17345012_cap3_Contig-6_orf351	3f663d5eb51278a379e590808d255c06	386	Pfam	PF03014	Structural protein 2	80	386	7.0E-112	T	12-09-2024	IPR004261	Hepatitis E virus structural protein 2
+SRR17345012_cap3_Contig-6_orf351	3f663d5eb51278a379e590808d255c06	386	FunFam	G3DSA:2.60.120.20:FF:000010	Secreted protein ORF2	138	328	2.4E-132	T	12-09-2024	-	-
+SRR17345012_cap3_Contig-6_orf351	3f663d5eb51278a379e590808d255c06	386	MobiDBLite	mobidb-lite	consensus disorder prediction	33	53	-	T	12-09-2024	-	-
+SRR17345012_cap3_Contig-6_orf351	3f663d5eb51278a379e590808d255c06	386	Gene3D	G3DSA:2.40.30.190	-	329	386	1.2E-23	T	12-09-2024	-	-
+SRR17345012_cap3_Contig-6_orf351	3f663d5eb51278a379e590808d255c06	386	Gene3D	G3DSA:2.60.120.20	-	138	328	9.3E-74	T	12-09-2024	IPR029053	Viral coat protein subunit
+SRR17345012_cap3_Contig-6_orf351	3f663d5eb51278a379e590808d255c06	386	MobiDBLite	mobidb-lite	consensus disorder prediction	94	108	-	T	12-09-2024	-	-
+SRR17345012_cap3_Contig-6_orf351	3f663d5eb51278a379e590808d255c06	386	MobiDBLite	mobidb-lite	consensus disorder prediction	74	136	-	T	12-09-2024	-	-
+SRR17345012_cap3_Contig-6_orf351	3f663d5eb51278a379e590808d255c06	386	SUPERFAMILY	SSF88633	Positive stranded ssRNA viruses	156	334	5.23E-6	T	12-09-2024	-	-
+SRR16151768_cap3_Contig-1_orf718	588876c24f815649927fa1dd5a78cb4b	254	MobiDBLite	mobidb-lite	consensus disorder prediction	177	244	-	T	12-09-2024	-	-
+SRR16151768_cap3_Contig-1_orf718	588876c24f815649927fa1dd5a78cb4b	254	Pfam	PF00802	Pneumovirus attachment glycoprotein G	17	225	4.3E-81	T	12-09-2024	IPR000925	Major surface glycoprotein G
+SRR16151768_cap3_Contig-1_orf718	588876c24f815649927fa1dd5a78cb4b	254	MobiDBLite	mobidb-lite	consensus disorder prediction	81	115	-	T	12-09-2024	-	-
+SRR16151768_cap3_Contig-1_orf718	588876c24f815649927fa1dd5a78cb4b	254	MobiDBLite	mobidb-lite	consensus disorder prediction	151	254	-	T	12-09-2024	-	-
+SRR16151768_cap3_Contig-1_orf718	588876c24f815649927fa1dd5a78cb4b	254	MobiDBLite	mobidb-lite	consensus disorder prediction	81	117	-	T	12-09-2024	-	-
+SRR14579882_cap3_Contig-1_orf3266	e82609e5d27f17757462f4f421b6b508	229	CDD	cd21564	alphaCoV_M	7	224	5.19782E-141	T	12-09-2024	IPR042551	M matrix/glycoprotein, alphacoronavirus
+SRR14579882_cap3_Contig-1_orf3266	e82609e5d27f17757462f4f421b6b508	229	ProSiteProfiles	PS51927	Coronavirus membrane (Cov-M) protein profile.	4	229	72.219002	T	12-09-2024	IPR002574	M matrix/glycoprotein, coronavirus
+SRR14579882_cap3_Contig-1_orf3266	e82609e5d27f17757462f4f421b6b508	229	Hamap	MF_04201	Membrane protein [M].	4	229	44.212975	T	12-09-2024	IPR042551	M matrix/glycoprotein, alphacoronavirus
+SRR14579882_cap3_Contig-1_orf3266	e82609e5d27f17757462f4f421b6b508	229	Pfam	PF01635	Coronavirus M matrix/glycoprotein	17	218	6.2E-81	T	12-09-2024	IPR002574	M matrix/glycoprotein, coronavirus
+SRR14579882_cap3_Contig-1_orf3149	d111b6afdc4d06eb1bf855c22e1e748a	3900	SUPERFAMILY	SSF51126	Pectin lyase-like	1966	2082	7.53E-7	T	12-09-2024	IPR011050	Pectin lyase fold/virulence factor
+SRR14579882_cap3_Contig-1_orf3149	d111b6afdc4d06eb1bf855c22e1e748a	3900	Pfam	PF19212	Coronavirus replicase NSP2, C-terminal	261	415	3.0E-35	T	12-09-2024	IPR043613	Non-structural protein 2, C-terminal domain, coronavirus
+SRR14579882_cap3_Contig-1_orf3149	d111b6afdc4d06eb1bf855c22e1e748a	3900	Pfam	PF19212	Coronavirus replicase NSP2, C-terminal	562	716	3.0E-30	T	12-09-2024	IPR043613	Non-structural protein 2, C-terminal domain, coronavirus
+SRR14579882_cap3_Contig-1_orf3149	d111b6afdc4d06eb1bf855c22e1e748a	3900	SMART	SM00506	YBR022w_8	1098	1223	4.2E-13	T	12-09-2024	IPR002589	Macro domain
+SRR14579882_cap3_Contig-1_orf3149	d111b6afdc4d06eb1bf855c22e1e748a	3900	SUPERFAMILY	SSF50494	Trypsin-like serine proteases	2783	3081	2.02E-138	T	12-09-2024	IPR009003	Peptidase S1, PA clan
+SRR14579882_cap3_Contig-1_orf3149	d111b6afdc4d06eb1bf855c22e1e748a	3900	ProSiteProfiles	PS51950	Coronavirus RNA-dependent RNA polymerase (RdRp) Nsp8 cofactor domain profile.	3446	3640	72.606583	T	12-09-2024	IPR014829	Non-structural protein NSP8, coronavirus
+SRR14579882_cap3_Contig-1_orf3149	d111b6afdc4d06eb1bf855c22e1e748a	3900	CDD	cd21514	alphaCoV_Nsp2_HCoV-229E-like	18	543	5.8755E-154	T	12-09-2024	IPR044385	Nonstructural protein 2, HCoV-229E-like
+SRR14579882_cap3_Contig-1_orf3149	d111b6afdc4d06eb1bf855c22e1e748a	3900	ProSiteProfiles	PS51944	Coronavirus Nsp3d Ubl domain profile.	1419	1474	14.586524	T	12-09-2024	IPR044353	NSP3, second ubiquitin-like (Ubl) domain, coronavirus
+SRR14579882_cap3_Contig-1_orf3149	d111b6afdc4d06eb1bf855c22e1e748a	3900	Gene3D	G3DSA:1.10.150.420	-	2686	2781	2.3E-38	T	12-09-2024	IPR038123	Non-structural protein NSP4, C-terminal superfamily, coronavirus
+SRR14579882_cap3_Contig-1_orf3149	d111b6afdc4d06eb1bf855c22e1e748a	3900	Pfam	PF19211	Coronavirus replicase NSP2, N-terminal	22	138	5.7E-35	T	12-09-2024	IPR043615	Nonstructural protein 2, N-terminal domain, coronavirus
+SRR14579882_cap3_Contig-1_orf3149	d111b6afdc4d06eb1bf855c22e1e748a	3900	Pfam	PF09401	Coronavirus RNA synthesis protein NSP10	3757	3878	1.2E-60	T	12-09-2024	IPR018995	RNA synthesis protein NSP10, coronavirus
+SRR14579882_cap3_Contig-1_orf3149	d111b6afdc4d06eb1bf855c22e1e748a	3900	CDD	cd21897	alphaCoV_Nsp9	3641	3748	7.04933E-81	T	12-09-2024	-	-
+SRR14579882_cap3_Contig-1_orf3149	d111b6afdc4d06eb1bf855c22e1e748a	3900	Pfam	PF19217	Coronavirus replicase NSP4, N-terminal	2333	2664	3.8E-121	T	12-09-2024	IPR043612	Non-structural protein NSP4, N-terminal, coronavirus
+SRR14579882_cap3_Contig-1_orf3149	d111b6afdc4d06eb1bf855c22e1e748a	3900	CDD	cd21558	alphaCoV-Nsp6	3069	3362	1.35453E-135	T	12-09-2024	IPR044369	Non-structural protein 6, alphacoronavirus
+SRR14579882_cap3_Contig-1_orf3149	d111b6afdc4d06eb1bf855c22e1e748a	3900	Pfam	PF08715	Coronavirus papain-like peptidase	1422	1715	1.4E-52	T	12-09-2024	IPR013016	Peptidase C16, coronavirus
+SRR14579882_cap3_Contig-1_orf3149	d111b6afdc4d06eb1bf855c22e1e748a	3900	Pfam	PF08715	Coronavirus papain-like peptidase	866	1043	2.0E-15	T	12-09-2024	IPR013016	Peptidase C16, coronavirus
+SRR14579882_cap3_Contig-1_orf3149	d111b6afdc4d06eb1bf855c22e1e748a	3900	ProSiteProfiles	PS51124	Peptidase family C16 domain profile.	1481	1741	49.204662	T	12-09-2024	IPR013016	Peptidase C16, coronavirus
+SRR14579882_cap3_Contig-1_orf3149	d111b6afdc4d06eb1bf855c22e1e748a	3900	Pfam	PF19218	Coronavirus replicase NSP3, C-terminal	1840	2289	4.2E-183	T	12-09-2024	IPR043611	Coronavirus replicase NSP3, C-terminal
+SRR14579882_cap3_Contig-1_orf3149	d111b6afdc4d06eb1bf855c22e1e748a	3900	Pfam	PF08710	Coronavirus replicase NSP9	3641	3748	6.9E-41	T	12-09-2024	IPR014822	Non-structural protein NSP9, coronavirus
+SRR14579882_cap3_Contig-1_orf3149	d111b6afdc4d06eb1bf855c22e1e748a	3900	Pfam	PF05409	Coronavirus endopeptidase C30	2811	3095	1.2E-122	T	12-09-2024	IPR008740	Peptidase C30, coronavirus
+SRR14579882_cap3_Contig-1_orf3149	d111b6afdc4d06eb1bf855c22e1e748a	3900	ProSiteProfiles	PS51154	Macro domain profile.	1086	1253	13.041008	T	12-09-2024	IPR002589	Macro domain
+SRR14579882_cap3_Contig-1_orf3149	d111b6afdc4d06eb1bf855c22e1e748a	3900	Pfam	PF16348	Coronavirus replicase NSP4, C-terminal	2687	2782	1.3E-40	T	12-09-2024	IPR032505	Non-structural protein NSP4, C-terminal, coronavirus
+SRR14579882_cap3_Contig-1_orf3149	d111b6afdc4d06eb1bf855c22e1e748a	3900	CDD	cd21826	alphaCoV_Nsp7	3363	3445	8.09071E-55	T	12-09-2024	-	-
+SRR14579882_cap3_Contig-1_orf3149	d111b6afdc4d06eb1bf855c22e1e748a	3900	Gene3D	G3DSA:3.30.70.3540	Nsp8 replicase, head domain	3546	3638	3.0E-34	T	12-09-2024	IPR037230	Non-structural protein NSP8 superfamily, coronavirus
+SRR14579882_cap3_Contig-1_orf3149	d111b6afdc4d06eb1bf855c22e1e748a	3900	Pfam	PF01661	Macro domain	1118	1221	7.4E-9	T	12-09-2024	IPR002589	Macro domain
+SRR14579882_cap3_Contig-1_orf3149	d111b6afdc4d06eb1bf855c22e1e748a	3900	ProSiteProfiles	PS51946	Coronavirus Nsp4 C-terminal (Nsp4C) domain profile.	2687	2782	41.273003	T	12-09-2024	IPR032505	Non-structural protein NSP4, C-terminal, coronavirus
+SRR14579882_cap3_Contig-1_orf3149	d111b6afdc4d06eb1bf855c22e1e748a	3900	SUPERFAMILY	SSF143076	Coronavirus NSP8-like	3483	3636	9.68E-67	T	12-09-2024	IPR037230	Non-structural protein NSP8 superfamily, coronavirus
+SRR14579882_cap3_Contig-1_orf3149	d111b6afdc4d06eb1bf855c22e1e748a	3900	Gene3D	G3DSA:2.40.10.10	-	2783	2974	2.0E-85	T	12-09-2024	IPR043504	Peptidase S1, PA clan, chymotrypsin-like fold
+SRR14579882_cap3_Contig-1_orf3149	d111b6afdc4d06eb1bf855c22e1e748a	3900	ProSiteProfiles	PS51124	Peptidase family C16 domain profile.	850	1096	53.334438	T	12-09-2024	IPR013016	Peptidase C16, coronavirus
+SRR14579882_cap3_Contig-1_orf3149	d111b6afdc4d06eb1bf855c22e1e748a	3900	CDD	cd21473	cv_Nsp4_TM	2313	2679	2.57656E-152	T	12-09-2024	IPR043612	Non-structural protein NSP4, N-terminal, coronavirus
+SRR14579882_cap3_Contig-1_orf3149	d111b6afdc4d06eb1bf855c22e1e748a	3900	Gene3D	G3DSA:1.10.8.370	nsp7 replicase	3358	3443	9.5E-35	T	12-09-2024	IPR037204	Non-structural protein NSP7 superfamily, coronavirus
+SRR14579882_cap3_Contig-1_orf3149	d111b6afdc4d06eb1bf855c22e1e748a	3900	CDD	cd21557	Macro_X_Nsp3-like	1114	1238	6.69163E-49	T	12-09-2024	IPR044371	Non-structural protein 3, X-domain-like
+SRR14579882_cap3_Contig-1_orf3149	d111b6afdc4d06eb1bf855c22e1e748a	3900	Gene3D	G3DSA:1.10.1840.10	main proteinase (3clpro) structure, domain 3	2979	3087	3.7E-41	T	12-09-2024	IPR043477	Peptidase C30, domain 3, coronavirus
+SRR14579882_cap3_Contig-1_orf3149	d111b6afdc4d06eb1bf855c22e1e748a	3900	Gene3D	G3DSA:2.40.10.250	Replicase NSP9	3639	3748	6.9E-44	T	12-09-2024	IPR036499	Non-structural protein NSP9 superfamily, coronavirus
+SRR14579882_cap3_Contig-1_orf3149	d111b6afdc4d06eb1bf855c22e1e748a	3900	Gene3D	G3DSA:3.40.220.10	Leucine Aminopeptidase, subunit E, domain 1	1084	1253	5.7E-32	T	12-09-2024	IPR043472	Macro domain-like
+SRR14579882_cap3_Contig-1_orf3149	d111b6afdc4d06eb1bf855c22e1e748a	3900	ProSiteProfiles	PS51952	Coronavirus (CoV) ExoN/MTase coactivator domain profile.	3749	3887	61.772106	T	12-09-2024	IPR018995	RNA synthesis protein NSP10, coronavirus
+SRR14579882_cap3_Contig-1_orf3149	d111b6afdc4d06eb1bf855c22e1e748a	3900	ProSiteProfiles	PS51442	Coronavirus main protease (M-pro) domain profile.	2783	3084	147.891769	T	12-09-2024	IPR008740	Peptidase C30, coronavirus
+SRR14579882_cap3_Contig-1_orf3149	d111b6afdc4d06eb1bf855c22e1e748a	3900	CDD	cd21731	alphaCoV_PLPro	1424	1711	1.5254E-127	T	12-09-2024	-	-
+SRR14579882_cap3_Contig-1_orf3149	d111b6afdc4d06eb1bf855c22e1e748a	3900	ProSiteProfiles	PS51943	Coronavirus Nsp3a Ubl domain profile.	716	813	24.853851	T	12-09-2024	IPR044357	NSP3, first ubiquitin-like (Ubl) domain, coronavirus
+SRR14579882_cap3_Contig-1_orf3149	d111b6afdc4d06eb1bf855c22e1e748a	3900	SUPERFAMILY	SSF52949	Macro domain-like	1096	1246	1.41E-25	T	12-09-2024	IPR043472	Macro domain-like
+SRR14579882_cap3_Contig-1_orf3149	d111b6afdc4d06eb1bf855c22e1e748a	3900	CDD	cd21901	alpha_betaCoV_Nsp10	3749	3878	3.15256E-93	T	12-09-2024	-	-
+SRR14579882_cap3_Contig-1_orf3149	d111b6afdc4d06eb1bf855c22e1e748a	3900	CDD	cd21712	TM_Y_alphaCoV_Nsp3_C	1803	2302	0.0	T	12-09-2024	-	-
+SRR14579882_cap3_Contig-1_orf3149	d111b6afdc4d06eb1bf855c22e1e748a	3900	SUPERFAMILY	SSF144246	Coronavirus NSP10-like	3754	3875	7.45E-54	T	12-09-2024	IPR036333	RNA synthesis protein NSP10 superfamily, coronavirus
+SRR14579882_cap3_Contig-1_orf3149	d111b6afdc4d06eb1bf855c22e1e748a	3900	ProSiteProfiles	PS51951	Coronavirus Nsp9 single-stranded RNA (ssRNA)-binding domain profile.	3641	3748	48.233337	T	12-09-2024	IPR014822	Non-structural protein NSP9, coronavirus
+SRR14579882_cap3_Contig-1_orf3149	d111b6afdc4d06eb1bf855c22e1e748a	3900	Pfam	PF19213	Coronavirus replicase NSP6	3109	3362	2.3E-86	T	12-09-2024	IPR043610	Non-structural protein 6, coronavirus
+SRR14579882_cap3_Contig-1_orf3149	d111b6afdc4d06eb1bf855c22e1e748a	3900	Gene3D	G3DSA:6.10.140.2090	-	3444	3544	1.0E-44	T	12-09-2024	-	-
+SRR14579882_cap3_Contig-1_orf3149	d111b6afdc4d06eb1bf855c22e1e748a	3900	Gene3D	G3DSA:2.40.10.10	-	2797	2881	2.0E-85	T	12-09-2024	IPR043504	Peptidase S1, PA clan, chymotrypsin-like fold
+SRR14579882_cap3_Contig-1_orf3149	d111b6afdc4d06eb1bf855c22e1e748a	3900	CDD	cd21665	alphaCoV_Nsp5_Mpro	2785	3080	0.0	T	12-09-2024	IPR044309	Non-structural protein 5, alphacoronavirus
+SRR14579882_cap3_Contig-1_orf3149	d111b6afdc4d06eb1bf855c22e1e748a	3900	ProSiteProfiles	PS51949	Coronavirus RNA-dependent RNA polymerase (RdRp) Nsp7 cofactor domain profile.	3363	3445	32.103954	T	12-09-2024	IPR014828	Non-structural protein NSP7, coronavirus
+SRR14579882_cap3_Contig-1_orf3149	d111b6afdc4d06eb1bf855c22e1e748a	3900	SUPERFAMILY	SSF101816	Replicase NSP9	3643	3748	2.22E-41	T	12-09-2024	IPR036499	Non-structural protein NSP9 superfamily, coronavirus
+SRR14579882_cap3_Contig-1_orf3149	d111b6afdc4d06eb1bf855c22e1e748a	3900	Gene3D	G3DSA:1.10.8.1190	-	1478	1587	2.1E-27	T	12-09-2024	IPR043178	Papain-like protease, thumb domain superfamily, coronavirus
+SRR14579882_cap3_Contig-1_orf3149	d111b6afdc4d06eb1bf855c22e1e748a	3900	Gene3D	G3DSA:1.10.8.1190	-	857	946	3.8E-21	T	12-09-2024	IPR043178	Papain-like protease, thumb domain superfamily, coronavirus
+SRR14579882_cap3_Contig-1_orf3149	d111b6afdc4d06eb1bf855c22e1e748a	3900	Pfam	PF08717	Coronavirus replicase NSP8	3446	3636	3.2E-84	T	12-09-2024	IPR014829	Non-structural protein NSP8, coronavirus
+SRR14579882_cap3_Contig-1_orf3149	d111b6afdc4d06eb1bf855c22e1e748a	3900	CDD	cd21830	alphaCoV_Nsp8	3446	3640	6.64891E-135	T	12-09-2024	-	-
+SRR14579882_cap3_Contig-1_orf3149	d111b6afdc4d06eb1bf855c22e1e748a	3900	SUPERFAMILY	SSF140367	Coronavirus NSP7-like	3363	3445	3.79E-34	T	12-09-2024	IPR037204	Non-structural protein NSP7 superfamily, coronavirus
+SRR14579882_cap3_Contig-1_orf3149	d111b6afdc4d06eb1bf855c22e1e748a	3900	Pfam	PF08716	Coronavirus replicase NSP7	3363	3445	3.2E-34	T	12-09-2024	IPR014828	Non-structural protein NSP7, coronavirus
+SRR17345012_cap3_Contig-6_orf340	ea3aed669da7466020f91536a381600b	132	Pfam	PF02444	Hepatitis E virus ORF-2 (Putative capsid protein)	21	132	1.4E-56	T	12-09-2024	IPR003384	Hepatitis E virus Orf2, capsid
+SRR14579882_cap3_Contig-1_orf3253	ff893a46051956b987428591faa10d3b	224	ProSiteProfiles	PS51967	Coronavirus (CoV) 3a-like viroporin cytosolic (CD) domain profile.	128	203	28.247364	T	12-09-2024	IPR046446	3a-like viroporin, cytosolic domain, alpha/betacoronavirus
+SRR14579882_cap3_Contig-1_orf3253	ff893a46051956b987428591faa10d3b	224	ProSiteProfiles	PS51966	Coronavirus (CoV) 3a-like viroporin trans-membrane (TM) domain profile.	34	124	15.464089	T	12-09-2024	IPR046445	3a-like viroporin, transmembrane domain, alpha/betacoronavirus
+SRR14579882_cap3_Contig-1_orf3253	ff893a46051956b987428591faa10d3b	224	Pfam	PF03053	ORF3b coronavirus protein	9	218	5.2E-63	T	12-09-2024	IPR004293	Coronavirus Orf3a/b
+SRR12430148_cap3_Contig-1_orf1741	f1ec5107d847a233d632946979b1ced7	346	Pfam	PF00661	Viral matrix protein	6	343	2.9E-124	T	12-09-2024	IPR000982	Viral matrix protein
+SRR12430148_cap3_Contig-1_orf1741	f1ec5107d847a233d632946979b1ced7	346	Gene3D	G3DSA:2.70.20.60	-	187	346	2.3E-51	T	12-09-2024	IPR042539	Viral matrix protein, C-terminal domain
+SRR12430148_cap3_Contig-1_orf1741	f1ec5107d847a233d632946979b1ced7	346	Gene3D	G3DSA:2.70.20.50	-	19	186	1.2E-42	T	12-09-2024	IPR042540	Viral matrix protein, N-terminal domain
+SRR18700679_cap3_Contig-1_orf2646	c232135e1a4977b22dad32c997d32af1	219	Pfam	PF01606	Arterivirus envelope protein	2	177	2.2E-100	T	12-09-2024	IPR002556	Arterivirus GP3 envelope glycoprotein
+SRR17345012_cap3_Contig-6_orf419	9f946eeb57d2adff200408bcb2c312e6	138	MobiDBLite	mobidb-lite	consensus disorder prediction	1	120	-	T	12-09-2024	-	-
+SRR17345012_cap3_Contig-6_orf419	9f946eeb57d2adff200408bcb2c312e6	138	MobiDBLite	mobidb-lite	consensus disorder prediction	31	57	-	T	12-09-2024	-	-
+SRR17345012_cap3_Contig-11_orf503	1da7fbb4cb94e85d99ac93ce6d06db98	618	Pfam	PF03431	RNA replicase, beta-chain	256	477	9.6E-45	T	12-09-2024	IPR005093	RNA-directed RNA polymerase beta-chain
+SRR17345012_cap3_Contig-11_orf503	1da7fbb4cb94e85d99ac93ce6d06db98	618	SUPERFAMILY	SSF56672	DNA/RNA polymerases	257	541	1.17E-9	T	12-09-2024	IPR043502	DNA/RNA polymerase superfamily
+SRR17345012_cap3_Contig-11_orf503	1da7fbb4cb94e85d99ac93ce6d06db98	618	ProSiteProfiles	PS50522	RdRp of RNA-containing bacteriophages catalytic domain profile.	317	451	21.242947	T	12-09-2024	IPR007096	RNA-directed RNA polymerase, catalytic domain,  bacteriophage
+SRR15647801_cap3_Contig-1_orf1494	12bc09e341fe7e56f9f55c9407c61ee7	3907	ProSiteProfiles	PS51192	Superfamilies 1 and 2 helicase ATP-binding type-1 domain profile.	1809	1967	17.651569	T	12-09-2024	IPR014001	Helicase superfamily 1/2, ATP-binding domain
+SRR15647801_cap3_Contig-1_orf1494	12bc09e341fe7e56f9f55c9407c61ee7	3907	CDD	cd17931	DEXHc_viral_Ns3	1815	1966	1.7346E-58	T	12-09-2024	-	-
+SRR15647801_cap3_Contig-1_orf1494	12bc09e341fe7e56f9f55c9407c61ee7	3907	Gene3D	G3DSA:2.60.40.3000	Pestivirus envelope glycoprotein E2, domain B	788	864	1.7E-40	T	12-09-2024	IPR042310	Pestivirus envelope glycoprotein E2, domain B
+SRR15647801_cap3_Contig-1_orf1494	12bc09e341fe7e56f9f55c9407c61ee7	3907	SUPERFAMILY	SSF52540	P-loop containing nucleoside triphosphate hydrolases	1819	2113	1.32E-37	T	12-09-2024	IPR027417	P-loop containing nucleoside triphosphate hydrolase
+SRR15647801_cap3_Contig-1_orf1494	12bc09e341fe7e56f9f55c9407c61ee7	3907	SMART	SM00487	ultradead3	1784	1984	1.3E-12	T	12-09-2024	IPR014001	Helicase superfamily 1/2, ATP-binding domain
+SRR15647801_cap3_Contig-1_orf1494	12bc09e341fe7e56f9f55c9407c61ee7	3907	PANTHER	PTHR18934	ATP-DEPENDENT RNA HELICASE	1820	2130	6.5E-22	T	12-09-2024	-	-
+SRR15647801_cap3_Contig-1_orf1494	12bc09e341fe7e56f9f55c9407c61ee7	3907	ProSiteProfiles	PS51535	Pestivirus NS3 protease (NS3pro) domain profile.	1597	1770	140.651535	T	12-09-2024	IPR000280	Pestivirus NS3, peptidase S31
+SRR15647801_cap3_Contig-1_orf1494	12bc09e341fe7e56f9f55c9407c61ee7	3907	Pfam	PF05578	Pestivirus NS3 polyprotein peptidase S31	1597	1807	3.2E-137	T	12-09-2024	IPR000280	Pestivirus NS3, peptidase S31
+SRR15647801_cap3_Contig-1_orf1494	12bc09e341fe7e56f9f55c9407c61ee7	3907	Pfam	PF16329	Pestivirus envelope glycoprotein E2	703	1071	1.9E-168	T	12-09-2024	IPR032521	Pestivirus envelope glycoprotein E2
+SRR15647801_cap3_Contig-1_orf1494	12bc09e341fe7e56f9f55c9407c61ee7	3907	Gene3D	G3DSA:2.60.320.20	Pestivirus envelope glycoprotein E2, domain A	701	787	9.4E-36	T	12-09-2024	IPR042309	Pestivirus envelope glycoprotein E2, domain A
+SRR15647801_cap3_Contig-1_orf1494	12bc09e341fe7e56f9f55c9407c61ee7	3907	MobiDBLite	mobidb-lite	consensus disorder prediction	183	217	-	T	12-09-2024	-	-
+SRR15647801_cap3_Contig-1_orf1494	12bc09e341fe7e56f9f55c9407c61ee7	3907	ProSiteProfiles	PS50507	RdRp of positive ssRNA viruses catalytic domain profile.	3526	3649	15.883014	T	12-09-2024	IPR007094	RNA-directed RNA polymerase,  catalytic domain
+SRR15647801_cap3_Contig-1_orf1494	12bc09e341fe7e56f9f55c9407c61ee7	3907	FunFam	G3DSA:3.30.70.270:FF:000083	Genome polyprotein	3598	3687	4.3E-54	T	12-09-2024	-	-
+SRR15647801_cap3_Contig-1_orf1494	12bc09e341fe7e56f9f55c9407c61ee7	3907	Pfam	PF00271	Helicase conserved C-terminal domain	1990	2106	1.4E-7	T	12-09-2024	IPR001650	Helicase, C-terminal
+SRR15647801_cap3_Contig-1_orf1494	12bc09e341fe7e56f9f55c9407c61ee7	3907	PRINTS	PR00729	Cattle diarrhoea virus endopeptidase P80 (S31) signature	1651	1679	9.7E-43	T	12-09-2024	IPR000280	Pestivirus NS3, peptidase S31
+SRR15647801_cap3_Contig-1_orf1494	12bc09e341fe7e56f9f55c9407c61ee7	3907	PRINTS	PR00729	Cattle diarrhoea virus endopeptidase P80 (S31) signature	1688	1716	9.7E-43	T	12-09-2024	IPR000280	Pestivirus NS3, peptidase S31
+SRR15647801_cap3_Contig-1_orf1494	12bc09e341fe7e56f9f55c9407c61ee7	3907	PRINTS	PR00729	Cattle diarrhoea virus endopeptidase P80 (S31) signature	1745	1773	9.7E-43	T	12-09-2024	IPR000280	Pestivirus NS3, peptidase S31
+SRR15647801_cap3_Contig-1_orf1494	12bc09e341fe7e56f9f55c9407c61ee7	3907	Gene3D	G3DSA:3.40.50.300	-	1971	2121	1.8E-39	T	12-09-2024	IPR027417	P-loop containing nucleoside triphosphate hydrolase
+SRR15647801_cap3_Contig-1_orf1494	12bc09e341fe7e56f9f55c9407c61ee7	3907	Gene3D	G3DSA:2.60.40.4200	-	940	1037	5.6E-47	T	12-09-2024	IPR042311	Pestivirus envelope glycoprotein E2, domain D
+SRR15647801_cap3_Contig-1_orf1494	12bc09e341fe7e56f9f55c9407c61ee7	3907	FunFam	G3DSA:3.40.50.300:FF:001127	Genome polyprotein	1809	1971	1.0E-109	T	12-09-2024	-	-
+SRR15647801_cap3_Contig-1_orf1494	12bc09e341fe7e56f9f55c9407c61ee7	3907	SUPERFAMILY	SSF56672	DNA/RNA polymerases	3282	3864	1.73E-122	T	12-09-2024	IPR043502	DNA/RNA polymerase superfamily
+SRR15647801_cap3_Contig-1_orf1494	12bc09e341fe7e56f9f55c9407c61ee7	3907	Gene3D	G3DSA:2.30.140.40	Pestivirus Npro endopeptidase C53, interaction domain	109	165	2.5E-32	T	12-09-2024	IPR042542	Peptidase C53, pestivirus Npro, interaction domain
+SRR15647801_cap3_Contig-1_orf1494	12bc09e341fe7e56f9f55c9407c61ee7	3907	SUPERFAMILY	SSF55895	Ribonuclease Rh-like	281	423	3.4E-11	T	12-09-2024	IPR036430	Ribonuclease T2-like superfamily
+SRR15647801_cap3_Contig-1_orf1494	12bc09e341fe7e56f9f55c9407c61ee7	3907	SMART	SM00490	helicmild6	2008	2107	1.7E-9	T	12-09-2024	IPR001650	Helicase, C-terminal
+SRR15647801_cap3_Contig-1_orf1494	12bc09e341fe7e56f9f55c9407c61ee7	3907	MobiDBLite	mobidb-lite	consensus disorder prediction	183	216	-	T	12-09-2024	-	-
+SRR15647801_cap3_Contig-1_orf1494	12bc09e341fe7e56f9f55c9407c61ee7	3907	Pfam	PF11889	Capsid protein C, pestivirus	187	236	1.3E-22	T	12-09-2024	IPR021824	Capsid protein C, pestivirus
+SRR15647801_cap3_Contig-1_orf1494	12bc09e341fe7e56f9f55c9407c61ee7	3907	Pfam	PF07652	Flavivirus DEAD domain	1814	1954	2.2E-9	T	12-09-2024	IPR011492	DEAD box, Flavivirus
+SRR15647801_cap3_Contig-1_orf1494	12bc09e341fe7e56f9f55c9407c61ee7	3907	Gene3D	G3DSA:3.40.50.300	-	1809	1970	2.0E-41	T	12-09-2024	IPR027417	P-loop containing nucleoside triphosphate hydrolase
+SRR15647801_cap3_Contig-1_orf1494	12bc09e341fe7e56f9f55c9407c61ee7	3907	ProSiteProfiles	PS51876	Pestivirus N-terminal protease Npro domain profile.	10	177	100.194443	T	12-09-2024	IPR008751	Peptidase C53, pestivirus Npro
+SRR15647801_cap3_Contig-1_orf1494	12bc09e341fe7e56f9f55c9407c61ee7	3907	Pfam	PF05550	Pestivirus Npro endopeptidase C53	10	177	2.8E-81	T	12-09-2024	IPR008751	Peptidase C53, pestivirus Npro
+SRR15647801_cap3_Contig-1_orf1494	12bc09e341fe7e56f9f55c9407c61ee7	3907	Gene3D	G3DSA:3.90.730.10	-	277	443	2.7E-79	T	12-09-2024	IPR036430	Ribonuclease T2-like superfamily
+SRR15647801_cap3_Contig-1_orf1494	12bc09e341fe7e56f9f55c9407c61ee7	3907	Pfam	PF00998	Viral RNA dependent RNA polymerase	3467	3693	2.1E-24	T	12-09-2024	IPR002166	RNA dependent RNA polymerase, hepatitis C virus
+SRR15647801_cap3_Contig-1_orf1494	12bc09e341fe7e56f9f55c9407c61ee7	3907	ProSitePatterns	PS00531	Ribonuclease T2 family histidine active site 2.	349	360	-	T	12-09-2024	IPR033130	Ribonuclease T2, His active site 2
+SRR15647801_cap3_Contig-1_orf1494	12bc09e341fe7e56f9f55c9407c61ee7	3907	FunFam	G3DSA:3.40.50.300:FF:001125	Genome polyprotein	1972	2121	1.6E-97	T	12-09-2024	-	-
+SRR15647801_cap3_Contig-1_orf1494	12bc09e341fe7e56f9f55c9407c61ee7	3907	CDD	cd23201	Pestivirus_RdRp	3284	3862	0.0	T	12-09-2024	-	-
+SRR15647801_cap3_Contig-1_orf1494	12bc09e341fe7e56f9f55c9407c61ee7	3907	ProSiteProfiles	PS51194	Superfamilies 1 and 2 helicase C-terminal domain profile.	1980	2150	10.757899	T	12-09-2024	IPR001650	Helicase, C-terminal
+SRR15647801_cap3_Contig-1_orf1494	12bc09e341fe7e56f9f55c9407c61ee7	3907	Pfam	PF12387	Pestivirus NS2 peptidase	1330	1529	3.3E-92	T	12-09-2024	IPR022120	Pestivirus nonstructural protein 2
+SRR15647801_cap3_Contig-1_orf1494	12bc09e341fe7e56f9f55c9407c61ee7	3907	Gene3D	G3DSA:3.30.70.270	-	3501	3572	4.0E-23	T	12-09-2024	IPR043128	Reverse transcriptase/Diguanylate cyclase domain
+SRR15647801_cap3_Contig-1_orf1494	12bc09e341fe7e56f9f55c9407c61ee7	3907	Gene3D	G3DSA:3.30.70.270	-	3598	3687	3.6E-35	T	12-09-2024	IPR043128	Reverse transcriptase/Diguanylate cyclase domain
+SRR15647801_cap3_Contig-1_orf1494	12bc09e341fe7e56f9f55c9407c61ee7	3907	ProSiteProfiles	PS51692	Pestivirus nonstructural protein 2 (NS2) protease domain profile.	1448	1596	75.691261	T	12-09-2024	IPR030399	Pestivirus NS2, peptidase C74
+SRR18700679_cap3_Contig-1_orf2638	31194ef8a3ebe984be8fc092a93c39c3	258	Pfam	PF02340	PRRSV putative envelope protein	21	253	5.9E-124	T	12-09-2024	IPR003434	Arterivirus GP2a envelope protein
+SRR12430148_cap3_Contig-1_orf1798	66d5cc67c170662add153b2aa3802a09	907	Gene3D	G3DSA:2.120.10.10	-	138	570	1.2E-115	T	12-09-2024	-	-
+SRR12430148_cap3_Contig-1_orf1798	66d5cc67c170662add153b2aa3802a09	907	SUPERFAMILY	SSF50939	Sialidases	142	570	3.43E-106	T	12-09-2024	IPR036278	Sialidase superfamily
+SRR12430148_cap3_Contig-1_orf1798	66d5cc67c170662add153b2aa3802a09	907	Pfam	PF00423	Haemagglutinin-neuraminidase	47	569	3.4E-99	T	12-09-2024	IPR000665	Haemagglutinin/haemagglutinin-neuraminidase, paramyxovirus
+SRR14579882_cap3_Contig-1_orf3245	60052e64b2d1c024540cdc77a68196e2	1378	CDD	cd22369	alphaCoV_Spike_SD1-2_S1-S2_S2	644	1313	0.0	T	12-09-2024	-	-
+SRR14579882_cap3_Contig-1_orf3245	60052e64b2d1c024540cdc77a68196e2	1378	Pfam	PF01600	Coronavirus spike glycoprotein S1	223	636	1.6E-135	T	12-09-2024	IPR002551	Spike glycoprotein S1, coronavirus
+SRR14579882_cap3_Contig-1_orf3245	60052e64b2d1c024540cdc77a68196e2	1378	ProSiteProfiles	PS51924	Coronavirus spike (S) glycoprotein S2 subunit heptad repeat 2 (HR2) region profile.	1238	1335	30.048906	T	12-09-2024	IPR044874	Spike glycoprotein S2, coronavirus, heptad repeat 2
+SRR14579882_cap3_Contig-1_orf3245	60052e64b2d1c024540cdc77a68196e2	1378	SUPERFAMILY	SSF111474	Coronavirus S2 glycoprotein	1002	1119	7.03E-43	T	12-09-2024	IPR043473	Spike glycoprotein S2 superfamily, coronavirus
+SRR14579882_cap3_Contig-1_orf3245	60052e64b2d1c024540cdc77a68196e2	1378	Gene3D	G3DSA:1.20.5.300	-	980	1133	4.1E-51	T	12-09-2024	-	-
+SRR14579882_cap3_Contig-1_orf3245	60052e64b2d1c024540cdc77a68196e2	1378	Gene3D	G3DSA:1.20.5.300	-	1223	1310	4.5E-11	T	12-09-2024	-	-
+SRR14579882_cap3_Contig-1_orf3245	60052e64b2d1c024540cdc77a68196e2	1378	SUPERFAMILY	SSF111474	Coronavirus S2 glycoprotein	1200	1312	6.11E-18	T	12-09-2024	IPR043473	Spike glycoprotein S2 superfamily, coronavirus
+SRR14579882_cap3_Contig-1_orf3245	60052e64b2d1c024540cdc77a68196e2	1378	Pfam	PF19214	Coronavirus spike glycoprotein S2, intravirion	1343	1378	9.4E-7	T	12-09-2024	IPR043614	Spike glycoprotein S2, coronavirus, C-terminal
+SRR14579882_cap3_Contig-1_orf3245	60052e64b2d1c024540cdc77a68196e2	1378	ProSiteProfiles	PS51923	Coronavirus spike (S) glycoprotein S2 subunit heptad repeat 1 (HR1) region profile.	975	1094	44.657539	T	12-09-2024	IPR044873	Spike glycoprotein S2, coronavirus, heptad repeat 1
+SRR14579882_cap3_Contig-1_orf3245	60052e64b2d1c024540cdc77a68196e2	1378	Pfam	PF19209	Coronavirus spike glycoprotein S1, C-terminal	651	707	6.6E-24	T	12-09-2024	IPR043607	Coronavirus spike glycoprotein S1, C-terminal
+SRR14579882_cap3_Contig-1_orf3245	60052e64b2d1c024540cdc77a68196e2	1378	Coils	Coil	Coil	1265	1285	-	T	12-09-2024	-	-
+SRR14579882_cap3_Contig-1_orf3245	60052e64b2d1c024540cdc77a68196e2	1378	Gene3D	G3DSA:2.60.40.3130	-	490	645	7.1E-35	T	12-09-2024	-	-
+SRR14579882_cap3_Contig-1_orf3245	60052e64b2d1c024540cdc77a68196e2	1378	Pfam	PF01601	Coronavirus spike glycoprotein S2	787	1340	3.9E-218	T	12-09-2024	IPR002552	Spike glycoprotein S2, coronavirus
+SRR19431078_cap3_Contig-1_orf2257	d72da2ca7216456c7879db55fb305fa9	2116	Pfam	PF00946	Mononegavirales RNA dependent RNA polymerase	54	1081	1.3E-237	T	12-09-2024	IPR014023	Mononegavirales RNA-directed RNA polymerase catalytic domain
+SRR19431078_cap3_Contig-1_orf2257	d72da2ca7216456c7879db55fb305fa9	2116	TIGRFAM	TIGR04198	paramyx_RNAcap: mRNA capping enzyme	1192	2003	5.1E-142	T	12-09-2024	IPR039736	RNA-directed RNA polymerase L, C-terminal
+SRR19431078_cap3_Contig-1_orf2257	d72da2ca7216456c7879db55fb305fa9	2116	Pfam	PF14314	Virus-capping methyltransferase	1365	2034	4.7E-159	T	12-09-2024	IPR039530	RNA-directed RNA polymerase L methyltransferase domain, rhabdovirus
+SRR19431078_cap3_Contig-1_orf2257	d72da2ca7216456c7879db55fb305fa9	2116	Pfam	PF14318	Mononegavirales mRNA-capping region V	1097	1324	7.3E-54	T	12-09-2024	IPR026890	Mononegavirales mRNA-capping domain V
+SRR19431078_cap3_Contig-1_orf2257	d72da2ca7216456c7879db55fb305fa9	2116	ProSiteProfiles	PS51590	Mononegavirus L protein 2'-O-ribose methyltransferase domain profile.	1674	1871	25.70207	T	12-09-2024	IPR025786	Mononegavirus L protein 2-O-ribose methyltransferase
+SRR19431078_cap3_Contig-1_orf2257	d72da2ca7216456c7879db55fb305fa9	2116	ProSiteProfiles	PS50526	RdRp of negative ssRNA viruses with non-segmented genomes catalytic domain profile.	611	797	52.598282	T	12-09-2024	IPR014023	Mononegavirales RNA-directed RNA polymerase catalytic domain
+SRR17345014_cap3_Contig-1_orf1049	c1e78b67505fb6aff96653bd4940815f	3783	MobiDBLite	mobidb-lite	consensus disorder prediction	1173	1196	-	T	12-09-2024	-	-
+SRR17345014_cap3_Contig-1_orf1049	c1e78b67505fb6aff96653bd4940815f	3783	SUPERFAMILY	SSF56672	DNA/RNA polymerases	2462	2916	2.03E-69	T	12-09-2024	IPR043502	DNA/RNA polymerase superfamily
+SRR17345014_cap3_Contig-1_orf1049	c1e78b67505fb6aff96653bd4940815f	3783	CDD	cd00205	rhv_like	3320	3486	5.29377E-12	T	12-09-2024	IPR033703	Picornavirus/Calicivirus coat protein
+SRR17345014_cap3_Contig-1_orf1049	c1e78b67505fb6aff96653bd4940815f	3783	Pfam	PF00910	RNA helicase	661	746	6.4E-7	T	12-09-2024	IPR000605	Helicase, superfamily 3, single-stranded DNA/RNA virus
+SRR17345014_cap3_Contig-1_orf1049	c1e78b67505fb6aff96653bd4940815f	3783	Gene3D	G3DSA:2.40.10.10	-	2312	2406	1.9E-5	T	12-09-2024	IPR043504	Peptidase S1, PA clan, chymotrypsin-like fold
+SRR17345014_cap3_Contig-1_orf1049	c1e78b67505fb6aff96653bd4940815f	3783	MobiDBLite	mobidb-lite	consensus disorder prediction	1304	1341	-	T	12-09-2024	-	-
+SRR17345014_cap3_Contig-1_orf1049	c1e78b67505fb6aff96653bd4940815f	3783	CDD	cd23169	ps-ssRNAv-Picornavirales	2640	2909	3.48676E-67	T	12-09-2024	-	-
+SRR17345014_cap3_Contig-1_orf1049	c1e78b67505fb6aff96653bd4940815f	3783	Gene3D	G3DSA:2.60.120.20	-	3041	3220	3.7E-15	T	12-09-2024	IPR029053	Viral coat protein subunit
+SRR17345014_cap3_Contig-1_orf1049	c1e78b67505fb6aff96653bd4940815f	3783	Pfam	PF00680	Viral RNA-dependent RNA polymerase	2492	2915	2.6E-35	T	12-09-2024	IPR001205	RNA-directed RNA polymerase,  C-terminal domain
+SRR17345014_cap3_Contig-1_orf1049	c1e78b67505fb6aff96653bd4940815f	3783	Gene3D	G3DSA:2.60.120.20	-	3270	3493	1.4E-28	T	12-09-2024	IPR029053	Viral coat protein subunit
+SRR17345014_cap3_Contig-1_orf1049	c1e78b67505fb6aff96653bd4940815f	3783	ProSiteProfiles	PS50507	RdRp of positive ssRNA viruses catalytic domain profile.	2715	2839	8.955615	T	12-09-2024	IPR007094	RNA-directed RNA polymerase,  catalytic domain
+SRR17345014_cap3_Contig-1_orf1049	c1e78b67505fb6aff96653bd4940815f	3783	MobiDBLite	mobidb-lite	consensus disorder prediction	1154	1211	-	T	12-09-2024	-	-
+SRR17345014_cap3_Contig-1_orf1049	c1e78b67505fb6aff96653bd4940815f	3783	SUPERFAMILY	SSF50494	Trypsin-like serine proteases	2237	2424	5.58E-7	T	12-09-2024	IPR009003	Peptidase S1, PA clan
+SRR17345014_cap3_Contig-1_orf1049	c1e78b67505fb6aff96653bd4940815f	3783	ProSiteProfiles	PS51218	Superfamily 3 helicase of positive ssRNA viruses domain profile.	638	805	17.723562	T	12-09-2024	IPR014759	Helicase, superfamily 3, single-stranded RNA virus
+SRR17345014_cap3_Contig-1_orf1049	c1e78b67505fb6aff96653bd4940815f	3783	SUPERFAMILY	SSF88633	Positive stranded ssRNA viruses	3003	3222	1.21E-7	T	12-09-2024	-	-
+SRR17345014_cap3_Contig-1_orf1049	c1e78b67505fb6aff96653bd4940815f	3783	Gene3D	G3DSA:3.30.70.270	-	2759	2889	2.8E-24	T	12-09-2024	IPR043128	Reverse transcriptase/Diguanylate cyclase domain
+SRR17345014_cap3_Contig-1_orf1049	c1e78b67505fb6aff96653bd4940815f	3783	MobiDBLite	mobidb-lite	consensus disorder prediction	3505	3547	-	T	12-09-2024	-	-
+SRR17345014_cap3_Contig-1_orf1049	c1e78b67505fb6aff96653bd4940815f	3783	MobiDBLite	mobidb-lite	consensus disorder prediction	3505	3537	-	T	12-09-2024	-	-
+SRR17345014_cap3_Contig-1_orf1049	c1e78b67505fb6aff96653bd4940815f	3783	SUPERFAMILY	SSF88633	Positive stranded ssRNA viruses	3254	3499	3.33E-20	T	12-09-2024	-	-
+SRR12430148_cap3_Contig-1_orf1731	14886dd0b35d7ee6d2b854d5a8404684	509	Pfam	PF03210	Paramyxovirus P/V phosphoprotein C-terminal	328	461	7.3E-20	T	12-09-2024	IPR004897	P/V phosphoprotein, paramyxoviral
+SRR12430148_cap3_Contig-1_orf1731	14886dd0b35d7ee6d2b854d5a8404684	509	MobiDBLite	mobidb-lite	consensus disorder prediction	133	169	-	T	12-09-2024	-	-
+SRR12430148_cap3_Contig-1_orf1731	14886dd0b35d7ee6d2b854d5a8404684	509	MobiDBLite	mobidb-lite	consensus disorder prediction	87	101	-	T	12-09-2024	-	-
+SRR12430148_cap3_Contig-1_orf1731	14886dd0b35d7ee6d2b854d5a8404684	509	MobiDBLite	mobidb-lite	consensus disorder prediction	37	169	-	T	12-09-2024	-	-
+SRR12430148_cap3_Contig-1_orf1731	14886dd0b35d7ee6d2b854d5a8404684	509	MobiDBLite	mobidb-lite	consensus disorder prediction	117	132	-	T	12-09-2024	-	-
+SRR12430148_cap3_Contig-1_orf1731	14886dd0b35d7ee6d2b854d5a8404684	509	MobiDBLite	mobidb-lite	consensus disorder prediction	47	76	-	T	12-09-2024	-	-
+SRR12430148_cap3_Contig-1_orf1731	14886dd0b35d7ee6d2b854d5a8404684	509	Gene3D	G3DSA:1.20.5.110	-	312	384	1.2E-19	T	12-09-2024	-	-
+SRR17345012_cap3_Contig-13_orf676	9ded1c17ec815c33516283af06c6bf35	151	MobiDBLite	mobidb-lite	consensus disorder prediction	1	26	-	T	12-09-2024	-	-
+SRR18700679_cap3_Contig-1_orf2627	f185108fc4a2b4f90f3033767b1fff73	1463	Gene3D	G3DSA:3.40.50.300	-	788	916	4.3E-8	T	12-09-2024	IPR027417	P-loop containing nucleoside triphosphate hydrolase
+SRR18700679_cap3_Contig-1_orf2627	f185108fc4a2b4f90f3033767b1fff73	1463	Pfam	PF19215	Coronavirus replicase NSP15, uridylate-specific endoribonuclease	1214	1302	7.2E-8	T	12-09-2024	IPR043609	NendoU domain, nidovirus
+SRR18700679_cap3_Contig-1_orf2627	f185108fc4a2b4f90f3033767b1fff73	1463	ProSiteProfiles	PS51961	Arterivirus Nsp11 N-terminal/coronavirus NSP15 middle (AV-Nsp11N/CoV-Nsp15M) domain profile.	1087	1183	18.428862	T	12-09-2024	IPR046440	Arterivirus Nsp11 N-terminal/Coronavirus NSP15 middle domain
+SRR18700679_cap3_Contig-1_orf2627	f185108fc4a2b4f90f3033767b1fff73	1463	CDD	cd18786	SF1_C	957	1018	2.32664E-22	T	12-09-2024	-	-
+SRR18700679_cap3_Contig-1_orf2627	f185108fc4a2b4f90f3033767b1fff73	1463	SUPERFAMILY	SSF56672	DNA/RNA polymerases	187	638	1.9E-50	T	12-09-2024	IPR043502	DNA/RNA polymerase superfamily
+SRR18700679_cap3_Contig-1_orf2627	f185108fc4a2b4f90f3033767b1fff73	1463	ProSiteProfiles	PS51958	Nidoviral uridylate-specific endoribonuclease (NendoU) domain profile.	1185	1307	43.621914	T	12-09-2024	IPR043609	NendoU domain, nidovirus
+SRR18700679_cap3_Contig-1_orf2627	f185108fc4a2b4f90f3033767b1fff73	1463	SUPERFAMILY	SSF142877	EndoU-like	1185	1308	8.24E-38	T	12-09-2024	IPR037227	Endoribonuclease EndoU-like
+SRR18700679_cap3_Contig-1_orf2627	f185108fc4a2b4f90f3033767b1fff73	1463	CDD	cd17937	DEXXYc_viral_SF1-N	788	923	3.11865E-71	T	12-09-2024	-	-
+SRR18700679_cap3_Contig-1_orf2627	f185108fc4a2b4f90f3033767b1fff73	1463	CDD	cd21405	ZBD_av_Nsp10-like	651	711	3.09362E-31	T	12-09-2024	IPR027355	Nonstructural protein 10, zinc-binding domain, arterivirus
+SRR18700679_cap3_Contig-1_orf2627	f185108fc4a2b4f90f3033767b1fff73	1463	Pfam	PF00680	Viral RNA-dependent RNA polymerase	212	619	5.6E-38	T	12-09-2024	IPR001205	RNA-directed RNA polymerase,  C-terminal domain
+SRR18700679_cap3_Contig-1_orf2627	f185108fc4a2b4f90f3033767b1fff73	1463	Gene3D	G3DSA:3.40.50.300	-	919	1029	9.2E-6	T	12-09-2024	IPR027417	P-loop containing nucleoside triphosphate hydrolase
+SRR18700679_cap3_Contig-1_orf2627	f185108fc4a2b4f90f3033767b1fff73	1463	ProSiteProfiles	PS50507	RdRp of positive ssRNA viruses catalytic domain profile.	392	526	10.120584	T	12-09-2024	IPR007094	RNA-directed RNA polymerase,  catalytic domain
+SRR18700679_cap3_Contig-1_orf2627	f185108fc4a2b4f90f3033767b1fff73	1463	CDD	cd23189	Arteriviridae_RdRp	320	642	0.0	T	12-09-2024	-	-
+SRR18700679_cap3_Contig-1_orf2627	f185108fc4a2b4f90f3033767b1fff73	1463	SUPERFAMILY	SSF52540	P-loop containing nucleoside triphosphate hydrolases	789	908	1.53E-5	T	12-09-2024	IPR027417	P-loop containing nucleoside triphosphate hydrolase
+SRR18700679_cap3_Contig-1_orf2627	f185108fc4a2b4f90f3033767b1fff73	1463	CDD	cd21160	NendoU_av_Nsp11-like	1190	1308	5.16825E-78	T	12-09-2024	IPR044314	NSP11, NendoU domain, arterivirus
+SRR18700679_cap3_Contig-1_orf2627	f185108fc4a2b4f90f3033767b1fff73	1463	ProSiteProfiles	PS51657	(+)RNA virus helicase core domain profile.	767	1048	46.424141	T	12-09-2024	IPR027351	(+) RNA virus helicase core domain
+SRR18700679_cap3_Contig-1_orf2627	f185108fc4a2b4f90f3033767b1fff73	1463	CDD	cd21410	1B_av_Nsp10-like	723	771	1.05299E-18	T	12-09-2024	IPR044348	Nonstructural protein 10, 1B domain, arterivirus
+SRR18700679_cap3_Contig-1_orf2627	f185108fc4a2b4f90f3033767b1fff73	1463	Pfam	PF01443	Viral (Superfamily 1) RNA helicase	795	1017	3.5E-11	T	12-09-2024	IPR027351	(+) RNA virus helicase core domain
+SRR18700679_cap3_Contig-1_orf2627	f185108fc4a2b4f90f3033767b1fff73	1463	CDD	cd21166	NTD_av_Nsp11-like	1090	1192	1.05552E-52	T	12-09-2024	IPR044320	NSP11, N-terminal, arterivirus
+SRR18700679_cap3_Contig-1_orf2627	f185108fc4a2b4f90f3033767b1fff73	1463	SUPERFAMILY	SSF52540	P-loop containing nucleoside triphosphate hydrolases	884	1024	8.71E-14	T	12-09-2024	IPR027417	P-loop containing nucleoside triphosphate hydrolase
+SRR18700679_cap3_Contig-1_orf2627	f185108fc4a2b4f90f3033767b1fff73	1463	ProSiteProfiles	PS51947	Nidovirus RdRp-associated nucleotidyl transferase (NiRAN) domain profile.	1	153	15.776436	T	12-09-2024	IPR044863	Nidovirus  RdRp-associated nucleotidyl transferase (NiRAN) domain
+SRR18700679_cap3_Contig-1_orf2627	f185108fc4a2b4f90f3033767b1fff73	1463	ProSiteProfiles	PS51652	Arteriviridae zinc-binding (AV ZBD) domain profile.	647	710	20.938347	T	12-09-2024	IPR027355	Nonstructural protein 10, zinc-binding domain, arterivirus
+SRR13364364_cap3_Contig-2_orf25	d02ea271bbbca0ece62c92a7a2bc0633	1189	Pfam	PF05788	Orbivirus RNA-dependent RNA polymerase (VP1)	29	779	2.6E-44	T	12-09-2024	IPR008723	RNA-dependent RNA polymerase, orbiviral
+SRR13364364_cap3_Contig-2_orf25	d02ea271bbbca0ece62c92a7a2bc0633	1189	SUPERFAMILY	SSF56672	DNA/RNA polymerases	358	720	8.9E-6	T	12-09-2024	IPR043502	DNA/RNA polymerase superfamily
+SRR17345012_cap3_Contig-6_orf368	d7245903257a5f616a15d5f2a72652f1	130	MobiDBLite	mobidb-lite	consensus disorder prediction	65	130	-	T	12-09-2024	-	-
+SRR17345012_cap3_Contig-6_orf368	d7245903257a5f616a15d5f2a72652f1	130	MobiDBLite	mobidb-lite	consensus disorder prediction	1	52	-	T	12-09-2024	-	-
+SRR17345012_cap3_Contig-6_orf368	d7245903257a5f616a15d5f2a72652f1	130	MobiDBLite	mobidb-lite	consensus disorder prediction	1	20	-	T	12-09-2024	-	-
+SRR17345012_cap3_Contig-13_orf638	b653d74ad7f00ef673f961e54af8c001	564	ProSiteProfiles	PS50522	RdRp of RNA-containing bacteriophages catalytic domain profile.	246	381	16.712313	T	12-09-2024	IPR007096	RNA-directed RNA polymerase, catalytic domain,  bacteriophage
+SRR17345012_cap3_Contig-13_orf638	b653d74ad7f00ef673f961e54af8c001	564	SUPERFAMILY	SSF56672	DNA/RNA polymerases	297	374	1.19E-6	T	12-09-2024	IPR043502	DNA/RNA polymerase superfamily
+SRR17345012_cap3_Contig-13_orf638	b653d74ad7f00ef673f961e54af8c001	564	Pfam	PF03431	RNA replicase, beta-chain	175	415	1.2E-28	T	12-09-2024	IPR005093	RNA-directed RNA polymerase beta-chain
+SRR13364364_cap3_Contig-12_orf102	dee5f4b7e58d1e2e60af483f1ac52a62	35	MobiDBLite	mobidb-lite	consensus disorder prediction	1	35	-	T	12-09-2024	-	-
+SRR13364364_cap3_Contig-12_orf102	dee5f4b7e58d1e2e60af483f1ac52a62	35	MobiDBLite	mobidb-lite	consensus disorder prediction	1	28	-	T	12-09-2024	-	-
+SRR16151768_cap3_Contig-1_orf745	9e65d7ffb592e21555082c08f043f9d7	213	ProSiteProfiles	PS50103	Zinc finger C3H1-type profile.	20	47	12.708712	T	12-09-2024	IPR000571	Zinc finger, CCCH-type
+SRR16151768_cap3_Contig-1_orf745	9e65d7ffb592e21555082c08f043f9d7	213	Pfam	PF06436	Pneumovirus matrix protein 2 (M2)	48	204	4.7E-85	T	12-09-2024	IPR009452	Pneumovirus matrix 2-1
+SRR16151768_cap3_Contig-1_orf745	9e65d7ffb592e21555082c08f043f9d7	213	SUPERFAMILY	SSF90229	CCCH zinc finger	23	45	3.27E-5	T	12-09-2024	IPR036855	Zinc finger, CCCH-type superfamily
+SRR16151768_cap3_Contig-1_orf745	9e65d7ffb592e21555082c08f043f9d7	213	FunFam	G3DSA:1.20.120.1350:FF:000001	Matrix M2-1	15	193	6.9E-124	T	12-09-2024	-	-
+SRR16151768_cap3_Contig-1_orf745	9e65d7ffb592e21555082c08f043f9d7	213	SMART	SM00356	c3hfinal6	21	46	0.0045	T	12-09-2024	IPR000571	Zinc finger, CCCH-type
+SRR16151768_cap3_Contig-1_orf745	9e65d7ffb592e21555082c08f043f9d7	213	Gene3D	G3DSA:1.20.120.1350	-	15	193	1.0E-93	T	12-09-2024	-	-
+SRR17345013_cap3_Contig-21_orf1288	9406ddf5f10a67f127ea92145a600464	571	SUPERFAMILY	SSF56672	DNA/RNA polymerases	128	412	1.63E-5	T	12-09-2024	IPR043502	DNA/RNA polymerase superfamily
+SRR17345013_cap3_Contig-21_orf1288	9406ddf5f10a67f127ea92145a600464	571	Pfam	PF03431	RNA replicase, beta-chain	203	421	1.0E-33	T	12-09-2024	IPR005093	RNA-directed RNA polymerase beta-chain
+SRR17345013_cap3_Contig-21_orf1288	9406ddf5f10a67f127ea92145a600464	571	ProSiteProfiles	PS50522	RdRp of RNA-containing bacteriophages catalytic domain profile.	265	401	17.353159	T	12-09-2024	IPR007096	RNA-directed RNA polymerase, catalytic domain,  bacteriophage
+SRR17345012_cap3_Contig-6_orf336	a7eb92ed15d8909ee0ff4500d59bb529	1660	SUPERFAMILY	SSF52540	P-loop containing nucleoside triphosphate hydrolases	1013	1158	3.45E-5	T	12-09-2024	IPR027417	P-loop containing nucleoside triphosphate hydrolase
+SRR17345012_cap3_Contig-6_orf336	a7eb92ed15d8909ee0ff4500d59bb529	1660	SUPERFAMILY	SSF52949	Macro domain-like	744	875	5.72E-22	T	12-09-2024	IPR043472	Macro domain-like
+SRR17345012_cap3_Contig-6_orf336	a7eb92ed15d8909ee0ff4500d59bb529	1660	SUPERFAMILY	SSF56672	DNA/RNA polymerases	1271	1612	3.86E-35	T	12-09-2024	IPR043502	DNA/RNA polymerase superfamily
+SRR17345012_cap3_Contig-6_orf336	a7eb92ed15d8909ee0ff4500d59bb529	1660	SMART	SM00506	YBR022w_8	754	869	3.2E-23	T	12-09-2024	IPR002589	Macro domain
+SRR17345012_cap3_Contig-6_orf336	a7eb92ed15d8909ee0ff4500d59bb529	1660	ProSiteProfiles	PS51154	Macro domain profile.	742	888	12.529775	T	12-09-2024	IPR002589	Macro domain
+SRR17345012_cap3_Contig-6_orf336	a7eb92ed15d8909ee0ff4500d59bb529	1660	CDD	cd21557	Macro_X_Nsp3-like	767	877	2.11571E-29	T	12-09-2024	IPR044371	Non-structural protein 3, X-domain-like
+SRR17345012_cap3_Contig-6_orf336	a7eb92ed15d8909ee0ff4500d59bb529	1660	Gene3D	G3DSA:3.40.50.300	-	934	1036	3.2E-6	T	12-09-2024	IPR027417	P-loop containing nucleoside triphosphate hydrolase
+SRR17345012_cap3_Contig-6_orf336	a7eb92ed15d8909ee0ff4500d59bb529	1660	Pfam	PF01443	Viral (Superfamily 1) RNA helicase	941	1151	3.1E-35	T	12-09-2024	IPR027351	(+) RNA virus helicase core domain
+SRR17345012_cap3_Contig-6_orf336	a7eb92ed15d8909ee0ff4500d59bb529	1660	ProSiteProfiles	PS50507	RdRp of positive ssRNA viruses catalytic domain profile.	1421	1532	12.346504	T	12-09-2024	IPR007094	RNA-directed RNA polymerase,  catalytic domain
+SRR17345012_cap3_Contig-6_orf336	a7eb92ed15d8909ee0ff4500d59bb529	1660	MobiDBLite	mobidb-lite	consensus disorder prediction	708	746	-	T	12-09-2024	-	-
+SRR17345012_cap3_Contig-6_orf336	a7eb92ed15d8909ee0ff4500d59bb529	1660	CDD	cd18809	SF1_C_RecD	1104	1150	1.80324E-6	T	12-09-2024	-	-
+SRR17345012_cap3_Contig-6_orf336	a7eb92ed15d8909ee0ff4500d59bb529	1660	ProSiteProfiles	PS51743	Alphavirus-like methyltransferase (MT) domain profile.	13	197	28.268564	T	12-09-2024	IPR002588	Alphavirus-like methyltransferase (MT) domain
+SRR17345012_cap3_Contig-6_orf336	a7eb92ed15d8909ee0ff4500d59bb529	1660	CDD	cd23259	Hepeviridae_RdRp	1279	1552	0.0	T	12-09-2024	-	-
+SRR17345012_cap3_Contig-6_orf336	a7eb92ed15d8909ee0ff4500d59bb529	1660	SUPERFAMILY	SSF52540	P-loop containing nucleoside triphosphate hydrolases	941	1062	2.66E-7	T	12-09-2024	IPR027417	P-loop containing nucleoside triphosphate hydrolase
+SRR17345012_cap3_Contig-6_orf336	a7eb92ed15d8909ee0ff4500d59bb529	1660	Pfam	PF00978	RNA dependent RNA polymerase	1336	1635	1.3E-22	T	12-09-2024	IPR001788	RNA-dependent RNA polymerase, C-terminal, virus
+SRR17345012_cap3_Contig-6_orf336	a7eb92ed15d8909ee0ff4500d59bb529	1660	ProSiteProfiles	PS51657	(+)RNA virus helicase core domain profile.	901	1183	50.661022	T	12-09-2024	IPR027351	(+) RNA virus helicase core domain
+SRR17345012_cap3_Contig-6_orf336	a7eb92ed15d8909ee0ff4500d59bb529	1660	FunFam	G3DSA:3.40.50.300:FF:001668	Non-structural polyprotein pORF1	928	1039	7.8E-42	T	12-09-2024	-	-
+SRR17345012_cap3_Contig-6_orf336	a7eb92ed15d8909ee0ff4500d59bb529	1660	Pfam	PF01660	Viral methyltransferase	2	336	5.3E-40	T	12-09-2024	IPR002588	Alphavirus-like methyltransferase (MT) domain
+SRR17345012_cap3_Contig-6_orf336	a7eb92ed15d8909ee0ff4500d59bb529	1660	Pfam	PF12526	Protein of unknown function (DUF3729)	643	752	2.3E-40	T	12-09-2024	IPR022202	Hepatitis E virus, hinge domain
+SRR17345012_cap3_Contig-6_orf336	a7eb92ed15d8909ee0ff4500d59bb529	1660	Pfam	PF05417	Hepatitis E cysteine protease	389	548	4.7E-76	T	12-09-2024	IPR008748	Hepatitis E virus, cysteine peptidase
+SRR17345012_cap3_Contig-6_orf336	a7eb92ed15d8909ee0ff4500d59bb529	1660	Gene3D	G3DSA:3.40.50.300	-	1050	1169	6.7E-17	T	12-09-2024	IPR027417	P-loop containing nucleoside triphosphate hydrolase
+SRR17345012_cap3_Contig-6_orf336	a7eb92ed15d8909ee0ff4500d59bb529	1660	Gene3D	G3DSA:3.40.220.10	Leucine Aminopeptidase, subunit E, domain 1	753	874	2.3E-11	T	12-09-2024	IPR043472	Macro domain-like
+SRR12430148_cap3_Contig-1_orf1849	c4653e839c0e23201eb41813fc8b9957	2214	Pfam	PF14318	Mononegavirales mRNA-capping region V	1151	1394	1.3E-77	T	12-09-2024	IPR026890	Mononegavirales mRNA-capping domain V
+SRR12430148_cap3_Contig-1_orf1849	c4653e839c0e23201eb41813fc8b9957	2214	Pfam	PF12803	mRNA (guanine-7-)methyltransferase (G-7-MTase)	1513	1822	2.9E-74	T	12-09-2024	IPR024352	RNA-dependent RNA polymerase L methyltransferase domain, paramyxovirus
+SRR12430148_cap3_Contig-1_orf1849	c4653e839c0e23201eb41813fc8b9957	2214	TIGRFAM	TIGR04198	paramyx_RNAcap: mRNA capping enzyme	1253	2205	4.2E-197	T	12-09-2024	IPR039736	RNA-directed RNA polymerase L, C-terminal
+SRR12430148_cap3_Contig-1_orf1849	c4653e839c0e23201eb41813fc8b9957	2214	ProSiteProfiles	PS50526	RdRp of negative ssRNA viruses with non-segmented genomes catalytic domain profile.	675	859	66.800423	T	12-09-2024	IPR014023	Mononegavirales RNA-directed RNA polymerase catalytic domain
+SRR12430148_cap3_Contig-1_orf1849	c4653e839c0e23201eb41813fc8b9957	2214	ProSiteProfiles	PS51590	Mononegavirus L protein 2'-O-ribose methyltransferase domain profile.	1774	1981	37.847412	T	12-09-2024	IPR025786	Mononegavirus L protein 2-O-ribose methyltransferase
+SRR12430148_cap3_Contig-1_orf1849	c4653e839c0e23201eb41813fc8b9957	2214	Coils	Coil	Coil	61	81	-	T	12-09-2024	-	-
+SRR12430148_cap3_Contig-1_orf1849	c4653e839c0e23201eb41813fc8b9957	2214	Pfam	PF00946	Mononegavirales RNA dependent RNA polymerase	28	1135	0.0	T	12-09-2024	IPR014023	Mononegavirales RNA-directed RNA polymerase catalytic domain
+SRR16151768_cap3_Contig-1_orf735	08fe893711e66d5984d5cc48302c70ff	580	FunFam	G3DSA:1.10.287.2480:FF:000001	Fusion glycoprotein F0	397	523	1.1E-83	T	12-09-2024	-	-
+SRR16151768_cap3_Contig-1_orf735	08fe893711e66d5984d5cc48302c70ff	580	SUPERFAMILY	SSF58069	Virus ectodomain	95	239	2.48E-35	T	12-09-2024	-	-
+SRR16151768_cap3_Contig-1_orf735	08fe893711e66d5984d5cc48302c70ff	580	Coils	Coil	Coil	82	116	-	T	12-09-2024	-	-
+SRR16151768_cap3_Contig-1_orf735	08fe893711e66d5984d5cc48302c70ff	580	Pfam	PF00523	Fusion glycoprotein F0	36	547	2.7E-147	T	12-09-2024	IPR000776	Precursor fusion glycoprotein F0, Paramyxoviridae
+SRR16151768_cap3_Contig-1_orf735	08fe893711e66d5984d5cc48302c70ff	580	Gene3D	G3DSA:1.10.287.2480	-	399	523	5.6E-35	T	12-09-2024	-	-
+SRR16151768_cap3_Contig-1_orf735	08fe893711e66d5984d5cc48302c70ff	580	Gene3D	G3DSA:1.10.287.2480	-	126	246	5.0E-36	T	12-09-2024	-	-
+SRR16151768_cap3_Contig-1_orf735	08fe893711e66d5984d5cc48302c70ff	580	SUPERFAMILY	SSF58069	Virus ectodomain	419	524	9.23E-29	T	12-09-2024	-	-
+SRR16151768_cap3_Contig-1_orf735	08fe893711e66d5984d5cc48302c70ff	580	FunFam	G3DSA:1.10.287.2480:FF:000002	Fusion glycoprotein F0	122	246	1.7E-78	T	12-09-2024	-	-
+SRR16151768_cap3_Contig-1_orf735	08fe893711e66d5984d5cc48302c70ff	580	Gene3D	G3DSA:6.10.250.1160	-	72	115	4.0E-29	T	12-09-2024	-	-
+SRR16151768_cap3_Contig-1_orf735	08fe893711e66d5984d5cc48302c70ff	580	Gene3D	G3DSA:6.20.370.50	-	32	50	4.9E-14	T	12-09-2024	-	-
+SRR18700679_cap3_Contig-1_orf2661	f0055b7d7f7f57dad926a498406989e9	214	Pfam	PF00951	Arterivirus GL envelope glycoprotein	42	211	6.3E-74	T	12-09-2024	IPR001332	Arterivirus GP5 envelope glycoprotein
+SRR14579882_cap3_Contig-1_orf3211	4d1fd276fa2496fbd808f7cbd3abe0af	2679	CDD	cd21689	stalk_CoV_Nsp13-like	1023	1070	4.79038E-29	T	12-09-2024	-	-
+SRR14579882_cap3_Contig-1_orf3211	4d1fd276fa2496fbd808f7cbd3abe0af	2679	ProSiteProfiles	PS51947	Nidovirus RdRp-associated nucleotidyl transferase (NiRAN) domain profile.	3	252	29.87007	T	12-09-2024	IPR044863	Nidovirus  RdRp-associated nucleotidyl transferase (NiRAN) domain
+SRR14579882_cap3_Contig-1_orf3211	4d1fd276fa2496fbd808f7cbd3abe0af	2679	PANTHER	PTHR43788	DNA2/NAM7 HELICASE FAMILY MEMBER	1199	1512	1.8E-30	T	12-09-2024	-	-
+SRR14579882_cap3_Contig-1_orf3211	4d1fd276fa2496fbd808f7cbd3abe0af	2679	Pfam	PF00680	Viral RNA-dependent RNA polymerase	527	763	1.8E-10	T	12-09-2024	IPR001205	RNA-directed RNA polymerase,  C-terminal domain
+SRR14579882_cap3_Contig-1_orf3211	4d1fd276fa2496fbd808f7cbd3abe0af	2679	Pfam	PF06478	Coronavirus RNA-dependent RNA polymerase, N-terminal	10	358	9.2E-182	T	12-09-2024	IPR009469	RNA polymerase, N-terminal, coronavirus
+SRR14579882_cap3_Contig-1_orf3211	4d1fd276fa2496fbd808f7cbd3abe0af	2679	Gene3D	G3DSA:3.40.50.300	-	1367	1526	3.0E-16	T	12-09-2024	IPR027417	P-loop containing nucleoside triphosphate hydrolase
+SRR14579882_cap3_Contig-1_orf3211	4d1fd276fa2496fbd808f7cbd3abe0af	2679	CDD	cd21409	1B_cv_Nsp13-like	1074	1153	1.51318E-47	T	12-09-2024	IPR044343	Nonstructural protein 13, 1B domain, coronavirus
+SRR14579882_cap3_Contig-1_orf3211	4d1fd276fa2496fbd808f7cbd3abe0af	2679	CDD	cd21660	alphaCoV_Nsp14	1527	2036	0.0	T	12-09-2024	IPR044313	Nonstructural protein 14, alphacoronavirus
+SRR14579882_cap3_Contig-1_orf3211	4d1fd276fa2496fbd808f7cbd3abe0af	2679	ProSiteProfiles	PS51955	Nidovirus 2'-O-methyltransferase (2'-O-MTase) domain profile.	2380	2676	120.569244	T	12-09-2024	IPR046438	Nidovirus 2-O-methyltransferase
+SRR14579882_cap3_Contig-1_orf3211	4d1fd276fa2496fbd808f7cbd3abe0af	2679	ProSiteProfiles	PS51657	(+)RNA virus helicase core domain profile.	1173	1532	25.651554	T	12-09-2024	IPR027351	(+) RNA virus helicase core domain
+SRR14579882_cap3_Contig-1_orf3211	4d1fd276fa2496fbd808f7cbd3abe0af	2679	SUPERFAMILY	SSF52540	P-loop containing nucleoside triphosphate hydrolases	1200	1505	3.16E-27	T	12-09-2024	IPR027417	P-loop containing nucleoside triphosphate hydrolase
+SRR14579882_cap3_Contig-1_orf3211	4d1fd276fa2496fbd808f7cbd3abe0af	2679	SUPERFAMILY	SSF53335	S-adenosyl-L-methionine-dependent methyltransferases	2041	2231	8.06E-76	T	12-09-2024	IPR029063	S-adenosyl-L-methionine-dependent methyltransferase superfamily
+SRR14579882_cap3_Contig-1_orf3211	4d1fd276fa2496fbd808f7cbd3abe0af	2679	Pfam	PF19216	Coronavirus replicase NSP15, middle domain	2102	2217	4.5E-49	T	12-09-2024	IPR043608	Nonstructural protein 15, middle domain, coronavirus
+SRR14579882_cap3_Contig-1_orf3211	4d1fd276fa2496fbd808f7cbd3abe0af	2679	Pfam	PF06471	Coronavirus proofreading exoribonuclease	1526	2035	6.1E-265	T	12-09-2024	IPR009466	Non-structural protein 14, coronavirus
+SRR14579882_cap3_Contig-1_orf3211	4d1fd276fa2496fbd808f7cbd3abe0af	2679	CDD	cd21401	ZBD_cv_Nsp13-like	925	1019	2.84894E-57	T	12-09-2024	IPR027352	Nonstructural protein 13, zinc-binding domain, coronavirus-like
+SRR14579882_cap3_Contig-1_orf3211	4d1fd276fa2496fbd808f7cbd3abe0af	2679	Gene3D	G3DSA:3.40.50.150	Vaccinia Virus protein VP39	2379	2679	4.0E-136	T	12-09-2024	IPR029063	S-adenosyl-L-methionine-dependent methyltransferase superfamily
+SRR14579882_cap3_Contig-1_orf3211	4d1fd276fa2496fbd808f7cbd3abe0af	2679	Pfam	PF19219	Coronavirus replicase NSP15, N-terminal oligomerisation	2041	2101	2.0E-31	T	12-09-2024	IPR043606	Coronavirus replicase NSP15, N-terminal oligomerization
+SRR14579882_cap3_Contig-1_orf3211	4d1fd276fa2496fbd808f7cbd3abe0af	2679	Pfam	PF19215	Coronavirus replicase NSP15, uridylate-specific endoribonuclease	2224	2377	1.1E-67	T	12-09-2024	IPR043609	NendoU domain, nidovirus
+SRR14579882_cap3_Contig-1_orf3211	4d1fd276fa2496fbd808f7cbd3abe0af	2679	SUPERFAMILY	SSF56672	DNA/RNA polymerases	459	916	1.68E-50	T	12-09-2024	IPR043502	DNA/RNA polymerase superfamily
+SRR14579882_cap3_Contig-1_orf3211	4d1fd276fa2496fbd808f7cbd3abe0af	2679	ProSiteProfiles	PS51958	Nidoviral uridylate-specific endoribonuclease (NendoU) domain profile.	2236	2376	66.531876	T	12-09-2024	IPR043609	NendoU domain, nidovirus
+SRR14579882_cap3_Contig-1_orf3211	4d1fd276fa2496fbd808f7cbd3abe0af	2679	ProSiteProfiles	PS51954	Coronavirus (CoV) guanine-N7-methyltransferase (N7-MTase) domain profile.	1817	2038	98.906837	T	12-09-2024	IPR046435	NSP14, guanine-N7-methyltransferase domain, coronavirus
+SRR14579882_cap3_Contig-1_orf3211	4d1fd276fa2496fbd808f7cbd3abe0af	2679	CDD	cd21723	alphaCoV_Nsp13-helicase	1176	1515	0.0	T	12-09-2024	-	-
+SRR14579882_cap3_Contig-1_orf3211	4d1fd276fa2496fbd808f7cbd3abe0af	2679	CDD	cd21161	NendoU_cv_Nsp15-like	2226	2377	1.78956E-85	T	12-09-2024	IPR044401	NSP15, NendoU domain, coronavirus
+SRR14579882_cap3_Contig-1_orf3211	4d1fd276fa2496fbd808f7cbd3abe0af	2679	ProSiteProfiles	PS51960	Coronavirus (CoV) Nsp15 N-terminal oligomerization domain profile.	2041	2101	31.37244	T	12-09-2024	IPR043606	Coronavirus replicase NSP15, N-terminal oligomerization
+SRR14579882_cap3_Contig-1_orf3211	4d1fd276fa2496fbd808f7cbd3abe0af	2679	ProSiteProfiles	PS51948	Coronavirus Nsp12 RNA-dependent RNA polymerase (RdRp) domain profile.	357	924	313.959961	T	12-09-2024	IPR046441	NSP12 RNA-dependent RNA polymerase, coronavirus
+SRR14579882_cap3_Contig-1_orf3211	4d1fd276fa2496fbd808f7cbd3abe0af	2679	Pfam	PF13087	AAA domain	1359	1500	7.9E-8	T	12-09-2024	IPR041679	DNA2/NAM7 helicase-like, C-terminal
+SRR14579882_cap3_Contig-1_orf3211	4d1fd276fa2496fbd808f7cbd3abe0af	2679	CDD	cd20762	capping_2-OMTase_Nidovirales	2421	2613	3.37339E-52	T	12-09-2024	IPR009461	Non-structural protein NSP16, coronavirus-like
+SRR14579882_cap3_Contig-1_orf3211	4d1fd276fa2496fbd808f7cbd3abe0af	2679	Gene3D	G3DSA:3.40.50.11580	-	2104	2221	6.1E-47	T	12-09-2024	IPR043174	Non-structural protein NSP15, middle domain superfamily
+SRR14579882_cap3_Contig-1_orf3211	4d1fd276fa2496fbd808f7cbd3abe0af	2679	ProSiteProfiles	PS51953	Nidovirus 3'-5' exoribonuclease (ExoN) domain profile.	1594	1808	60.623867	T	12-09-2024	IPR046436	Nidovirus 3'-5' exoribonuclease domain
+SRR14579882_cap3_Contig-1_orf3211	4d1fd276fa2496fbd808f7cbd3abe0af	2679	SUPERFAMILY	SSF142877	EndoU-like	2223	2374	6.47E-60	T	12-09-2024	IPR037227	Endoribonuclease EndoU-like
+SRR14579882_cap3_Contig-1_orf3211	4d1fd276fa2496fbd808f7cbd3abe0af	2679	CDD	cd21167	M_alpha_beta_cv_Nsp15-like	2105	2228	2.93534E-61	T	12-09-2024	IPR044322	Nonstructural protein 15, middle domain, alpha/betacoronavirus
+SRR14579882_cap3_Contig-1_orf3211	4d1fd276fa2496fbd808f7cbd3abe0af	2679	CDD	cd21588	alphaCoV_RdRp	4	924	0.0	T	12-09-2024	IPR044356	RNA-dependent RNA polymerase, alphacoronavirus
+SRR14579882_cap3_Contig-1_orf3211	4d1fd276fa2496fbd808f7cbd3abe0af	2679	Pfam	PF13604	AAA domain	1199	1332	1.8E-8	T	12-09-2024	-	-
+SRR14579882_cap3_Contig-1_orf3211	4d1fd276fa2496fbd808f7cbd3abe0af	2679	ProSiteProfiles	PS51961	Arterivirus Nsp11 N-terminal/coronavirus NSP15 middle (AV-Nsp11N/CoV-Nsp15M) domain profile.	2102	2219	43.404602	T	12-09-2024	IPR046440	Arterivirus Nsp11 N-terminal/Coronavirus NSP15 middle domain
+SRR14579882_cap3_Contig-1_orf3211	4d1fd276fa2496fbd808f7cbd3abe0af	2679	ProSiteProfiles	PS51653	Coronaviridae zinc-binding (CV ZBD) domain profile.	925	1008	34.386169	T	12-09-2024	IPR027352	Nonstructural protein 13, zinc-binding domain, coronavirus-like
+SRR14579882_cap3_Contig-1_orf3211	4d1fd276fa2496fbd808f7cbd3abe0af	2679	Gene3D	G3DSA:3.40.50.300	-	1154	1340	7.6E-18	T	12-09-2024	IPR027417	P-loop containing nucleoside triphosphate hydrolase
+SRR14579882_cap3_Contig-1_orf3211	4d1fd276fa2496fbd808f7cbd3abe0af	2679	CDD	cd21171	NTD_alpha_betaCoV_Nsp15-like	2041	2101	9.86906E-39	T	12-09-2024	IPR044330	Nonstructural protein 15, N-terminal domain, alpha/beta-coronavirus
+SRR14579882_cap3_Contig-1_orf3211	4d1fd276fa2496fbd808f7cbd3abe0af	2679	Pfam	PF06460	Coronavirus 2'-O-methyltransferase	2380	2678	2.0E-160	T	12-09-2024	IPR009461	Non-structural protein NSP16, coronavirus-like
+SRR14579882_cap3_Contig-1_orf3211	4d1fd276fa2496fbd808f7cbd3abe0af	2679	FunFam	G3DSA:3.40.50.300:FF:001105	Orf1ab polyprotein	1367	1525	7.7E-86	T	12-09-2024	-	-
+SRR14579882_cap3_Contig-1_orf3211	4d1fd276fa2496fbd808f7cbd3abe0af	2679	Gene3D	G3DSA:3.30.160.820	-	2039	2103	3.6E-30	T	12-09-2024	IPR042515	Non-structural protein NSP15,  N-terminal domain superfamily, coronavirus
+SRR12430148_cap3_Contig-1_orf1761	bbd2ffaf00bf32e1cfc3bddba0c99fea	557	Pfam	PF00523	Fusion glycoprotein F0	40	520	2.5E-143	T	12-09-2024	IPR000776	Precursor fusion glycoprotein F0, Paramyxoviridae
+SRR12430148_cap3_Contig-1_orf1761	bbd2ffaf00bf32e1cfc3bddba0c99fea	557	Gene3D	G3DSA:2.60.40.1690	Head and neck region of the ectodomain of NDV fusion glycoprotein	385	441	3.5E-17	T	12-09-2024	-	-
+SRR12430148_cap3_Contig-1_orf1761	bbd2ffaf00bf32e1cfc3bddba0c99fea	557	Gene3D	G3DSA:2.40.490.10	Newcastle disease virus like domain	299	384	1.2E-21	T	12-09-2024	-	-
+SRR12430148_cap3_Contig-1_orf1761	bbd2ffaf00bf32e1cfc3bddba0c99fea	557	Gene3D	G3DSA:1.10.287.2480	-	137	298	5.8E-45	T	12-09-2024	-	-
+SRR12430148_cap3_Contig-1_orf1761	bbd2ffaf00bf32e1cfc3bddba0c99fea	557	SUPERFAMILY	SSF58069	Virus ectodomain	73	227	3.04E-43	T	12-09-2024	-	-
+SRR12430148_cap3_Contig-1_orf1761	bbd2ffaf00bf32e1cfc3bddba0c99fea	557	Gene3D	G3DSA:6.10.10.110	-	38	115	2.7E-13	T	12-09-2024	-	-
+SRR12430148_cap3_Contig-1_orf1761	bbd2ffaf00bf32e1cfc3bddba0c99fea	557	SUPERFAMILY	SSF69922	Head and neck region of the ectodomain of NDV fusion glycoprotein	194	458	4.18E-73	T	12-09-2024	-	-
+SRR18779479_cap3_Contig-1_orf236	abb7fcff6f9eccebfe9eea651ff026d8	971	SUPERFAMILY	SSF52540	P-loop containing nucleoside triphosphate hydrolases	97	341	1.46E-14	T	12-09-2024	IPR027417	P-loop containing nucleoside triphosphate hydrolase
+SRR18779479_cap3_Contig-1_orf236	abb7fcff6f9eccebfe9eea651ff026d8	971	SUPERFAMILY	SSF56672	DNA/RNA polymerases	602	924	1.73E-45	T	12-09-2024	IPR043502	DNA/RNA polymerase superfamily
+SRR18779479_cap3_Contig-1_orf236	abb7fcff6f9eccebfe9eea651ff026d8	971	Pfam	PF00978	RNA dependent RNA polymerase	522	949	6.0E-96	T	12-09-2024	IPR001788	RNA-dependent RNA polymerase, C-terminal, virus
+SRR18779479_cap3_Contig-1_orf236	abb7fcff6f9eccebfe9eea651ff026d8	971	Gene3D	G3DSA:3.40.50.300	-	246	393	4.1E-34	T	12-09-2024	IPR027417	P-loop containing nucleoside triphosphate hydrolase
+SRR18779479_cap3_Contig-1_orf236	abb7fcff6f9eccebfe9eea651ff026d8	971	Gene3D	G3DSA:3.40.50.300	-	95	235	5.3E-29	T	12-09-2024	IPR027417	P-loop containing nucleoside triphosphate hydrolase
+SRR18779479_cap3_Contig-1_orf236	abb7fcff6f9eccebfe9eea651ff026d8	971	ProSiteProfiles	PS50507	RdRp of positive ssRNA viruses catalytic domain profile.	720	832	14.572425	T	12-09-2024	IPR007094	RNA-directed RNA polymerase,  catalytic domain
+SRR18779479_cap3_Contig-1_orf236	abb7fcff6f9eccebfe9eea651ff026d8	971	Pfam	PF01443	Viral (Superfamily 1) RNA helicase	101	366	8.7E-37	T	12-09-2024	IPR027351	(+) RNA virus helicase core domain
+SRR18779479_cap3_Contig-1_orf236	abb7fcff6f9eccebfe9eea651ff026d8	971	CDD	cd23254	Kitaviridae_RdRp	636	901	5.09605E-134	T	12-09-2024	-	-
+SRR16151768_cap3_Contig-1_orf789	07575a09d024edfa04c804282a91394f	2174	Pfam	PF00946	Mononegavirales RNA dependent RNA polymerase	25	1189	0.0	T	12-09-2024	IPR014023	Mononegavirales RNA-directed RNA polymerase catalytic domain
+SRR16151768_cap3_Contig-1_orf789	07575a09d024edfa04c804282a91394f	2174	Pfam	PF14318	Mononegavirales mRNA-capping region V	1210	1408	2.0E-15	T	12-09-2024	IPR026890	Mononegavirales mRNA-capping domain V
+SRR16151768_cap3_Contig-1_orf789	07575a09d024edfa04c804282a91394f	2174	ProSiteProfiles	PS50526	RdRp of negative ssRNA viruses with non-segmented genomes catalytic domain profile.	702	886	51.526768	T	12-09-2024	IPR014023	Mononegavirales RNA-directed RNA polymerase catalytic domain
+SRR16151768_cap3_Contig-1_orf789	07575a09d024edfa04c804282a91394f	2174	TIGRFAM	TIGR04198	paramyx_RNAcap: mRNA capping enzyme	1294	2169	1.3E-156	T	12-09-2024	IPR039736	RNA-directed RNA polymerase L, C-terminal
+SRR16151768_cap3_Contig-1_orf789	07575a09d024edfa04c804282a91394f	2174	ProSiteProfiles	PS51590	Mononegavirus L protein 2'-O-ribose methyltransferase domain profile.	1829	2017	49.87138	T	12-09-2024	IPR025786	Mononegavirus L protein 2-O-ribose methyltransferase
+SRR17345013_cap3_Contig-21_orf1355	31d446036b2612d286108fa77a968b75	95	MobiDBLite	mobidb-lite	consensus disorder prediction	76	95	-	T	12-09-2024	-	-
+SRR18700679_cap3_Contig-1_orf2575	e3130c33968669f96464bf663f12a046	2490	CDD	cd22528	av_Nsp3_ER-remodelling	1587	1644	5.52806E-22	T	12-09-2024	-	-
+SRR18700679_cap3_Contig-1_orf2575	e3130c33968669f96464bf663f12a046	2490	Gene3D	G3DSA:3.90.70.60	-	82	197	4.2E-69	T	12-09-2024	IPR038155	Arterivirus papain-like cysteine protease alpha (PCPalpha) domain superfamily
+SRR18700679_cap3_Contig-1_orf2575	e3130c33968669f96464bf663f12a046	2490	ProSiteProfiles	PS51538	Arterivirus nsp2 cysteine protease (AV CP) domain profile.	445	552	42.688683	T	12-09-2024	IPR008743	Arterivirus Nsp2, peptidase C33
+SRR18700679_cap3_Contig-1_orf2575	e3130c33968669f96464bf663f12a046	2490	Gene3D	G3DSA:3.30.40.20	-	1951	2000	3.4E-30	T	12-09-2024	IPR023183	Serine protease, chymotrypsin-like serine protease, C-terminal
+SRR18700679_cap3_Contig-1_orf2575	e3130c33968669f96464bf663f12a046	2490	Pfam	PF05411	Equine arteritis virus putative proteinase	273	399	8.9E-55	T	12-09-2024	IPR025773	Arterivirus papain-like cysteine protease beta (PCPbeta) domain
+SRR18700679_cap3_Contig-1_orf2575	e3130c33968669f96464bf663f12a046	2490	Pfam	PF05579	Equine arteritis virus serine endopeptidase S32	1704	2001	2.1E-144	T	12-09-2024	IPR008760	Equine arteritis virus peptidase S32
+SRR18700679_cap3_Contig-1_orf2575	e3130c33968669f96464bf663f12a046	2490	MobiDBLite	mobidb-lite	consensus disorder prediction	1137	1189	-	T	12-09-2024	-	-
+SRR18700679_cap3_Contig-1_orf2575	e3130c33968669f96464bf663f12a046	2490	MobiDBLite	mobidb-lite	consensus disorder prediction	842	858	-	T	12-09-2024	-	-
+SRR18700679_cap3_Contig-1_orf2575	e3130c33968669f96464bf663f12a046	2490	Gene3D	G3DSA:3.30.1330.220	Arterivirus nonstructural protein 7 alpha	2187	2316	2.0E-51	T	12-09-2024	IPR038451	Arterivirus nsp7 alpha superfamily
+SRR18700679_cap3_Contig-1_orf2575	e3130c33968669f96464bf663f12a046	2490	Pfam	PF14756	Peptidase_C33-associated domain	554	699	2.0E-92	T	12-09-2024	IPR032785	Replicase polyprotein 1ab, peptidase C33-associated domain
+SRR18700679_cap3_Contig-1_orf2575	e3130c33968669f96464bf663f12a046	2490	ProSiteProfiles	PS51493	Arterivirus nsp4 proteinase domain profile.	1797	2000	34.748623	T	12-09-2024	IPR023338	Arterivirus NSP4 peptidase domain
+SRR18700679_cap3_Contig-1_orf2575	e3130c33968669f96464bf663f12a046	2490	SUPERFAMILY	SSF50494	Trypsin-like serine proteases	1807	1970	1.35E-16	T	12-09-2024	IPR009003	Peptidase S1, PA clan
+SRR18700679_cap3_Contig-1_orf2575	e3130c33968669f96464bf663f12a046	2490	Pfam	PF14757	Immunogenic region of nsp2 protein of arterivirus polyprotein	930	1062	1.1E-83	T	12-09-2024	IPR032855	Arterivirus polyprotein, nsp2, immunogenic region
+SRR18700679_cap3_Contig-1_orf2575	e3130c33968669f96464bf663f12a046	2490	Pfam	PF14757	Immunogenic region of nsp2 protein of arterivirus polyprotein	821	931	2.4E-52	T	12-09-2024	IPR032855	Arterivirus polyprotein, nsp2, immunogenic region
+SRR18700679_cap3_Contig-1_orf2575	e3130c33968669f96464bf663f12a046	2490	Gene3D	G3DSA:4.10.80.390	-	31	81	7.8E-33	T	12-09-2024	-	-
+SRR18700679_cap3_Contig-1_orf2575	e3130c33968669f96464bf663f12a046	2490	MobiDBLite	mobidb-lite	consensus disorder prediction	828	885	-	T	12-09-2024	-	-
+SRR18700679_cap3_Contig-1_orf2575	e3130c33968669f96464bf663f12a046	2490	MobiDBLite	mobidb-lite	consensus disorder prediction	424	444	-	T	12-09-2024	-	-
+SRR18700679_cap3_Contig-1_orf2575	e3130c33968669f96464bf663f12a046	2490	Pfam	PF05410	Porcine arterivirus-type cysteine proteinase alpha	74	178	4.9E-61	T	12-09-2024	IPR008741	Arterivirus papain-like cysteine protease alpha (PCPalpha) domain
+SRR18700679_cap3_Contig-1_orf2575	e3130c33968669f96464bf663f12a046	2490	Gene3D	G3DSA:3.90.70.160	-	445	576	3.7E-42	T	12-09-2024	-	-
+SRR18700679_cap3_Contig-1_orf2575	e3130c33968669f96464bf663f12a046	2490	Coils	Coil	Coil	784	804	-	T	12-09-2024	-	-
+SRR18700679_cap3_Contig-1_orf2575	e3130c33968669f96464bf663f12a046	2490	Pfam	PF16749	Arterivirus nonstructural protein 7 alpha	2188	2316	3.5E-54	T	12-09-2024	IPR031932	Arterivirus nonstructural protein 7 alpha
+SRR18700679_cap3_Contig-1_orf2575	e3130c33968669f96464bf663f12a046	2490	Gene3D	G3DSA:2.30.31.30	Arterivirus nps1beta, nuclease domain	198	277	1.0E-42	T	12-09-2024	-	-
+SRR18700679_cap3_Contig-1_orf2575	e3130c33968669f96464bf663f12a046	2490	ProSiteProfiles	PS51539	Arterivirus papain-like cysteine protease alpha (PCPalpha) domain profile.	86	197	59.342541	T	12-09-2024	IPR008741	Arterivirus papain-like cysteine protease alpha (PCPalpha) domain
+SRR18700679_cap3_Contig-1_orf2575	e3130c33968669f96464bf663f12a046	2490	Pfam	PF05412	Equine arterivirus Nsp2-type cysteine proteinase	446	552	1.2E-51	T	12-09-2024	IPR008743	Arterivirus Nsp2, peptidase C33
+SRR18700679_cap3_Contig-1_orf2575	e3130c33968669f96464bf663f12a046	2490	ProSiteProfiles	PS51540	Arterivirus papain-like cysteine protease beta (PCPbeta) domain profile.	280	400	40.706421	T	12-09-2024	IPR025773	Arterivirus papain-like cysteine protease beta (PCPbeta) domain
+SRR18700679_cap3_Contig-1_orf2575	e3130c33968669f96464bf663f12a046	2490	Gene3D	G3DSA:3.90.70.70	-	278	400	3.7E-57	T	12-09-2024	IPR038154	Arterivirus papain-like cysteine protease beta (PCPbeta) domain superfamily
+SRR18700679_cap3_Contig-1_orf2575	e3130c33968669f96464bf663f12a046	2490	Gene3D	G3DSA:2.40.10.10	-	1877	1950	4.5E-38	T	12-09-2024	IPR043504	Peptidase S1, PA clan, chymotrypsin-like fold
+SRR18700679_cap3_Contig-1_orf2575	e3130c33968669f96464bf663f12a046	2490	Gene3D	G3DSA:2.40.10.10	-	1804	1876	1.6E-37	T	12-09-2024	IPR043504	Peptidase S1, PA clan, chymotrypsin-like fold
+SRR13364363_cap3_Contig-11_orf3051	e146d2f5664e02bcb1eae1fe829ef735	508	ProSiteProfiles	PS50507	RdRp of positive ssRNA viruses catalytic domain profile.	239	355	8.726782	T	12-09-2024	IPR007094	RNA-directed RNA polymerase,  catalytic domain
+SRR13364363_cap3_Contig-11_orf3051	e146d2f5664e02bcb1eae1fe829ef735	508	Pfam	PF02123	Viral RNA-directed RNA-polymerase	27	407	8.9E-84	T	12-09-2024	IPR001795	RNA-directed RNA polymerase, luteovirus
+SRR13364363_cap3_Contig-11_orf3051	e146d2f5664e02bcb1eae1fe829ef735	508	SUPERFAMILY	SSF56672	DNA/RNA polymerases	82	420	1.29E-49	T	12-09-2024	IPR043502	DNA/RNA polymerase superfamily
+SRR14579882_cap3_Contig-1_orf3272	e14ceb2ef9589e73b330978fc02d6016	369	SUPERFAMILY	SSF103068	Nucleocapsid protein dimerization domain	268	369	5.89E-36	T	12-09-2024	IPR037179	Nucleocapsid protein, C-terminal
+SRR14579882_cap3_Contig-1_orf3272	e14ceb2ef9589e73b330978fc02d6016	369	MobiDBLite	mobidb-lite	consensus disorder prediction	130	220	-	T	12-09-2024	-	-
+SRR14579882_cap3_Contig-1_orf3272	e14ceb2ef9589e73b330978fc02d6016	369	CDD	cd21554	CoV_N-NTD	21	141	1.38819E-55	T	12-09-2024	IPR044345	Nucleocapsid (N) protein, N-terminal domain,  coronavirus
+SRR14579882_cap3_Contig-1_orf3272	e14ceb2ef9589e73b330978fc02d6016	369	ProSiteProfiles	PS51928	Coronavirus nucleocapsid (CoV N) protein N-terminal (NTD) domain profile.	21	143	64.481819	T	12-09-2024	IPR044345	Nucleocapsid (N) protein, N-terminal domain,  coronavirus
+SRR14579882_cap3_Contig-1_orf3272	e14ceb2ef9589e73b330978fc02d6016	369	MobiDBLite	mobidb-lite	consensus disorder prediction	240	266	-	T	12-09-2024	-	-
+SRR14579882_cap3_Contig-1_orf3272	e14ceb2ef9589e73b330978fc02d6016	369	ProSiteProfiles	PS51929	Coronavirus nucleocapsid (CoV N) protein C-terminal (CTD) domain profile.	263	369	57.000198	T	12-09-2024	IPR044344	Nucleocapsid (N) protein, C-terminal domain, coronavirus
+SRR14579882_cap3_Contig-1_orf3272	e14ceb2ef9589e73b330978fc02d6016	369	MobiDBLite	mobidb-lite	consensus disorder prediction	115	280	-	T	12-09-2024	-	-
+SRR14579882_cap3_Contig-1_orf3272	e14ceb2ef9589e73b330978fc02d6016	369	Pfam	PF00937	Coronavirus nucleocapsid	13	179	3.8E-67	T	12-09-2024	IPR001218	Nucleocapsid protein, coronavirus
+SRR14579882_cap3_Contig-1_orf3272	e14ceb2ef9589e73b330978fc02d6016	369	Pfam	PF00937	Coronavirus nucleocapsid	183	369	7.0E-56	T	12-09-2024	IPR001218	Nucleocapsid protein, coronavirus
+SRR14579882_cap3_Contig-1_orf3272	e14ceb2ef9589e73b330978fc02d6016	369	CDD	cd21595	CoV_N-CTD	285	368	6.93371E-45	T	12-09-2024	IPR044344	Nucleocapsid (N) protein, C-terminal domain, coronavirus
+SRR14579882_cap3_Contig-1_orf3272	e14ceb2ef9589e73b330978fc02d6016	369	SUPERFAMILY	SSF110304	Coronavirus RNA-binding domain	14	142	1.14E-44	T	12-09-2024	IPR037195	Nucleocapsid protein, N-terminal
+SRR17345012_cap3_Contig-13_orf604	733ffc00ecb6914dfdc0e2293e1a16a7	490	Pfam	PF03863	Phage maturation protein	354	381	5.2E-6	T	12-09-2024	IPR005563	Assembly protein

@@ -17,3 +17,5 @@ path <- "output/mammals/"
 
 ExportVirusPlot(plot = sra_runfil$plot,file_name = "gesamtuberblick_mammals.png",path=path,
                 width = 8,height = 7,units = "in")
+
+

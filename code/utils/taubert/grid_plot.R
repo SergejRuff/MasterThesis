@@ -4,6 +4,7 @@ library(Virusparies)
 library(ggplot2)
 
 taubert <- ImportVirusTable("data/hittables_taubert/largedna/combined_virusgatherer-cap3.tsv")
+taubert_gatherer <- ImportVirusTable("data/hittables_taubert/")
 
 export_path <- "output/TaubertDatacombined/plots/largedna/"
 

@@ -2,6 +2,7 @@ rm(list = ls())
 
 library(Virusparies)
 library(ggplot2)
+library(patchwork)
 
 taubert_small <- ImportVirusTable("data/hittables_taubert/smalldna/combined_virusgatherer-cap3.tsv")
 
@@ -67,8 +68,15 @@ taubert_rna_p3 <- VhgBoxplot(taubert_rna,x_column = "ViralRefSeq_taxonomy",y_col
 
 ################################# Export
 
+# plot_list <- list(taubert_small_p1$plot,taubert_small_p2$boxp,taubert_small_p3$boxp,
+#                   taubert_large_p1$plot,taubert_large_p2$boxp,taubert_large_p3$boxp,
+#                   taubert_rna_p1$plot,taubert_rna_p2$boxp,taubert_rna_p3$boxp)
+
+taubert_large_p1$plot <- taubert_large_p1$plot + scale_y_continuous(limits = c(0, 10))
+taubert_rna_p1$plot <- taubert_rna_p1$plot + scale_y_continuous(limits = c(0, 10))
+
 plot_list <- list(taubert_small_p1$plot,taubert_small_p2$boxp,taubert_small_p3$boxp,
-                  taubert_large_p1$plot,taubert_large_p2$boxp,taubert_large_p3$boxp,
+                  taubert_large_p1$plot,taubert_large_p2$boxp,taubert_large_p3$boxp
                   taubert_rna_p1$plot,taubert_rna_p2$boxp,taubert_rna_p3$boxp)
 
 # Adjust y-axis title margin
@@ -76,7 +84,69 @@ plot_list <- lapply(plot_list, function(p) {
   p + theme(axis.title.y = element_text(margin = margin(r = 10, unit = "pt")))
 })
 
+# 
+# ExportVirusPlot("grid_9x9_taubert.png",plot = plot_list,
+#                 width = 13,height = 9,units = "in",limitsize = FALSE,ncol = 3,nrow = 3,greedy = TRUE,align="h",
+#                 labels = c("A","B","C","D","E","F","G","H","I"),path = export_path,rel_widths = c(1, 0.6, 1))
 
-ExportVirusPlot("grid_9x9_taubert.png",plot = plot_list,
-                width = 13,height = 9,units = "in",limitsize = FALSE,ncol = 3,nrow = 3,greedy = TRUE,align="h",
-                labels = c("A","B","C","D","E","F","G","H","I"),path = export_path,rel_widths = c(1, 0.6, 1))
+taubert_small_p1$plot <- taubert_small_p1$plot + scale_y_continuous(limits = c(0, 5))
+taubert_large_p1$plot <- taubert_large_p1$plot + scale_y_continuous(limits = c(0, 5))
+taubert_rna_p1$plot <- taubert_rna_p1$plot + scale_y_continuous(limits = c(0, 5))
+
+taubert_small_p3$boxp <- taubert_small_p3$boxp + scale_y_continuous(limits = c(50, 270))
+taubert_large_p3$boxp <- taubert_large_p3$boxp + scale_y_continuous(limits = c(50, 270))
+taubert_rna_p3$boxp <- taubert_rna_p3$boxp + scale_y_continuous(limits = c(50, 270))
+
+combined_gatherer_plots <- (taubert_small_p1$plot|taubert_small_p2$boxp|taubert_small_p3$boxp)/
+  (taubert_large_p1$plot|taubert_large_p2$boxp|taubert_large_p3$boxp)/
+  (taubert_rna_p1$plot|taubert_rna_p2$boxp|taubert_rna_p3$boxp)+
+  plot_annotation(tag_levels = "A") 
+
+ggsave("grid_9x9_taubert_gatherer.png", plot = combined_gatherer_plots, width = 13, height = 9, units = "in")
+
+
+taubert_large_p15 <- VhSumHitsBarplot(taubert_large,groupby = "ViralRefSeq_taxonomy",reorder_criteria = NULL,
+                                      theme_choice = "linedraw_dotted",plot_text = 1,legend_position = "none",ytext_size = 9,
+                                      title = NULL,xtext_size = 11,legend_text_size = 12,plot_text_size = 5,xlabel = "Large DNA viruses",subtitle_size = 11,axis_title_size = 10,remove_group_labels = TRUE)
+
+
+
+taubert_rna_p15 <- VhSumHitsBarplot(taubert_rna,groupby = "ViralRefSeq_taxonomy",reorder_criteria = NULL,
+                                    theme_choice = "linedraw_dotted",plot_text = 1,legend_position = "none",ytext_size = 9,
+                                    title = NULL,xtext_size = 11,legend_text_size = 12,plot_text_size = 5,xlabel = "RNA viruses",subtitle_size = 11,axis_title_size = 10,remove_group_labels = TRUE)
+
+
+taubert_large_p15$plot <- taubert_large_p15$plot + scale_y_continuous(limits = c(0, 30))
+taubert_rna_p15$plot <- taubert_rna_p15$plot + scale_y_continuous(limits = c(0, 30))
+
+combined_plot <- (taubert_large_p1$plot |taubert_large_p15$plot | taubert_large_p2$boxp) / (taubert_rna_p1$plot |taubert_rna_p15$plot | taubert_rna_p2$boxp)+
+  plot_annotation(tag_levels = "A") 
+
+ggsave("grid_3x3_taubert_hunter.png", plot = combined_plot, width = 13, height = 9, units = "in")
+
+
+pups <- unique(taubert_small$run_id)
+pups <- as.data.frame(pups)
+pups$pups <- gsub("_R[1,2]$","",pups$pups)
+anszahl_an_samples <- gsub("_R[1,2]_001$","",pups$pups)
+anszahl_an_samples <- unique(anszahl_an_samples)
+
+testerino <- VhgSubsetHittable(peks,group_column = "ViralRefSeq_taxonomy",ViralRefSeq_E_criteria = 1e-5)
+
+pups <- unique(testerino$run_id)
+pups <- as.data.frame(pups)
+pups$pups <- gsub("_R[1,2]$","",pups$pups)
+anszahl_an_samples <- gsub("_R[1,2]_001$","",pups$pups)
+anszahl_an_samples <- unique(anszahl_an_samples)
+
+
+library(magick)
+pipeline <- image_read("/media/sergej/My Book/Masterarbeit/VhVg_workflow_3.drawio(2).png") %>%
+  image_ggplot()
+
+combined_gatherer_plots <- (pipeline| (taubert_small_p1$plot|taubert_small_p2$boxp|taubert_small_p3$boxp)/
+                (taubert_large_p1$plot|taubert_large_p2$boxp|taubert_large_p3$boxp)/
+                (taubert_rna_p1$plot|taubert_rna_p2$boxp|taubert_rna_p3$boxp))+plot_annotation(tag_levels = "A")&
+  theme(plot.tag = element_text(face = 'bold',size = 25))
+
+ggsave("plot_and-pipeline.tiff", plot = combined_gatherer_plots, width = 20, height = 15, units = "in")
