@@ -1,204 +1,170 @@
-<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (X11; Linux x86_64; rv:129.0) Gecko/20100101 Firefox/129.0" version="24.7.12">
-  <diagram name="Page-1" id="UmnG6x5tp6qrb22gdRWd">
-    <mxGraphModel dx="1418" dy="764" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
-      <root>
-        <mxCell id="0" />
-        <mxCell id="1" parent="0" />
-        <mxCell id="DtNA1OOpv918O6FHiLsb-5" value="&lt;font style=&quot;font-size: 17px;&quot;&gt;VirusHunter&lt;/font&gt;" style="swimlane;whiteSpace=wrap;html=1;startSize=47;rounded=1;labelBackgroundColor=none;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
-          <mxGeometry x="340" y="174" width="510" height="573" as="geometry" />
-        </mxCell>
-        <mxCell id="JjrdLrowcXQNLenx9GRh-69" style="edgeStyle=elbowEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;startArrow=none;endArrow=none;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;labelBackgroundColor=none;fontColor=default;strokeWidth=3;" edge="1" parent="DtNA1OOpv918O6FHiLsb-5" target="JjrdLrowcXQNLenx9GRh-68">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="178" y="180" as="sourcePoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="JjrdLrowcXQNLenx9GRh-63" value="&lt;div&gt;&lt;b&gt;RNA&amp;nbsp;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;viruses profiles&lt;/b&gt;&lt;/div&gt;" style="labelPosition=center;verticalLabelPosition=middle;align=center;html=1;shape=mxgraph.basic.shaded_button;dx=10;strokeColor=#d6b656;whiteSpace=wrap;rounded=1;labelBackgroundColor=none;fillColor=#fff2cc;" vertex="1" parent="DtNA1OOpv918O6FHiLsb-5">
-          <mxGeometry x="156" y="53" width="111" height="63" as="geometry" />
-        </mxCell>
-        <mxCell id="JjrdLrowcXQNLenx9GRh-65" value="&lt;div&gt;&lt;b&gt;Large DNA&amp;nbsp;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;viruses profiles&lt;/b&gt;&lt;/div&gt;" style="labelPosition=center;verticalLabelPosition=middle;align=center;html=1;shape=mxgraph.basic.shaded_button;dx=10;strokeColor=#d6b656;whiteSpace=wrap;rounded=1;labelBackgroundColor=none;fillColor=#fff2cc;" vertex="1" parent="DtNA1OOpv918O6FHiLsb-5">
-          <mxGeometry x="270" y="55" width="108" height="62" as="geometry" />
-        </mxCell>
-        <mxCell id="JjrdLrowcXQNLenx9GRh-66" value="&lt;div&gt;&lt;b&gt;Small DNA&amp;nbsp;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;viruses profiles&lt;/b&gt;&lt;/div&gt;" style="labelPosition=center;verticalLabelPosition=middle;align=center;html=1;shape=mxgraph.basic.shaded_button;dx=10;strokeColor=#d6b656;whiteSpace=wrap;rounded=1;labelBackgroundColor=none;fillColor=#fff2cc;" vertex="1" parent="DtNA1OOpv918O6FHiLsb-5">
-          <mxGeometry x="387" y="55" width="117" height="61" as="geometry" />
-        </mxCell>
-        <mxCell id="JjrdLrowcXQNLenx9GRh-67" value="" style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;flipH=1;labelPosition=right;verticalLabelPosition=middle;align=left;verticalAlign=middle;rotation=90;labelBackgroundColor=none;strokeWidth=3;" vertex="1" parent="DtNA1OOpv918O6FHiLsb-5">
-          <mxGeometry x="312" y="3" width="23" height="264" as="geometry" />
-        </mxCell>
-        <mxCell id="JjrdLrowcXQNLenx9GRh-76" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;labelBackgroundColor=none;fontColor=default;strokeWidth=3;" edge="1" parent="DtNA1OOpv918O6FHiLsb-5" source="JjrdLrowcXQNLenx9GRh-68" target="JjrdLrowcXQNLenx9GRh-70">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="JjrdLrowcXQNLenx9GRh-68" value="&lt;div style=&quot;font-size: 16px;&quot;&gt;&lt;font style=&quot;font-size: 20px;&quot;&gt;hmmsearch&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-weight: normal; font-size: 13px;&quot;&gt;6 single-frame HMMer searches&lt;/font&gt;&lt;/div&gt;" style="label;whiteSpace=wrap;html=1;image=img/clipart/Gear_128x128.png;rounded=1;labelBackgroundColor=none;" vertex="1" parent="DtNA1OOpv918O6FHiLsb-5">
-          <mxGeometry x="219" y="151" width="192.5" height="58" as="geometry" />
-        </mxCell>
-        <mxCell id="JjrdLrowcXQNLenx9GRh-77" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;labelBackgroundColor=none;fontColor=default;strokeWidth=3;" edge="1" parent="DtNA1OOpv918O6FHiLsb-5" source="JjrdLrowcXQNLenx9GRh-70" target="JjrdLrowcXQNLenx9GRh-71">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="JjrdLrowcXQNLenx9GRh-70" value="&lt;div style=&quot;font-size: 16px;&quot;&gt;&lt;font style=&quot;font-size: 20px;&quot;&gt;vsearch&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-weight: normal; font-size: 13px;&quot;&gt;deduplicate&lt;br&gt;&lt;/font&gt;&lt;/div&gt;" style="label;whiteSpace=wrap;html=1;image=img/clipart/Gear_128x128.png;rounded=1;labelBackgroundColor=none;" vertex="1" parent="DtNA1OOpv918O6FHiLsb-5">
-          <mxGeometry x="221.87" y="231" width="186.75" height="41" as="geometry" />
-        </mxCell>
-        <mxCell id="JjrdLrowcXQNLenx9GRh-78" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;labelBackgroundColor=none;fontColor=default;strokeWidth=3;" edge="1" parent="DtNA1OOpv918O6FHiLsb-5" source="JjrdLrowcXQNLenx9GRh-71" target="JjrdLrowcXQNLenx9GRh-72">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="JjrdLrowcXQNLenx9GRh-71" value="&lt;div style=&quot;font-size: 16px;&quot;&gt;&lt;font style=&quot;font-size: 20px;&quot;&gt;Cap3&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-weight: normal; font-size: 13px;&quot;&gt;Generate micro-contigs&lt;br&gt;&lt;/font&gt;&lt;/div&gt;" style="label;whiteSpace=wrap;html=1;image=img/clipart/Gear_128x128.png;rounded=1;labelBackgroundColor=none;" vertex="1" parent="DtNA1OOpv918O6FHiLsb-5">
-          <mxGeometry x="219" y="289" width="191.63" height="46" as="geometry" />
-        </mxCell>
-        <mxCell id="JjrdLrowcXQNLenx9GRh-88" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;labelBackgroundColor=none;fontColor=default;strokeWidth=3;" edge="1" parent="DtNA1OOpv918O6FHiLsb-5" source="JjrdLrowcXQNLenx9GRh-72" target="JjrdLrowcXQNLenx9GRh-73">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="JjrdLrowcXQNLenx9GRh-72" value="&lt;div style=&quot;font-size: 16px;&quot;&gt;&lt;font size=&quot;1&quot;&gt;&lt;b style=&quot;font-size: 20px;&quot;&gt;blastn&lt;/b&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-weight: normal; font-size: 13px;&quot;&gt;filter against custom contaminant DB&lt;/font&gt;&lt;/div&gt;" style="label;whiteSpace=wrap;html=1;image=img/clipart/Gear_128x128.png;rounded=1;labelBackgroundColor=none;" vertex="1" parent="DtNA1OOpv918O6FHiLsb-5">
-          <mxGeometry x="215.82" y="358" width="195.18" height="56" as="geometry" />
-        </mxCell>
-        <mxCell id="JjrdLrowcXQNLenx9GRh-84" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;labelBackgroundColor=none;fontColor=default;strokeWidth=3;" edge="1" parent="DtNA1OOpv918O6FHiLsb-5" source="JjrdLrowcXQNLenx9GRh-74" target="JjrdLrowcXQNLenx9GRh-73">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="JjrdLrowcXQNLenx9GRh-74" value="&lt;div style=&quot;font-size: 16px;&quot;&gt;&lt;font size=&quot;1&quot;&gt;&lt;b style=&quot;font-size: 20px;&quot;&gt;blastx&lt;/b&gt;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;font style=&quot;font-size: 12px; font-weight: normal;&quot;&gt;Filter &lt;/font&gt;&lt;font style=&quot;font-size: 12px; font-weight: normal;&quot;&gt;against non-viral refseq protein&lt;/font&gt;&lt;/div&gt;" style="label;whiteSpace=wrap;html=1;image=img/clipart/Gear_128x128.png;rounded=1;labelBackgroundColor=none;" vertex="1" parent="DtNA1OOpv918O6FHiLsb-5">
-          <mxGeometry x="21" y="428" width="181" height="55" as="geometry" />
-        </mxCell>
-        <mxCell id="JjrdLrowcXQNLenx9GRh-73" value="&lt;div style=&quot;font-size: 16px;&quot;&gt;&lt;font size=&quot;1&quot;&gt;&lt;b style=&quot;font-size: 20px;&quot;&gt;tblastx&lt;/b&gt;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 13px;&quot;&gt;&lt;font style=&quot;font-size: 13px; font-weight: normal;&quot;&gt;check &lt;/font&gt;&lt;font style=&quot;font-size: 13px; font-weight: normal;&quot;&gt;against viral genome&lt;/font&gt; (taxonomy annotation)&lt;br&gt;&lt;/div&gt;" style="label;whiteSpace=wrap;html=1;image=img/clipart/Gear_128x128.png;rounded=1;labelBackgroundColor=none;" vertex="1" parent="DtNA1OOpv918O6FHiLsb-5">
-          <mxGeometry x="215.45" y="481" width="194.55" height="78" as="geometry" />
-        </mxCell>
-        <mxCell id="JjrdLrowcXQNLenx9GRh-81" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.47;entryY=0.091;entryDx=0;entryDy=0;entryPerimeter=0;labelBackgroundColor=none;fontColor=default;strokeWidth=3;" edge="1" parent="DtNA1OOpv918O6FHiLsb-5" source="JjrdLrowcXQNLenx9GRh-72" target="JjrdLrowcXQNLenx9GRh-74">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="JjrdLrowcXQNLenx9GRh-82" value="Optional" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=15;fontStyle=1;rounded=1;labelBackgroundColor=none;" vertex="1" connectable="0" parent="JjrdLrowcXQNLenx9GRh-81">
-          <mxGeometry x="-0.3387" relative="1" as="geometry">
-            <mxPoint x="1" y="-10" as="offset" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="JjrdLrowcXQNLenx9GRh-91" value="&lt;div align=&quot;left&quot; style=&quot;font-size: 14px;&quot;&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;&lt;b&gt;Protein Translation of&amp;nbsp;&lt;/b&gt;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 14px;&quot; align=&quot;left&quot;&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;&lt;b&gt;FASTA Sequences&amp;nbsp;&lt;/b&gt;&lt;/font&gt;&lt;/div&gt;&lt;div align=&quot;left&quot; style=&quot;font-size: 14px;&quot;&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;&lt;b&gt;(Six Frames)&lt;/b&gt;&lt;/font&gt;&lt;/div&gt;" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.multi-document;whiteSpace=wrap;align=left;rounded=1;labelBackgroundColor=none;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="DtNA1OOpv918O6FHiLsb-5">
-          <mxGeometry x="6" y="138" width="176" height="93" as="geometry" />
-        </mxCell>
-        <mxCell id="JjrdLrowcXQNLenx9GRh-118" value="&lt;font size=&quot;1&quot;&gt;&lt;b style=&quot;font-size: 14px;&quot;&gt;#²&lt;/b&gt;&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="DtNA1OOpv918O6FHiLsb-5">
-          <mxGeometry x="414" y="288" width="30" height="29" as="geometry" />
-        </mxCell>
-        <mxCell id="JjrdLrowcXQNLenx9GRh-119" value="&lt;font size=&quot;1&quot;&gt;&lt;b style=&quot;font-size: 14px;&quot;&gt;#¹&lt;/b&gt;&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="DtNA1OOpv918O6FHiLsb-5">
-          <mxGeometry x="414" y="151" width="30" height="29" as="geometry" />
-        </mxCell>
-        <mxCell id="JjrdLrowcXQNLenx9GRh-133" value="&lt;font style=&quot;font-size: 29px;&quot;&gt;&lt;b&gt;3&lt;/b&gt;&lt;/font&gt;" style="html=1;whiteSpace=wrap;container=1;recursiveResize=0;collapsible=0;fillColor=#000000;strokeColor=#3700CC;fontColor=#ffffff;" vertex="1" parent="DtNA1OOpv918O6FHiLsb-5">
-          <mxGeometry x="10" y="59" width="37" height="33" as="geometry" />
-        </mxCell>
-        <mxCell id="JjrdLrowcXQNLenx9GRh-27" value="Input" style="swimlane;startSize=33;horizontal=1;containerType=tree;fontSize=16;rounded=1;labelBackgroundColor=none;fillColor=#bac8d3;strokeColor=#23445d;" vertex="1" parent="1">
-          <mxGeometry x="6" y="17" width="326" height="236" as="geometry">
-            <mxRectangle x="9" y="9" width="75" height="26" as="alternateBounds" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="JjrdLrowcXQNLenx9GRh-29" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;&lt;b&gt;List with SRA accessions&lt;/b&gt;&lt;/font&gt;" style="whiteSpace=wrap;html=1;treeFolding=1;treeMoving=1;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;startArrow&quot;:&quot;none&quot;,&quot;endArrow&quot;:&quot;none&quot;};rounded=1;labelBackgroundColor=none;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="JjrdLrowcXQNLenx9GRh-27">
-          <mxGeometry x="164.5" y="63" width="120" height="45" as="geometry" />
-        </mxCell>
-        <mxCell id="JjrdLrowcXQNLenx9GRh-93" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;&lt;b&gt;local FASTQ&lt;br&gt;&lt;/b&gt;&lt;/font&gt;" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.multi-document;whiteSpace=wrap;align=left;rounded=1;labelBackgroundColor=none;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="JjrdLrowcXQNLenx9GRh-27">
-          <mxGeometry x="14" y="169" width="117" height="52" as="geometry" />
-        </mxCell>
-        <mxCell id="JjrdLrowcXQNLenx9GRh-94" value="&lt;b&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;FASTQ&lt;/font&gt;&lt;/b&gt; " style="strokeWidth=2;html=1;shape=mxgraph.flowchart.multi-document;whiteSpace=wrap;align=left;rounded=1;labelBackgroundColor=none;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="JjrdLrowcXQNLenx9GRh-27">
-          <mxGeometry x="174" y="169" width="101" height="53" as="geometry" />
-        </mxCell>
-        <mxCell id="JjrdLrowcXQNLenx9GRh-95" style="edgeStyle=elbowEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;startArrow=none;endArrow=none;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;labelBackgroundColor=none;fontColor=default;strokeWidth=3;" edge="1" parent="JjrdLrowcXQNLenx9GRh-27" source="JjrdLrowcXQNLenx9GRh-29" target="JjrdLrowcXQNLenx9GRh-94">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="JjrdLrowcXQNLenx9GRh-96" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;&lt;b&gt;Fetch&lt;/b&gt;&lt;/font&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];rounded=1;labelBackgroundColor=none;" vertex="1" connectable="0" parent="JjrdLrowcXQNLenx9GRh-95">
-          <mxGeometry x="-0.0569" y="-1" relative="1" as="geometry">
-            <mxPoint x="-26" y="-1" as="offset" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="JjrdLrowcXQNLenx9GRh-124" value="&lt;b&gt;&lt;font style=&quot;font-size: 29px;&quot;&gt;1&lt;/font&gt;&lt;/b&gt;" style="html=1;whiteSpace=wrap;container=1;recursiveResize=0;collapsible=0;fillColor=#000000;strokeColor=#3700CC;fontColor=#ffffff;" vertex="1" parent="JjrdLrowcXQNLenx9GRh-27">
-          <mxGeometry x="5" y="37" width="37" height="33" as="geometry" />
-        </mxCell>
-        <mxCell id="JjrdLrowcXQNLenx9GRh-54" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;labelBackgroundColor=none;fontColor=default;strokeWidth=3;" edge="1" parent="1" source="JjrdLrowcXQNLenx9GRh-45" target="JjrdLrowcXQNLenx9GRh-47">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="JjrdLrowcXQNLenx9GRh-45" value="&lt;div&gt;&lt;font style=&quot;font-size: 20px;&quot;&gt;fastp&lt;/font&gt;&lt;font style=&quot;font-size: 15px;&quot;&gt; &lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font size=&quot;1&quot;&gt;&lt;span style=&quot;font-weight: normal; font-size: 13px;&quot;&gt;Trimming of sequencing adapters and removal of low-quality bases&lt;/span&gt;&lt;/font&gt;&lt;font style=&quot;font-size: 15px;&quot;&gt;  &lt;/font&gt;&lt;/div&gt;" style="label;whiteSpace=wrap;html=1;image=img/clipart/Gear_128x128.png;rounded=1;labelBackgroundColor=none;" vertex="1" parent="1">
-          <mxGeometry x="57" y="295" width="208" height="116" as="geometry" />
-        </mxCell>
-        <mxCell id="JjrdLrowcXQNLenx9GRh-55" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;labelBackgroundColor=none;fontColor=default;strokeWidth=3;" edge="1" parent="1" source="JjrdLrowcXQNLenx9GRh-47" target="JjrdLrowcXQNLenx9GRh-48">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="JjrdLrowcXQNLenx9GRh-47" value="&lt;div style=&quot;font-size: 16px;&quot;&gt;&lt;font style=&quot;font-size: 20px;&quot;&gt;seqtk&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-weight: normal;&quot;&gt;&lt;font style=&quot;font-size: 13px;&quot;&gt;Convert to FASTA&lt;/font&gt;&lt;/span&gt;&lt;br&gt;&lt;/div&gt;" style="label;whiteSpace=wrap;html=1;image=img/clipart/Gear_128x128.png;rounded=1;labelBackgroundColor=none;" vertex="1" parent="1">
-          <mxGeometry x="6" y="480" width="129" height="77" as="geometry" />
-        </mxCell>
-        <mxCell id="JjrdLrowcXQNLenx9GRh-48" value="&lt;div&gt;&lt;font style=&quot;font-size: 20px;&quot;&gt;transeq&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-weight: normal;&quot;&gt;&lt;font style=&quot;font-size: 13px;&quot;&gt;Translate sequences into proteins for all six reading frames&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="label;whiteSpace=wrap;html=1;image=img/clipart/Gear_128x128.png;rounded=1;labelBackgroundColor=none;" vertex="1" parent="1">
-          <mxGeometry x="172" y="459.68" width="157" height="117.63" as="geometry" />
-        </mxCell>
-        <mxCell id="JjrdLrowcXQNLenx9GRh-49" value="" style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;flipH=1;labelPosition=right;verticalLabelPosition=middle;align=left;verticalAlign=middle;rotation=90;labelBackgroundColor=none;fontStyle=0;strokeWidth=3;" vertex="1" parent="1">
-          <mxGeometry x="149" y="147" width="23" height="264" as="geometry" />
-        </mxCell>
-        <mxCell id="JjrdLrowcXQNLenx9GRh-62" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.464;entryY=0.988;entryDx=0;entryDy=0;entryPerimeter=0;labelBackgroundColor=none;fontColor=default;strokeWidth=3;" edge="1" parent="1" source="JjrdLrowcXQNLenx9GRh-48">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="429.0239999999999" y="395.9680000000001" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="JjrdLrowcXQNLenx9GRh-100" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.445;entryY=0.025;entryDx=0;entryDy=0;entryPerimeter=0;labelBackgroundColor=none;fontColor=default;strokeWidth=3;" edge="1" parent="1" source="JjrdLrowcXQNLenx9GRh-47" target="JjrdLrowcXQNLenx9GRh-92">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="72" y="939" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="JjrdLrowcXQNLenx9GRh-102" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.452;entryY=0.131;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.45;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;labelBackgroundColor=none;fontColor=default;strokeWidth=3;" edge="1" parent="1" source="JjrdLrowcXQNLenx9GRh-73" target="JjrdLrowcXQNLenx9GRh-99">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="643" y="755" as="sourcePoint" />
-            <mxPoint x="270" y="860" as="targetPoint" />
-            <Array as="points">
-              <mxPoint x="643" y="764" />
-              <mxPoint x="281" y="764" />
-              <mxPoint x="281" y="876" />
-            </Array>
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="JjrdLrowcXQNLenx9GRh-114" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontColor=default;labelBackgroundColor=none;strokeWidth=3;" edge="1" parent="1" source="5gK6zpaWBkJ-7K4iz9fj-62" target="JjrdLrowcXQNLenx9GRh-112">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="5gK6zpaWBkJ-7K4iz9fj-62" value="&lt;font style=&quot;font-size: 17px;&quot;&gt;VirusGatherer&lt;/font&gt;" style="swimlane;whiteSpace=wrap;html=1;startSize=46;rounded=1;labelBackgroundColor=none;fillColor=#d0cee2;strokeColor=#56517e;" parent="1" vertex="1">
-          <mxGeometry y="807" width="613" height="230" as="geometry" />
-        </mxCell>
-        <mxCell id="JjrdLrowcXQNLenx9GRh-103" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;labelBackgroundColor=none;fontColor=default;strokeWidth=3;" edge="1" parent="5gK6zpaWBkJ-7K4iz9fj-62" source="JjrdLrowcXQNLenx9GRh-92" target="JjrdLrowcXQNLenx9GRh-97">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="JjrdLrowcXQNLenx9GRh-92" value="&lt;div align=&quot;left&quot; style=&quot;font-size: 14px;&quot;&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;&lt;b&gt;FASTA Sequences &lt;br&gt;&lt;/b&gt;&lt;/font&gt;&lt;/div&gt;" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.multi-document;whiteSpace=wrap;align=left;rounded=1;labelBackgroundColor=none;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="5gK6zpaWBkJ-7K4iz9fj-62">
-          <mxGeometry x="5" y="149.5" width="146" height="61" as="geometry" />
-        </mxCell>
-        <mxCell id="JjrdLrowcXQNLenx9GRh-97" value="&lt;div&gt;&lt;font style=&quot;font-size: 20px;&quot;&gt;genseed-hmm&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 13px;&quot;&gt;&lt;font style=&quot;font-size: 13px;&quot;&gt;&lt;span style=&quot;font-weight: normal;&quot;&gt;Iterative assembly&lt;/span&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;" style="label;whiteSpace=wrap;html=1;image=img/clipart/Gear_128x128.png;rounded=1;labelBackgroundColor=none;" vertex="1" parent="5gK6zpaWBkJ-7K4iz9fj-62">
-          <mxGeometry x="180.5" y="153" width="198" height="54" as="geometry" />
-        </mxCell>
-        <mxCell id="JjrdLrowcXQNLenx9GRh-98" value="&lt;div style=&quot;font-size: 16px;&quot;&gt;&lt;font size=&quot;1&quot;&gt;&lt;b style=&quot;font-size: 20px;&quot;&gt;blastx&lt;/b&gt;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 13px;&quot;&gt;&lt;font style=&quot;font-size: 13px; font-weight: normal;&quot;&gt;check &lt;/font&gt;&lt;font style=&quot;font-size: 13px; font-weight: normal;&quot;&gt;against viral genome&lt;/font&gt; (taxonomy annotation)&lt;br&gt;&lt;/div&gt;" style="label;whiteSpace=wrap;html=1;image=img/clipart/Gear_128x128.png;rounded=1;labelBackgroundColor=none;" vertex="1" parent="5gK6zpaWBkJ-7K4iz9fj-62">
-          <mxGeometry x="423" y="137" width="172.55" height="70" as="geometry" />
-        </mxCell>
-        <mxCell id="JjrdLrowcXQNLenx9GRh-104" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0.88;exitDx=0;exitDy=0;exitPerimeter=0;labelBackgroundColor=none;fontColor=default;strokeWidth=3;" edge="1" parent="5gK6zpaWBkJ-7K4iz9fj-62" source="JjrdLrowcXQNLenx9GRh-99" target="JjrdLrowcXQNLenx9GRh-97">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="JjrdLrowcXQNLenx9GRh-99" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;&lt;b&gt;Filtered Contigs from Hunter&lt;/b&gt;&lt;/font&gt;" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.multi-document;whiteSpace=wrap;align=left;rounded=1;labelBackgroundColor=none;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="5gK6zpaWBkJ-7K4iz9fj-62">
-          <mxGeometry x="191" y="61" width="177" height="61" as="geometry" />
-        </mxCell>
-        <mxCell id="JjrdLrowcXQNLenx9GRh-105" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.006;entryY=0.621;entryDx=0;entryDy=0;entryPerimeter=0;labelBackgroundColor=none;fontColor=default;strokeWidth=3;" edge="1" parent="5gK6zpaWBkJ-7K4iz9fj-62" source="JjrdLrowcXQNLenx9GRh-97" target="JjrdLrowcXQNLenx9GRh-98">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="JjrdLrowcXQNLenx9GRh-134" value="&lt;b&gt;&lt;font style=&quot;font-size: 29px;&quot;&gt;4&lt;/font&gt;&lt;/b&gt;" style="html=1;whiteSpace=wrap;container=1;recursiveResize=0;collapsible=0;fillColor=#000000;strokeColor=#3700CC;fontColor=#ffffff;" vertex="1" parent="5gK6zpaWBkJ-7K4iz9fj-62">
-          <mxGeometry x="9" y="56" width="37" height="33" as="geometry" />
-        </mxCell>
-        <mxCell id="JjrdLrowcXQNLenx9GRh-112" value="&lt;b&gt;&lt;font style=&quot;font-size: 17px;&quot;&gt;Output&lt;/font&gt;&lt;/b&gt;" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#ffff88;strokeColor=#36393d;" vertex="1" parent="1">
-          <mxGeometry x="648" y="815.5" width="184" height="213" as="geometry" />
-        </mxCell>
-        <mxCell id="JjrdLrowcXQNLenx9GRh-113" value="&lt;div style=&quot;font-size: 14px;&quot;&gt;&lt;b&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;+ Filtered contigs&amp;nbsp;&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 14px;&quot;&gt;&lt;b&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;&amp;nbsp;&amp;nbsp; from VirusHunter&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 14px;&quot;&gt;&lt;b&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 14px;&quot;&gt;&lt;b&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;+ VirusHunter hittable&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 14px;&quot;&gt;&lt;b&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 14px;&quot;&gt;&lt;b&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;+ Contigs from&amp;nbsp;&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 14px;&quot;&gt;&lt;b&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;&amp;nbsp;&amp;nbsp; VirusGatherer&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 14px;&quot;&gt;&lt;b&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 14px;&quot;&gt;&lt;b&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;+ VirusGatherer hittable&lt;br&gt;&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 14px;&quot;&gt;&lt;b&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 14px;&quot;&gt;&lt;b&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;html=1;labelBackgroundColor=none;" vertex="1" parent="JjrdLrowcXQNLenx9GRh-112">
-          <mxGeometry y="50" width="184" height="163" as="geometry" />
-        </mxCell>
-        <mxCell id="JjrdLrowcXQNLenx9GRh-115" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.75;exitY=1;exitDx=0;exitDy=0;entryX=0.402;entryY=-0.002;entryDx=0;entryDy=0;entryPerimeter=0;fontColor=default;labelBackgroundColor=none;strokeWidth=3;" edge="1" parent="1" source="DtNA1OOpv918O6FHiLsb-5" target="JjrdLrowcXQNLenx9GRh-112">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="JjrdLrowcXQNLenx9GRh-117" value="&lt;div align=&quot;left&quot;&gt;&lt;b&gt;#¹ &amp;gt; Only HMM-positive reads are used in the subsequent pipeline steps following the HMM profile search.&lt;/b&gt;&lt;/div&gt;&lt;div align=&quot;left&quot;&gt;&lt;b&gt;#² &amp;gt; Micro-contigs generated from Cap3 assembly are used in the filtering step.&lt;/b&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
-          <mxGeometry x="13" y="1052" width="622" height="41" as="geometry" />
-        </mxCell>
-        <mxCell id="JjrdLrowcXQNLenx9GRh-120" value="&lt;h1 align=&quot;center&quot; style=&quot;font-size: 47px;&quot;&gt;&lt;i&gt;&lt;font style=&quot;font-size: 19px;&quot;&gt;&lt;u&gt;The VirusHunter and VirusGatherer Pipeline&lt;/u&gt;&lt;/font&gt;&lt;/i&gt;&lt;/h1&gt;" style="text;strokeColor=none;fillColor=none;html=1;fontSize=24;fontStyle=1;verticalAlign=middle;align=center;" vertex="1" parent="1">
-          <mxGeometry x="548" y="67" width="87" height="56" as="geometry" />
-        </mxCell>
-        <mxCell id="JjrdLrowcXQNLenx9GRh-121" value="" style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;labelPosition=left;verticalLabelPosition=middle;align=right;verticalAlign=middle;strokeWidth=3;" vertex="1" parent="1">
-          <mxGeometry x="368" y="40" width="20" height="120" as="geometry" />
-        </mxCell>
-        <mxCell id="JjrdLrowcXQNLenx9GRh-122" value="" style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;flipH=1;labelPosition=right;verticalLabelPosition=middle;align=left;verticalAlign=middle;strokeWidth=3;" vertex="1" parent="1">
-          <mxGeometry x="792" y="35" width="20" height="120" as="geometry" />
-        </mxCell>
-        <mxCell id="JjrdLrowcXQNLenx9GRh-132" value="&lt;font style=&quot;font-size: 29px;&quot;&gt;&lt;b&gt;2&lt;/b&gt;&lt;/font&gt;" style="html=1;whiteSpace=wrap;container=1;recursiveResize=0;collapsible=0;fillColor=#000000;strokeColor=#3700CC;fontColor=#ffffff;" vertex="1" parent="1">
-          <mxGeometry x="15" y="416" width="37" height="33" as="geometry" />
-        </mxCell>
-        <mxCell id="JjrdLrowcXQNLenx9GRh-135" value="&lt;b&gt;&lt;font style=&quot;font-size: 29px;&quot;&gt;5&lt;/font&gt;&lt;/b&gt;" style="html=1;whiteSpace=wrap;container=1;recursiveResize=0;collapsible=0;fillColor=#000000;strokeColor=#3700CC;fontColor=#ffffff;" vertex="1" parent="1">
-          <mxGeometry x="622" y="777" width="37" height="33" as="geometry" />
-        </mxCell>
-      </root>
-    </mxGraphModel>
-  </diagram>
-</mxfile>
+##gff-version 3
+##feature-ontology http://song.cvs.sourceforge.net/viewvc/song/ontology/sofa.obo?revision=1.269
+##interproscan-version 5.60-92.0
+##sequence-region SRR16151768_cap3_Contig-1 1 10373
+SRR16151768_cap3_Contig-1	provided_by_user	nucleic_acid	1	10373	.	+	.	ID=SRR16151768_cap3_Contig-1;Name=SRR16151768_cap3_Contig-1;md5=bd5f1e7f85bfe5f6c172a98f9ed79853
+SRR16151768_cap3_Contig-1_orf747	getorf	ORF	3318	3626	.	+	.	Target=pep_SRR16151768_cap3_Contig-1_3318_3626 1 103;ID=orf_SRR16151768_cap3_Contig-1_3318_3626;Name=SRR16151768_cap3_Contig-1_orf747;md5=bd5f1e7f85bfe5f6c172a98f9ed79853
+SRR16151768_cap3_Contig-1_orf747	getorf	polypeptide	1	103	.	+	.	ID=pep_SRR16151768_cap3_Contig-1_3318_3626;md5=20ddede02370edc65133566077e83be6
+SRR16151768_cap3_Contig-1_orf747	Pfam	protein_match	14	102	5.3E-35	+	.	date=12-09-2024;Target=null 14 102;ID=match$1_14_102;signature_desc=Pneumovirus M2 protein;Name=PF07380;status=T;Dbxref="InterPro:IPR009969"
+##sequence-region SRR13364363_cap3_Contig-11 1 1525
+SRR13364363_cap3_Contig-11	provided_by_user	nucleic_acid	1	1525	.	+	.	ID=SRR13364363_cap3_Contig-11;Name=SRR13364363_cap3_Contig-11;md5=d7ebfb60004c08193dbc2611ce2d371e
+SRR13364363_cap3_Contig-11_orf3029	getorf	ORF	1187	1450	.	+	.	Target=pep_SRR13364363_cap3_Contig-11_1187_1450 1 88;ID=orf_SRR13364363_cap3_Contig-11_1187_1450;Name=SRR13364363_cap3_Contig-11_orf3029;md5=d7ebfb60004c08193dbc2611ce2d371e
+SRR13364363_cap3_Contig-11_orf3029	getorf	polypeptide	1	88	.	+	.	ID=pep_SRR13364363_cap3_Contig-11_1187_1450;md5=b4c75953e7da352e44a0828a5eed4eae
+SRR13364363_cap3_Contig-11_orf3029	MobiDBLite	protein_match	42	77	.	+	.	date=12-09-2024;Target=null 42 77;ID=match$2_42_77;signature_desc=consensus disorder prediction;Name=mobidb-lite;status=T
+SRR13364363_cap3_Contig-11_orf3029	MobiDBLite	protein_match	42	88	.	+	.	date=12-09-2024;Target=null 42 88;ID=match$3_42_88;signature_desc=consensus disorder prediction;Name=mobidb-lite;status=T
+##sequence-region SRR19431078_cap3_Contig-1 1 12782
+SRR19431078_cap3_Contig-1	provided_by_user	nucleic_acid	1	12782	.	+	.	ID=SRR19431078_cap3_Contig-1;Name=SRR19431078_cap3_Contig-1;md5=74f2714fe5f391c9a588604ba5af490
+SRR19431078_cap3_Contig-1_orf2200	getorf	ORF	3559	5265	.	+	.	Target=pep_SRR19431078_cap3_Contig-1_3559_5265 1 569;ID=orf_SRR19431078_cap3_Contig-1_3559_5265;Name=SRR19431078_cap3_Contig-1_orf2200;md5=74f2714fe5f391c9a588604ba5af490
+SRR19431078_cap3_Contig-1_orf2200	getorf	polypeptide	1	569	.	+	.	ID=pep_SRR19431078_cap3_Contig-1_3559_5265;md5=a28f605515de8e079e8548df35708b41
+SRR19431078_cap3_Contig-1_orf2200	SUPERFAMILY	protein_match	77	373	3.4E-9	+	.	date=12-09-2024;Target=null 77 373;ID=match$4_77_373;Name=SSF161008;status=T
+##sequence-region SRR19431078_cap3_Contig-1 1 12782
+SRR19431078_cap3_Contig-1	provided_by_user	nucleic_acid	1	12782	.	+	.	ID=SRR19431078_cap3_Contig-1;Name=SRR19431078_cap3_Contig-1;md5=74f2714fe5f391c9a588604ba5af490
+SRR19431078_cap3_Contig-1_orf2188	getorf	ORF	1719	3572	.	+	.	Target=pep_SRR19431078_cap3_Contig-1_1719_3572 1 618;ID=orf_SRR19431078_cap3_Contig-1_1719_3572;Name=SRR19431078_cap3_Contig-1_orf2188;md5=74f2714fe5f391c9a588604ba5af490
+SRR19431078_cap3_Contig-1_orf2188	getorf	polypeptide	1	618	.	+	.	ID=pep_SRR19431078_cap3_Contig-1_1719_3572;md5=344d7e9f696c1536547557e1d9e6d1e7
+SRR19431078_cap3_Contig-1_orf2188	SUPERFAMILY	protein_match	27	383	1.44E-70	+	.	date=12-09-2024;Target=null 27 383;ID=match$5_27_383;Name=SSF161008;status=T
+SRR19431078_cap3_Contig-1_orf2188	Pfam	protein_match	12	358	1.4E-34	+	.	date=12-09-2024;Target=null 12 358;ID=match$6_12_358;signature_desc=Rhabdovirus spike glycoprotein;Name=PF00974;status=T;Dbxref="InterPro:IPR001903"
+SRR19431078_cap3_Contig-1_orf2188	Gene3D	protein_match	202	286	1.3E-9	+	.	date=12-09-2024;Target=null 202 286;ID=match$7_202_286;Name=G3DSA:2.30.29.130;status=T
+SRR19431078_cap3_Contig-1_orf2188	Gene3D	protein_match	292	357	2.8E-6	+	.	date=12-09-2024;Target=null 292 357;ID=match$8_292_357;Name=G3DSA:6.10.140.740;status=T
+SRR19431078_cap3_Contig-1_orf2188	Coils	protein_match	618	618	.	+	.	date=12-09-2024;Target=null 618 618;ID=match$9_618_618;Name=Coil;status=T
+##sequence-region SRR18779479_cap3_Contig-1 1 7031
+SRR18779479_cap3_Contig-1	provided_by_user	nucleic_acid	1	7031	.	+	.	ID=SRR18779479_cap3_Contig-1;Name=SRR18779479_cap3_Contig-1;md5=ef75aae594a478d79f11bc5a71ebc9cc
+SRR18779479_cap3_Contig-1_orf276	getorf	ORF	120	1052	.	-	.	Target=pep_SRR18779479_cap3_Contig-1_120_1052_r 1 311;ID=orf_SRR18779479_cap3_Contig-1_120_1052_r;Name=SRR18779479_cap3_Contig-1_orf276;md5=ef75aae594a478d79f11bc5a71ebc9cc
+SRR18779479_cap3_Contig-1_orf276	getorf	polypeptide	1	311	.	+	.	ID=pep_SRR18779479_cap3_Contig-1_120_1052_r;md5=888354c3ecb0d8e14fbe01cf65ddf049
+SRR18779479_cap3_Contig-1_orf276	Pfam	protein_match	43	192	1.1E-27	+	.	date=12-09-2024;Target=null 43 192;ID=match$10_43_192;signature_desc=Putative virion membrane protein of plant and insect virus;Name=PF16504;status=T;Dbxref="InterPro:IPR032441"
+SRR18779479_cap3_Contig-1_orf276	MobiDBLite	protein_match	296	311	.	+	.	date=12-09-2024;Target=null 296 311;ID=match$11_296_311;signature_desc=consensus disorder prediction;Name=mobidb-lite;status=T
+SRR18779479_cap3_Contig-1_orf276	MobiDBLite	protein_match	255	311	.	+	.	date=12-09-2024;Target=null 255 311;ID=match$12_255_311;signature_desc=consensus disorder prediction;Name=mobidb-lite;status=T
+##sequence-region SRR16151768_cap3_Contig-1 1 10373
+SRR16151768_cap3_Contig-1	provided_by_user	nucleic_acid	1	10373	.	+	.	ID=SRR16151768_cap3_Contig-1;Name=SRR16151768_cap3_Contig-1;md5=bd5f1e7f85bfe5f6c172a98f9ed79853
+SRR16151768_cap3_Contig-1_orf717	getorf	ORF	232	615	.	+	.	Target=pep_SRR16151768_cap3_Contig-1_232_615 1 128;ID=orf_SRR16151768_cap3_Contig-1_232_615;Name=SRR16151768_cap3_Contig-1_orf717;md5=bd5f1e7f85bfe5f6c172a98f9ed79853
+SRR16151768_cap3_Contig-1_orf717	getorf	polypeptide	1	128	.	+	.	ID=pep_SRR16151768_cap3_Contig-1_232_615;md5=77ca8c636d67ea5962b3f8e7cc7f9913
+SRR16151768_cap3_Contig-1_orf717	MobiDBLite	protein_match	1	47	.	+	.	date=12-09-2024;Target=null 1 47;ID=match$13_1_47;signature_desc=consensus disorder prediction;Name=mobidb-lite;status=T
+SRR16151768_cap3_Contig-1_orf717	MobiDBLite	protein_match	106	128	.	+	.	date=12-09-2024;Target=null 106 128;ID=match$14_106_128;signature_desc=consensus disorder prediction;Name=mobidb-lite;status=T
+SRR16151768_cap3_Contig-1_orf717	MobiDBLite	protein_match	59	128	.	+	.	date=12-09-2024;Target=null 59 128;ID=match$15_59_128;signature_desc=consensus disorder prediction;Name=mobidb-lite;status=T
+SRR16151768_cap3_Contig-1_orf717	MobiDBLite	protein_match	69	97	.	+	.	date=12-09-2024;Target=null 69 97;ID=match$16_69_97;signature_desc=consensus disorder prediction;Name=mobidb-lite;status=T
+##sequence-region SRR12430148_cap3_Contig-1 1 17699
+SRR12430148_cap3_Contig-1	provided_by_user	nucleic_acid	1	17699	.	+	.	ID=SRR12430148_cap3_Contig-1;Name=SRR12430148_cap3_Contig-1;md5=1bbb123a5afd9c67348edfb039141634
+SRR12430148_cap3_Contig-1_orf1718	getorf	ORF	2	829	.	+	.	Target=pep_SRR12430148_cap3_Contig-1_2_829 1 276;ID=orf_SRR12430148_cap3_Contig-1_2_829;Name=SRR12430148_cap3_Contig-1_orf1718;md5=1bbb123a5afd9c67348edfb039141634
+SRR12430148_cap3_Contig-1_orf1718	getorf	polypeptide	1	276	.	+	.	ID=pep_SRR12430148_cap3_Contig-1_2_829;md5=fa7cd8baa1a48d10e43da73aabafb11c
+SRR12430148_cap3_Contig-1_orf1718	Pfam	protein_match	2	147	2.2E-50	+	.	date=12-09-2024;Target=null 2 147;ID=match$17_2_147;signature_desc=Paramyxovirus nucleocapsid protein;Name=PF00973;status=T;Dbxref="InterPro:IPR002021"
+SRR12430148_cap3_Contig-1_orf1718	MobiDBLite	protein_match	186	231	.	+	.	date=12-09-2024;Target=null 186 231;ID=match$18_186_231;signature_desc=consensus disorder prediction;Name=mobidb-lite;status=T
+##sequence-region SRR19431078_cap3_Contig-1 1 12782
+SRR19431078_cap3_Contig-1	provided_by_user	nucleic_acid	1	12782	.	+	.	ID=SRR19431078_cap3_Contig-1;Name=SRR19431078_cap3_Contig-1;md5=74f2714fe5f391c9a588604ba5af490
+SRR19431078_cap3_Contig-1_orf2171	getorf	ORF	988	1710	.	+	.	Target=pep_SRR19431078_cap3_Contig-1_988_1710 1 241;ID=orf_SRR19431078_cap3_Contig-1_988_1710;Name=SRR19431078_cap3_Contig-1_orf2171;md5=74f2714fe5f391c9a588604ba5af490
+SRR19431078_cap3_Contig-1_orf2171	getorf	polypeptide	1	241	.	+	.	ID=pep_SRR19431078_cap3_Contig-1_988_1710;md5=f214c771edb04210f47f09694e5c508c
+SRR19431078_cap3_Contig-1_orf2171	Pfam	protein_match	59	235	1.2E-28	+	.	date=12-09-2024;Target=null 59 235;ID=match$19_59_235;signature_desc=Vesiculovirus matrix protein;Name=PF06326;status=T;Dbxref="InterPro:IPR009397"
+##sequence-region SRR17345012_cap3_Contig-6 1 6148
+SRR17345012_cap3_Contig-6	provided_by_user	nucleic_acid	1	6148	.	+	.	ID=SRR17345012_cap3_Contig-6;Name=SRR17345012_cap3_Contig-6;md5=1765feff76f522ae51d8e2815f41876b
+SRR17345012_cap3_Contig-6_orf351	getorf	ORF	4990	6147	.	+	.	Target=pep_SRR17345012_cap3_Contig-6_4990_6147 1 386;ID=orf_SRR17345012_cap3_Contig-6_4990_6147;Name=SRR17345012_cap3_Contig-6_orf351;md5=1765feff76f522ae51d8e2815f41876b
+SRR17345012_cap3_Contig-6_orf351	getorf	polypeptide	1	386	.	+	.	ID=pep_SRR17345012_cap3_Contig-6_4990_6147;md5=3f663d5eb51278a379e590808d255c06
+SRR17345012_cap3_Contig-6_orf351	Pfam	protein_match	80	386	7.0E-112	+	.	date=12-09-2024;Target=null 80 386;ID=match$20_80_386;signature_desc=Structural protein 2;Name=PF03014;status=T;Dbxref="InterPro:IPR004261"
+SRR17345012_cap3_Contig-6_orf351	FunFam	protein_match	138	328	2.4E-132	+	.	date=12-09-2024;Target=null 138 328;ID=match$21_138_328;signature_desc=Secreted protein ORF2;Name=G3DSA:2.60.120.20:FF:000010;status=T
+SRR17345012_cap3_Contig-6_orf351	MobiDBLite	protein_match	33	53	.	+	.	date=12-09-2024;Target=null 33 53;ID=match$22_33_53;signature_desc=consensus disorder prediction;Name=mobidb-lite;status=T
+SRR17345012_cap3_Contig-6_orf351	Gene3D	protein_match	329	386	1.2E-23	+	.	date=12-09-2024;Target=null 329 386;ID=match$23_329_386;Name=G3DSA:2.40.30.190;status=T
+SRR17345012_cap3_Contig-6_orf351	Gene3D	protein_match	138	328	9.3E-74	+	.	date=12-09-2024;Target=null 138 328;ID=match$24_138_328;Name=G3DSA:2.60.120.20;status=T;Dbxref="InterPro:IPR029053"
+SRR17345012_cap3_Contig-6_orf351	MobiDBLite	protein_match	94	108	.	+	.	date=12-09-2024;Target=null 94 108;ID=match$25_94_108;signature_desc=consensus disorder prediction;Name=mobidb-lite;status=T
+SRR17345012_cap3_Contig-6_orf351	MobiDBLite	protein_match	74	136	.	+	.	date=12-09-2024;Target=null 74 136;ID=match$26_74_136;signature_desc=consensus disorder prediction;Name=mobidb-lite;status=T
+SRR17345012_cap3_Contig-6_orf351	SUPERFAMILY	protein_match	156	334	5.23E-6	+	.	date=12-09-2024;Target=null 156 334;ID=match$27_156_334;Name=SSF88633;status=T
+##sequence-region SRR16151768_cap3_Contig-1 1 10373
+SRR16151768_cap3_Contig-1	provided_by_user	nucleic_acid	1	10373	.	+	.	ID=SRR16151768_cap3_Contig-1;Name=SRR16151768_cap3_Contig-1;md5=bd5f1e7f85bfe5f6c172a98f9ed79853
+SRR16151768_cap3_Contig-1_orf718	getorf	ORF	18	779	.	+	.	Target=pep_SRR16151768_cap3_Contig-1_18_779 1 254;ID=orf_SRR16151768_cap3_Contig-1_18_779;Name=SRR16151768_cap3_Contig-1_orf718;md5=bd5f1e7f85bfe5f6c172a98f9ed79853
+SRR16151768_cap3_Contig-1_orf718	getorf	polypeptide	1	254	.	+	.	ID=pep_SRR16151768_cap3_Contig-1_18_779;md5=588876c24f815649927fa1dd5a78cb4b
+SRR16151768_cap3_Contig-1_orf718	MobiDBLite	protein_match	177	244	.	+	.	date=12-09-2024;Target=null 177 244;ID=match$28_177_244;signature_desc=consensus disorder prediction;Name=mobidb-lite;status=T
+SRR16151768_cap3_Contig-1_orf718	Pfam	protein_match	17	225	4.3E-81	+	.	date=12-09-2024;Target=null 17 225;ID=match$29_17_225;signature_desc=Pneumovirus attachment glycoprotein G;Name=PF00802;status=T;Dbxref="InterPro:IPR000925"
+SRR16151768_cap3_Contig-1_orf718	MobiDBLite	protein_match	81	115	.	+	.	date=12-09-2024;Target=null 81 115;ID=match$30_81_115;signature_desc=consensus disorder prediction;Name=mobidb-lite;status=T
+SRR16151768_cap3_Contig-1_orf718	MobiDBLite	protein_match	151	254	.	+	.	date=12-09-2024;Target=null 151 254;ID=match$31_151_254;signature_desc=consensus disorder prediction;Name=mobidb-lite;status=T
+SRR16151768_cap3_Contig-1_orf718	MobiDBLite	protein_match	81	117	.	+	.	date=12-09-2024;Target=null 81 117;ID=match$32_81_117;signature_desc=consensus disorder prediction;Name=mobidb-lite;status=T
+##sequence-region SRR14579882_cap3_Contig-1 1 26479
+SRR14579882_cap3_Contig-1	provided_by_user	nucleic_acid	1	26479	.	+	.	ID=SRR14579882_cap3_Contig-1;Name=SRR14579882_cap3_Contig-1;md5=8b1eed4cf41c89c0d3729e8f12a88050
+SRR14579882_cap3_Contig-1_orf3266	getorf	ORF	24687	25373	.	+	.	Target=pep_SRR14579882_cap3_Contig-1_24687_25373 1 229;ID=orf_SRR14579882_cap3_Contig-1_24687_25373;Name=SRR14579882_cap3_Contig-1_orf3266;md5=8b1eed4cf41c89c0d3729e8f12a88050
+SRR14579882_cap3_Contig-1_orf3266	getorf	polypeptide	1	229	.	+	.	ID=pep_SRR14579882_cap3_Contig-1_24687_25373;md5=e82609e5d27f17757462f4f421b6b508
+SRR14579882_cap3_Contig-1_orf3266	CDD	protein_match	7	224	5.19782E-141	+	.	date=12-09-2024;Target=null 7 224;ID=match$33_7_224;signature_desc=alphaCoV_M;Name=cd21564;status=T;Dbxref="InterPro:IPR042551"
+SRR14579882_cap3_Contig-1_orf3266	ProSiteProfiles	protein_match	4	229	72.219002	+	.	date=12-09-2024;Target=null 4 229;ID=match$34_4_229;signature_desc=Coronavirus membrane (Cov-M) protein profile.;Name=PS51927;status=T;Dbxref="InterPro:IPR002574"
+SRR14579882_cap3_Contig-1_orf3266	Hamap	protein_match	4	229	44.212975	+	.	date=12-09-2024;Target=null 4 229;ID=match$35_4_229;signature_desc=Membrane protein [M].;Name=MF_04201;status=T;Dbxref="InterPro:IPR042551"
+SRR14579882_cap3_Contig-1_orf3266	Pfam	protein_match	17	218	6.2E-81	+	.	date=12-09-2024;Target=null 17 218;ID=match$36_17_218;signature_desc=Coronavirus M matrix/glycoprotein;Name=PF01635;status=T;Dbxref="InterPro:IPR002574"
+##sequence-region SRR14579882_cap3_Contig-1 1 26479
+SRR14579882_cap3_Contig-1	provided_by_user	nucleic_acid	1	26479	.	+	.	ID=SRR14579882_cap3_Contig-1;Name=SRR14579882_cap3_Contig-1;md5=8b1eed4cf41c89c0d3729e8f12a88050
+SRR14579882_cap3_Contig-1_orf3149	getorf	ORF	3	11702	.	+	.	Target=pep_SRR14579882_cap3_Contig-1_3_11702 1 3900;ID=orf_SRR14579882_cap3_Contig-1_3_11702;Name=SRR14579882_cap3_Contig-1_orf3149;md5=8b1eed4cf41c89c0d3729e8f12a88050
+SRR14579882_cap3_Contig-1_orf3149	getorf	polypeptide	1	3900	.	+	.	ID=pep_SRR14579882_cap3_Contig-1_3_11702;md5=d111b6afdc4d06eb1bf855c22e1e748a
+SRR14579882_cap3_Contig-1_orf3149	SUPERFAMILY	protein_match	1966	2082	7.53E-7	+	.	date=12-09-2024;Target=null 1966 2082;ID=match$37_1966_2082;Name=SSF51126;status=T;Dbxref="InterPro:IPR011050"
+SRR14579882_cap3_Contig-1_orf3149	Pfam	protein_match	261	415	3.0E-35	+	.	date=12-09-2024;Target=null 261 415;ID=match$38_261_415;signature_desc=Coronavirus replicase NSP2, C-terminal;Name=PF19212;status=T;Dbxref="InterPro:IPR043613"
+SRR14579882_cap3_Contig-1_orf3149	Pfam	protein_match	562	716	3.0E-30	+	.	date=12-09-2024;Target=null 562 716;ID=match$38_562_716;signature_desc=Coronavirus replicase NSP2, C-terminal;Name=PF19212;status=T;Dbxref="InterPro:IPR043613"
+SRR14579882_cap3_Contig-1_orf3149	SMART	protein_match	1098	1223	4.2E-13	+	.	date=12-09-2024;Target=null 1098 1223;ID=match$39_1098_1223;Name=SM00506;status=T;Dbxref="InterPro:IPR002589"
+SRR14579882_cap3_Contig-1_orf3149	SUPERFAMILY	protein_match	2783	3081	2.02E-138	+	.	date=12-09-2024;Target=null 2783 3081;ID=match$40_2783_3081;Name=SSF50494;status=T;Dbxref="InterPro:IPR009003"
+SRR14579882_cap3_Contig-1_orf3149	ProSiteProfiles	protein_match	3446	3640	72.606583	+	.	date=12-09-2024;Target=null 3446 3640;ID=match$41_3446_3640;signature_desc=Coronavirus RNA-dependent RNA polymerase (RdRp) Nsp8 cofactor domain profile.;Name=PS51950;status=T;Dbxref="InterPro:IPR014829"
+SRR14579882_cap3_Contig-1_orf3149	CDD	protein_match	18	543	5.8755E-154	+	.	date=12-09-2024;Target=null 18 543;ID=match$42_18_543;signature_desc=alphaCoV_Nsp2_HCoV-229E-like;Name=cd21514;status=T;Dbxref="InterPro:IPR044385"
+SRR14579882_cap3_Contig-1_orf3149	ProSiteProfiles	protein_match	1419	1474	14.586524	+	.	date=12-09-2024;Target=null 1419 1474;ID=match$43_1419_1474;signature_desc=Coronavirus Nsp3d Ubl domain profile.;Name=PS51944;status=T;Dbxref="InterPro:IPR044353"
+SRR14579882_cap3_Contig-1_orf3149	Gene3D	protein_match	2686	2781	2.3E-38	+	.	date=12-09-2024;Target=null 2686 2781;ID=match$44_2686_2781;Name=G3DSA:1.10.150.420;status=T;Dbxref="InterPro:IPR038123"
+SRR14579882_cap3_Contig-1_orf3149	Pfam	protein_match	22	138	5.7E-35	+	.	date=12-09-2024;Target=null 22 138;ID=match$45_22_138;signature_desc=Coronavirus replicase NSP2, N-terminal;Name=PF19211;status=T;Dbxref="InterPro:IPR043615"
+SRR14579882_cap3_Contig-1_orf3149	Pfam	protein_match	3757	3878	1.2E-60	+	.	date=12-09-2024;Target=null 3757 3878;ID=match$46_3757_3878;signature_desc=Coronavirus RNA synthesis protein NSP10;Name=PF09401;status=T;Dbxref="InterPro:IPR018995"
+SRR14579882_cap3_Contig-1_orf3149	CDD	protein_match	3641	3748	7.04933E-81	+	.	date=12-09-2024;Target=null 3641 3748;ID=match$47_3641_3748;signature_desc=alphaCoV_Nsp9;Name=cd21897;status=T
+SRR14579882_cap3_Contig-1_orf3149	Pfam	protein_match	2333	2664	3.8E-121	+	.	date=12-09-2024;Target=null 2333 2664;ID=match$48_2333_2664;signature_desc=Coronavirus replicase NSP4, N-terminal;Name=PF19217;status=T;Dbxref="InterPro:IPR043612"
+SRR14579882_cap3_Contig-1_orf3149	CDD	protein_match	3069	3362	1.35453E-135	+	.	date=12-09-2024;Target=null 3069 3362;ID=match$49_3069_3362;signature_desc=alphaCoV-Nsp6;Name=cd21558;status=T;Dbxref="InterPro:IPR044369"
+SRR14579882_cap3_Contig-1_orf3149	Pfam	protein_match	1422	1715	1.4E-52	+	.	date=12-09-2024;Target=null 1422 1715;ID=match$50_1422_1715;signature_desc=Coronavirus papain-like peptidase;Name=PF08715;status=T;Dbxref="InterPro:IPR013016"
+SRR14579882_cap3_Contig-1_orf3149	Pfam	protein_match	866	1043	2.0E-15	+	.	date=12-09-2024;Target=null 866 1043;ID=match$50_866_1043;signature_desc=Coronavirus papain-like peptidase;Name=PF08715;status=T;Dbxref="InterPro:IPR013016"
+SRR14579882_cap3_Contig-1_orf3149	ProSiteProfiles	protein_match	1481	1741	49.204662	+	.	date=12-09-2024;Target=null 1481 1741;ID=match$51_1481_1741;signature_desc=Peptidase family C16 domain profile.;Name=PS51124;status=T;Dbxref="InterPro:IPR013016"
+SRR14579882_cap3_Contig-1_orf3149	Pfam	protein_match	1840	2289	4.2E-183	+	.	date=12-09-2024;Target=null 1840 2289;ID=match$52_1840_2289;signature_desc=Coronavirus replicase NSP3, C-terminal;Name=PF19218;status=T;Dbxref="InterPro:IPR043611"
+SRR14579882_cap3_Contig-1_orf3149	Pfam	protein_match	3641	3748	6.9E-41	+	.	date=12-09-2024;Target=null 3641 3748;ID=match$53_3641_3748;signature_desc=Coronavirus replicase NSP9;Name=PF08710;status=T;Dbxref="InterPro:IPR014822"
+SRR14579882_cap3_Contig-1_orf3149	Pfam	protein_match	2811	3095	1.2E-122	+	.	date=12-09-2024;Target=null 2811 3095;ID=match$54_2811_3095;signature_desc=Coronavirus endopeptidase C30;Name=PF05409;status=T;Dbxref="InterPro:IPR008740"
+SRR14579882_cap3_Contig-1_orf3149	ProSiteProfiles	protein_match	1086	1253	13.041008	+	.	date=12-09-2024;Target=null 1086 1253;ID=match$55_1086_1253;signature_desc=Macro domain profile.;Name=PS51154;status=T;Dbxref="InterPro:IPR002589"
+SRR14579882_cap3_Contig-1_orf3149	Pfam	protein_match	2687	2782	1.3E-40	+	.	date=12-09-2024;Target=null 2687 2782;ID=match$56_2687_2782;signature_desc=Coronavirus replicase NSP4, C-terminal;Name=PF16348;status=T;Dbxref="InterPro:IPR032505"
+SRR14579882_cap3_Contig-1_orf3149	CDD	protein_match	3363	3445	8.09071E-55	+	.	date=12-09-2024;Target=null 3363 3445;ID=match$57_3363_3445;signature_desc=alphaCoV_Nsp7;Name=cd21826;status=T
+SRR14579882_cap3_Contig-1_orf3149	Gene3D	protein_match	3546	3638	3.0E-34	+	.	date=12-09-2024;Target=null 3546 3638;ID=match$58_3546_3638;Name=G3DSA:3.30.70.3540;status=T;Dbxref="InterPro:IPR037230"
+SRR14579882_cap3_Contig-1_orf3149	Pfam	protein_match	1118	1221	7.4E-9	+	.	date=12-09-2024;Target=null 1118 1221;ID=match$59_1118_1221;signature_desc=Macro domain;Name=PF01661;status=T;Dbxref="InterPro:IPR002589"
+SRR14579882_cap3_Contig-1_orf3149	ProSiteProfiles	protein_match	2687	2782	41.273003	+	.	date=12-09-2024;Target=null 2687 2782;ID=match$60_2687_2782;signature_desc=Coronavirus Nsp4 C-terminal (Nsp4C) domain profile.;Name=PS51946;status=T;Dbxref="InterPro:IPR032505"
+SRR14579882_cap3_Contig-1_orf3149	SUPERFAMILY	protein_match	3483	3636	9.68E-67	+	.	date=12-09-2024;Target=null 3483 3636;ID=match$61_3483_3636;Name=SSF143076;status=T;Dbxref="InterPro:IPR037230"
+SRR14579882_cap3_Contig-1_orf3149	Gene3D	protein_match	2783	2974	2.0E-85	+	.	date=12-09-2024;Target=null 2783 2974;ID=match$62_2783_2974;Name=G3DSA:2.40.10.10;status=T;Dbxref="InterPro:IPR043504"
+SRR14579882_cap3_Contig-1_orf3149	ProSiteProfiles	protein_match	850	1096	53.334438	+	.	date=12-09-2024;Target=null 850 1096;ID=match$63_850_1096;signature_desc=Peptidase family C16 domain profile.;Name=PS51124;status=T;Dbxref="InterPro:IPR013016"
+SRR14579882_cap3_Contig-1_orf3149	CDD	protein_match	2313	2679	2.57656E-152	+	.	date=12-09-2024;Target=null 2313 2679;ID=match$64_2313_2679;signature_desc=cv_Nsp4_TM;Name=cd21473;status=T;Dbxref="InterPro:IPR043612"
+SRR14579882_cap3_Contig-1_orf3149	Gene3D	protein_match	3358	3443	9.5E-35	+	.	date=12-09-2024;Target=null 3358 3443;ID=match$65_3358_3443;Name=G3DSA:1.10.8.370;status=T;Dbxref="InterPro:IPR037204"
+SRR14579882_cap3_Contig-1_orf3149	CDD	protein_match	1114	1238	6.69163E-49	+	.	date=12-09-2024;Target=null 1114 1238;ID=match$66_1114_1238;signature_desc=Macro_X_Nsp3-like;Name=cd21557;status=T;Dbxref="InterPro:IPR044371"
+SRR14579882_cap3_Contig-1_orf3149	Gene3D	protein_match	2979	3087	3.7E-41	+	.	date=12-09-2024;Target=null 2979 3087;ID=match$67_2979_3087;Name=G3DSA:1.10.1840.10;status=T;Dbxref="InterPro:IPR043477"
+SRR14579882_cap3_Contig-1_orf3149	Gene3D	protein_match	3639	3748	6.9E-44	+	.	date=12-09-2024;Target=null 3639 3748;ID=match$68_3639_3748;Name=G3DSA:2.40.10.250;status=T;Dbxref="InterPro:IPR036499"
+SRR14579882_cap3_Contig-1_orf3149	Gene3D	protein_match	1084	1253	5.7E-32	+	.	date=12-09-2024;Target=null 1084 1253;ID=match$69_1084_1253;Name=G3DSA:3.40.220.10;status=T;Dbxref="InterPro:IPR043472"
+SRR14579882_cap3_Contig-1_orf3149	ProSiteProfiles	protein_match	3749	3887	61.772106	+	.	date=12-09-2024;Target=null 3749 3887;ID=match$70_3749_3887;signature_desc=Coronavirus (CoV) ExoN/MTase coactivator domain profile.;Name=PS51952;status=T;Dbxref="InterPro:IPR018995"
+SRR14579882_cap3_Contig-1_orf3149	ProSiteProfiles	protein_match	2783	3084	147.891769	+	.	date=12-09-2024;Target=null 2783 3084;ID=match$71_2783_3084;signature_desc=Coronavirus main protease (M-pro) domain profile.;Name=PS51442;status=T;Dbxref="InterPro:IPR008740"
+SRR14579882_cap3_Contig-1_orf3149	CDD	protein_match	1424	1711	1.5254E-127	+	.	date=12-09-2024;Target=null 1424 1711;ID=match$72_1424_1711;signature_desc=alphaCoV_PLPro;Name=cd21731;status=T
+SRR14579882_cap3_Contig-1_orf3149	ProSiteProfiles	protein_match	716	813	24.853851	+	.	date=12-09-2024;Target=null 716 813;ID=match$73_716_813;signature_desc=Coronavirus Nsp3a Ubl domain profile.;Name=PS51943;status=T;Dbxref="InterPro:IPR044357"
+SRR14579882_cap3_Contig-1_orf3149	SUPERFAMILY	protein_match	1096	1246	1.41E-25	+	.	date=12-09-2024;Target=null 1096 1246;ID=match$74_1096_1246;Name=SSF52949;status=T;Dbxref="InterPro:IPR043472"
+SRR14579882_cap3_Contig-1_orf3149	CDD	protein_match	3749	3878	3.15256E-93	+	.	date=12-09-2024;Target=null 3749 3878;ID=match$75_3749_3878;signature_desc=alpha_betaCoV_Nsp10;Name=cd21901;status=T
+SRR14579882_cap3_Contig-1_orf3149	CDD	protein_match	1803	2302	0.0	+	.	date=12-09-2024;Target=null 1803 2302;ID=match$76_1803_2302;signature_desc=TM_Y_alphaCoV_Nsp3_C;Name=cd21712;status=T
+SRR14579882_cap3_Contig-1_orf3149	SUPERFAMILY	protein_match	3754	3875	7.45E-54	+	.	date=12-09-2024;Target=null 3754 3875;ID=match$77_3754_3875;Name=SSF144246;status=T;Dbxref="InterPro:IPR036333"
+SRR14579882_cap3_Contig-1_orf3149	ProSiteProfiles	protein_match	3641	3748	48.233337	+	.	date=12-09-2024;Target=null 3641 3748;ID=match$78_3641_3748;signature_desc=Coronavirus Nsp9 single-stranded RNA (ssRNA)-binding domain profile.;Name=PS51951;status=T;Dbxref="InterPro:IPR014822"
+SRR14579882_cap3_Contig-1_orf3149	Pfam	protein_match	3109	3362	2.3E-86	+	.	date=12-09-2024;Target=null 3109 3362;ID=match$79_3109_3362;signature_desc=Coronavirus replicase NSP6;Name=PF19213;status=T;Dbxref="InterPro:IPR043610"
+SRR14579882_cap3_Contig-1_orf3149	Gene3D	protein_match	3444	3544	1.0E-44	+	.	date=12-09-2024;Target=null 3444 3544;ID=match$80_3444_3544;Name=G3DSA:6.10.140.2090;status=T
+SRR14579882_cap3_Contig-1_orf3149	Gene3D	protein_match	2797	2881	2.0E-85	+	.	date=12-09-2024;Target=null 2797 2881;ID=match$81_2797_2881;Name=G3DSA:2.40.10.10;status=T;Dbxref="InterPro:IPR043504"
+SRR14579882_cap3_Contig-1_orf3149	CDD	protein_match	2785	3080	0.0	+	.	date=12-09-2024;Target=null 2785 3080;ID=match$82_2785_3080;signature_desc=alphaCoV_Nsp5_Mpro;Name=cd21665;status=T;Dbxref="InterPro:IPR044309"
+SRR14579882_cap3_Contig-1_orf3149	ProSiteProfiles	protein_match	3363	3445	32.103954	+	.	date=12-09-2024;Target=null 3363 3445;ID=match$83_3363_3445;signature_desc=Coronavirus RNA-dependent RNA polymerase (RdRp) Nsp7 cofactor domain profile.;Name=PS51949;status=T;Dbxref="InterPro:IPR014828"
+SRR14579882_cap3_Contig-1_orf3149	SUPERFAMILY	protein_match	3643	3748	2.22E-41	+	.	date=12-09-2024;Target=null 3643 3748;ID=match$84_3643_3748;Name=SSF101816;status=T;Dbxref="InterPro:IPR036499"
+SRR14579882_cap3_Contig-1_orf3149	Gene3D	protein_match	1478	1587	2.1E-27	+	.	date=12-09-2024;Target=null 1478 1587;ID=match$85_1478_1587;Name=G3DSA:1.10.8.1190;status=T;Dbxref="InterPro:IPR043178"
+SRR14579882_cap3_Contig-1_orf3149	Gene3D	protein_match	857	946	3.8E-21	+	.	date=12-09-2024;Target=null 857 946;ID=match$85_857_946;Name=G3DSA:1.10.8.1190;status=T;Dbxref="InterPro:IPR043178"
+SRR14579882_cap3_Contig-1_orf3149	Pfam	protein_match	3446	3636	3.2E-84	+	.	date=12-09-2024;Target=null 3446 3636;ID=match$86_3446_3636;signature_desc=Coronavirus replicase NSP8;Name=PF08717;status=T;Dbxref="InterPro:IPR014829"
+SRR14579882_cap3_Contig-1_orf3149	CDD	protein_match	3446	3640	6.64891E-135	+	.	date=12-09-2024;Target=null 3446 3640;ID=match$87_3446_3640;signature_desc=alphaCoV_Nsp8;Name=cd21830;status=T
+SRR14579882_cap3_Contig-1_orf3149	SUPERFAMILY	protein_match	3363	3445	3.79E-34	+	.	date=12-09-2024;Target=null 3363 3445;ID=match$88_3363_3445;Name=SSF140367;status=T;Dbxref="InterPro:IPR037204"
+SRR14579882_cap3_Contig-1_orf3149	Pfam	protein_match	3363	3445	3.2E-34	+	.	date=12-09-2024;Target=null 3363 3445;ID=match$89_3363_3445;signature_desc=Coronavirus replicase NSP7;Name=PF08716;status=T;Dbxref="InterPro:IPR014828"
+##sequence-region SRR17345012_cap3_Contig-6 1 6148
+SRR17345012_cap3_Contig-6	provided_by_user	nucleic_acid	1	6148	.	+	.	ID=SRR17345012_cap3_Contig-6;Name=SRR17345012_cap3_Contig-6;md5=1765feff76f522ae51d8e2815f41876b
+SRR17345012_cap3_Contig-6_orf340	getorf	ORF	4952	5347	.	+	.	Target=pep_SRR17345012_cap3_Contig-6_4952_5347 1 132;ID=orf_SRR17345012_cap3_Contig-6_4952_5347;Name=SRR17345012_cap3_Contig-6_orf340;md5=1765feff76f522ae51d8e2815f41876b
+SRR17345012_cap3_Contig-6_orf340	getorf	polypeptide	1	132	.	+	.	ID=pep_SRR17345012_cap3_Contig-6_4952_5347;md5=ea3aed669da7466020f91536a381600b
+SRR17345012_cap3_Contig-6_orf340	Pfam	protein_match	21	132	1.4E-56	+	.	date=12-09-2024;Target=null 21 132;ID=match$90_21_132;signature_desc=Hepatitis E virus ORF-2 (Putative capsid protein);Name=PF02444;status=T;Dbxref="InterPro:IPR003384"
+##sequence-region SRR14579882_cap3_Contig-1 1 26479
+SRR14579882_cap3_Contig-1	provided_by_user	nucleic_acid	1	26479	.	+	.	ID=SRR14579882_cap3_Contig-1;Name=SRR14579882_cap3_Contig-1;md5=8b1eed4cf41c89c0d3729e8f12a88050
+SRR14579882_cap3_Contig-1_orf3253	getorf	ORF	23804	24475	.	+	.	Target=pep_SRR14579882_cap3_Contig-1_23804_24475 1 224;ID=orf_SRR14579882_cap3_Contig-1_23804_24475;Name=SRR14579882_cap3_Contig-1_orf3253;md5=8b1eed4cf41c89c0d3729e8f12a88050
+SRR14579882_cap3_Contig-1_orf3253	getorf	polypeptide	1	224	.	+	.	ID=pep_SRR14579882_cap3_Contig-1_23804_24475;md5=ff893a46051956b987428591faa10d3b
+SRR14579882_cap3_Contig-1_orf3253	ProSiteProfiles	protein_match	128	203	28.247364	+	.	date=12-09-2024;Target=null 128 203;ID=match$91_128_203;signature_desc=Coronavirus (CoV) 3a-like viroporin cytosolic (CD) domain profile.;Name=PS51967;status=T;Dbxref="InterPro:IPR046446"
+SRR14579882_cap3_Contig-1_orf3253	ProSiteProfiles	protein_match	34	124	15.464089	+	.	date=12-09-2024;Target=null 34 124;ID=match$92_34_124;signature_desc=Coronavirus (CoV) 3a-like viroporin trans-membrane (TM) domain profile.;Name=PS51966;status=T;Dbxref="InterPro:IPR046445"
+SRR14579882_cap3_Contig-1_orf3253	Pfam	protein_match	9	218	5.2E-63	+	.	date=12-09-2024;Target=null 9 218;ID=match$93_9_218;signature_desc=ORF3b coronavirus protein;Name=PF03053;status=T;Dbxref="InterPro:IPR004293"
+##sequence-region SRR12430148_cap3_Contig-1 1 17699
+SRR12430148_cap3_Contig-1	provided_by_user	nucleic_acid	1	17699	.	+	.	ID=SRR12430148_cap3_Contig-1;Name=SRR12430148_cap3_Contig-1;md5=1bbb123a5afd9c67348edfb039141634
+SRR12430148_cap3_Contig-1_orf1741	getorf	ORF	2557	3594	.	+	.	Target=pep_SRR12430148_cap3_Contig-1_2557_3594 1 346;ID=orf_SRR12430148_cap3_Contig-1_2557_3594;Name=SRR12430148_cap3_Contig-1_orf1741;md5=1bbb123a5afd9c67348edfb039141634
+SRR12430148_cap3_Contig-1_orf1741	getorf	polypeptide	1	346	.	+	.	ID=pep_SRR12430148_cap3_Contig-1_2557_3594;md5=f1ec5107d847a233d632946979b1ced7
+SRR12430148_cap3_Contig-1_orf1741	Pfam	protein_match	6	343	2.9E-124	+	.	date=12-09-2024;Target=null 6 343;ID=match$94_6_343;signature_desc=Viral matrix protein;Name=PF00661;status=T;Dbxref="InterPro:IPR000982"
+SRR12430148_cap3_Contig-1_orf1741	Gene3D	protein_match	187	346	2.3E-51	+	.	date=12-09-2024;Target=null 187 346;ID=match$95_187_346;Name=G3DSA:2.70.20.60;status=T;Dbxref="InterPro:IPR042539"
+SRR12430148_cap3_Contig-1_orf1741	Gene3D	protein_match	19	186	1.2E-42	+	.	date=12-09-2024;Target=null 19 186;ID=match$96_19_186;Name=G3DSA:2.70.20.50;status=T;Dbxref="InterPro:IPR042540"
+##sequence-region SRR18700679_cap3_Contig-1 1 18735
+SRR18700679_cap3_Contig-1	provided_by_user	nucleic_acid	1	18735	.	+	.	ID=SRR18700679_cap3_Contig-1;Name=SRR18700679_cap3_Contig-1;md5=864a288ac088e124b35c8ed3a1d5d1ee
+SRR18700679_cap3_Contig-1_orf2646	getorf	ORF	12866	13522	.	+	.	Target=pep_SRR18700679_cap3_Contig-1_12866_13522 1 219;ID=orf_SRR18700679_cap3_Contig-1_12866_13522;Name=SRR18700679_cap3_Contig-1_orf2646;md5=864a288ac088e124b35c8ed3a1d5d1ee
+SRR18700679_cap3_Contig-1_orf2646	getorf	polypeptide	1	219	.	+	.	ID=pep_SRR18700679_cap3_Contig-1_12866_13522;md5=c232135e1a4977b22dad32c997d32af1
+SRR18700679_cap3_Contig-1_orf2646	Pfam	protein_match	2	177	2.2E-100	+	.	date=12-09-2024;Target=null 2 177;ID=match$97_2_177;signature_desc=Arterivirus envelope protein;Name=PF01606;status=T;Dbxref="InterPro:IPR002556"
+##sequence-region SRR17345012_cap3_Contig-6 1 6148
+SRR17345012_cap3_Contig-6	provided_by_user	nucleic_acid	1	6148	.	+	.	ID=SRR17345012_cap3_Contig-6;Name=SRR17345012_cap3_Contig-6;md5=1765feff76f522ae51d8e2815f41876b
+SRR17345012_cap3_Contig-6_orf419	getorf	ORF	1832	2245	.	-	.	Target=pep_SRR173450
