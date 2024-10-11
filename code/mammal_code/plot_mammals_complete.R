@@ -80,9 +80,21 @@ boxplot_iden <- VhgBoxplot(combined_ga,x_column = "ViralRefSeq_taxonomy",y_colum
 boxplot_con <-VhgBoxplot(combined_ga,x_column = "ViralRefSeq_taxonomy",y_column = "contig_len",contiglen_log10_scale = TRUE,
                          theme_choice = "linedraw_dotted",group_unwanted_phyla = "rna",reorder_criteria = "phylum_median",title = NULL,xlabel = "RNA viruses")
 
-# VgConLenViolin(combined_ga)
+eval_stats <- VhgTabularRasa(boxplot_ $summary_stats,title = NULL,names_ = c("Viral reference taxonomy","Median","Q1","Q3",
+                                                                             "Mean","SD","Min","Max"),col_everyrow = TRUE,cell_colour = "white")
 
-# VhgIdentityScatterPlot(combined_ga,groupby = "ViralRefSeq_taxonomy",conlen_bubble_plot = TRUE,theme_choice = "linedraw_dotted")
+
+iden_stats <- VhgTabularRasa(boxplot_iden$summary_stats,title = NULL,names_ = c("Viral reference taxonomy","Median","Q1","Q3",
+                                                                                "Mean","SD","Min","Max"),col_everyrow = TRUE,cell_colour = "white")
+
+
+con_stats <-VhgTabularRasa(boxplot_con$summary_stats,title = NULL,names_ = c("Viral reference taxonomy","Median","Q1","Q3",
+                                                                              "Mean","SD","Min","Max"),col_everyrow = TRUE,cell_colour = "white")
+
+
+ExportVirusGt(eval_stats,filename = "mammal_evalstats.docx",export_gt_obj = TRUE,path = "output/mammals/statistics",create.dir = TRUE)
+ExportVirusGt(iden_stats,filename = "mammal_idenstats.docx",export_gt_obj = TRUE,path = "output/mammals/statistics",create.dir = TRUE)
+ExportVirusGt(con_stats,filename = "mammal_constats.docx",export_gt_obj = TRUE,path = "output/mammals/statistics",create.dir = TRUE)
 
 
 # export
@@ -178,7 +190,7 @@ df <- as.data.frame(matrix_data, stringsAsFactors = FALSE)
 gt_table <- df %>%
   gt() %>%
   tab_header(
-    title = "Non-RNA-viruses found in Mammal data"
+    title = NULL
   ) %>%
   cols_label(
     V1 = "Family 1-6",
@@ -226,7 +238,7 @@ filtered_data <- stats %>%
   slice_head(n = 10)
 
 
-ident_gt <- VhgTabularRasa(filtered_data,title = "Top 10 Viral Families by Sequence Identity",
+ident_gt <- VhgTabularRasa(filtered_data,title = NULL,
                            names_ = c("Viral taxonomy","Identity < 90%", "Identity ≥ 90%","Total","Median","Q1","Q3"),title_colour = "black")
 
 
@@ -399,29 +411,131 @@ result_iden <- combined_ga %>%
     total_contigs = n(),
     contigs_below_90 = sum(ViralRefSeq_ident < 90, na.rm = TRUE),
     contigs_above_90 = sum(ViralRefSeq_ident >= 90, na.rm = TRUE),
-    percent_below_90 = (contigs_below_90 / total_contigs) * 100,
-    percent_above_90 = (contigs_above_90 / total_contigs) * 100
+    percent_below_90 = round((contigs_below_90 / total_contigs) * 100, 2),
+    percent_above_90 = round((contigs_above_90 / total_contigs) * 100, 2)
   )
 
 # Print the result
 print(result_iden)
 
+phyl_stats <-VhgTabularRasa(result_iden,title = NULL,names_ = c("Phylum","Number of contigs","Contigs with sequence identity < 90%","Contigs with sequence identity >= 90%",
+                                                                              "Percentage < 90%","Percentage >= 90%"))
 
+
+ExportVirusGt(phyl_stats,filename = "mammal_phyl_stats.docx",export_gt_obj = TRUE,path = "output/mammals/statistics",create.dir = TRUE)
 ########################################
 
 
 
 contiglarger1000 <- combined_ga %>% 
   group_by(Phylum) %>% 
-  summarise(over1000 =sum(contig_len>1000),
-            num_observations = n(), .groups = 'drop',
-            percentage = (over1000 / num_observations) * 100)
+  summarise(
+    over1000 = sum(contig_len > 1000),
+    percentage = round((over1000 / 1225) * 100, 2)
+  )
 
-combined_ga <- VhgSubsetHittable(combined_ga,ViralRefSeq_ident_criteria = -90)
+# Assuming VhgSubsetHittable function modifies combined_ga based on criteria
+combined_ga_90 <- VhgSubsetHittable(combined_ga, ViralRefSeq_ident_criteria = -90)
 
-
-contiglarger1000_novel <- combined_ga %>% 
+# For contiglarger1000_novel
+contiglarger1000_novel <- combined_ga_90 %>% 
   group_by(Phylum) %>% 
-  summarise(over1000 =sum(contig_len>1000),
-            num_observations = n(), .groups = 'drop',
-            percentage = (over1000 / num_observations) * 100)
+  summarise(
+    over1000 = sum(contig_len > 1000),
+    percentage = round((over1000 / 1225) * 100, 2)
+  )
+
+contigcombined_data <- cbind(contiglarger1000, contiglarger1000_novel)
+
+contigcombined_data <- contigcombined_data[ , -4]
+
+
+contigcombined_data_stats <-VhgTabularRasa(contigcombined_data,title = NULL,names_ = c("Phylum","Contig length >= 1000 nt","% of Contigs >= 1000 nt",
+                                                                "Contigs length >= 1000 nt & sequence identity < 90%","% of length >= 1000 nt & sequence identity < 90%"))
+
+contigcombined_data_stats <- contigcombined_data_stats%>%
+  opt_align_table_header(align = "left") %>%
+  opt_stylize(style = 4) %>%  # Apply predefined styling
+  tab_options(
+    data_row.padding = px(2),
+    summary_row.padding = px(3),
+    row_group.padding = px(4),
+    heading.title.font.size = px(20)
+  )
+
+ExportVirusGt(contigcombined_data_stats,filename = "contigcombined_data_stats.png",export_gt_obj = TRUE,path = "output/mammals/statistics",create.dir = TRUE)
+
+
+combined_ga_90_1000 <- VhgSubsetHittable(combined_ga, ViralRefSeq_ident_criteria = -90,contig_len_criteria = 1000)
+
+phylum_smaller90_larger1000 <- combined_ga_90_1000  %>%
+  group_by(Phylum, ViralRefSeq_taxonomy) %>%
+  summarise(count = n()) %>%
+  ungroup() %>%
+  group_by(Phylum) %>%
+  mutate(total_phylum = sum(count), 
+         percentage = round((count / total_phylum) * 100, 2)) %>%
+  ungroup() %>%
+  arrange(Phylum, desc(percentage))
+
+phylum_smaller90_larger1000 <- phylum_smaller90_larger1000[ , -4]
+
+phylum_smaller90_larger1000 <-VhgTabularRasa(phylum_smaller90_larger1000,title = NULL,names_ = c("Phylum","Viral reference family","Contigs length >= 1000 nt & sequence identity < 90%",
+                                                                                            "% of length >= 1000 nt & sequence identity < 90%"),col_everyrow = TRUE,cell_colour = "white")
+
+
+
+phylum_smaller90_larger1000 <- phylum_smaller90_larger1000%>%
+  opt_align_table_header(align = "left") %>%
+  opt_stylize(style = 4) %>%  # Apply predefined styling
+  tab_options(
+    data_row.padding = px(2),
+    summary_row.padding = px(3),
+    row_group.padding = px(4),
+    heading.title.font.size = px(20)
+  )
+
+
+ExportVirusGt(phylum_smaller90_larger1000,filename = "phylum_smaller90_larger1000.docx",export_gt_obj = TRUE,path = "output/mammals/statistics",create.dir = TRUE)
+
+
+
+
+###################################################################
+
+
+
+combined_ga <- VhgPreprocessTaxa(combined_ga,taxa_rank = "Family")
+
+
+combined_ga <- VhgAddPhylum(combined_ga,"ViralRefSeq_taxonomy")
+
+combined_ga <- VhgSubsetHittable(combined_ga,ViralRefSeq_E_criteria = 1e-5)
+
+
+host_taxon_df <- as.data.frame(table(combined_ga$host_taxon)) %>%
+  rename(host_taxon = Var1, count = Freq) %>%
+  mutate(total = sum(count),
+         percentage = round((count / total) * 100, 2)) %>%
+  arrange(desc(percentage))
+
+host_taxon_df <- host_taxon_df[,-3]
+
+
+host_info_gt <-VhgTabularRasa(host_taxon_df,title = NULL,names_ = c("Host","Number of contigs","Percentage"),col_everyrow = TRUE,cell_colour = "white")
+
+host_info_gt <- host_info_gt%>%
+  opt_align_table_header(align = "left") %>%
+  opt_stylize(style = 4) %>%  # Apply predefined styling
+  tab_options(
+    data_row.padding = px(2),
+    summary_row.padding = px(3),
+    row_group.padding = px(4),
+    heading.title.font.size = px(20)
+  )
+
+
+
+ExportVirusGt(host_info_gt,filename = "host_info_gt.docx",export_gt_obj = TRUE,path = "output/mammals/statistics",create.dir = TRUE)
+
+

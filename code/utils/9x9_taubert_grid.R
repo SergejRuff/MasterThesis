@@ -42,7 +42,7 @@ taubert_large_p1 <- VhgRunsBarplot(taubert_large,groupby = "ViralRefSeq_taxonomy
                                    title = NULL,xtext_size = 11,legend_text_size = 12,plot_text_size = 5,xlabel = "Large DNA viruses",subtitle_size = 11,axis_title_size = 10)
 
 
-taubert_large_p2 <- VhgBoxplot(taubert_large,x_column = "ViralRefSeq_taxonomy",y_column = "ViralRefSeq_ident",theme_choice = "linedraw_dotted",reorder_criteria = NULL,legend_position = "none",xlabel = "",
+taubert_large_p2 <- VhgBoxplot(taubert_large,x_column = "ViralRefSeq_taxonomy",y_column = "ViralRefSeq_ident",theme_choice = "linedraw_dotted",reorder_criteria = NULL,legend_position = "right",xlabel = "",
                                axis_title_size = 12,ytext_size = 10,xtext_size = 11,title = NULL,remove_group_labels = TRUE)
 
 taubert_large_p3 <- VhgBoxplot(taubert_large,x_column = "ViralRefSeq_taxonomy",y_column = "contig_len",theme_choice = "linedraw_dotted",reorder_criteria = NULL,
@@ -57,7 +57,7 @@ taubert_rna_p1 <- VhgRunsBarplot(taubert_rna,groupby = "ViralRefSeq_taxonomy",re
                                  title = NULL,xtext_size = 11,legend_text_size = 12,plot_text_size = 5,xlabel = "RNA viruses",subtitle_size = 11,axis_title_size = 10)
 
 
-taubert_rna_p2 <- VhgBoxplot(taubert_rna,x_column = "ViralRefSeq_taxonomy",y_column = "ViralRefSeq_ident",theme_choice = "linedraw_dotted",reorder_criteria = NULL,legend_position = "none",xlabel = "",
+taubert_rna_p2 <- VhgBoxplot(taubert_rna,x_column = "ViralRefSeq_taxonomy",y_column = "ViralRefSeq_ident",theme_choice = "linedraw_dotted",reorder_criteria = NULL,legend_position = "right",xlabel = "",
                              axis_title_size = 12,ytext_size = 10,xtext_size = 11,title = NULL,remove_group_labels = TRUE)
 
 taubert_rna_p3 <- VhgBoxplot(taubert_rna,x_column = "ViralRefSeq_taxonomy",y_column = "contig_len",theme_choice = "linedraw_dotted",reorder_criteria = NULL,
@@ -150,3 +150,98 @@ combined_gatherer_plots <- (pipeline| (taubert_small_p1$plot|taubert_small_p2$bo
   theme(plot.tag = element_text(face = 'bold',size = 25))
 
 ggsave("plot_and-pipeline.tiff", plot = combined_gatherer_plots, width = 20, height = 15, units = "in")
+
+
+
+
+########################################################################
+
+combined_ident <- rbind(taubert_small_p2$summary_stats,taubert_large_p2$summary_stats,taubert_rna_p2$summary_stats)
+
+
+tablo <- VhgTabularRasa(combined_ident,title = NULL,names_ = c("Viral reference taxonomy","Median","Q1","Q3",
+                                                      "Mean","SD","Min","Max"))
+
+
+
+tablo <- tablo  |>
+  tab_row_group(
+    label = "Small DNA Viruses",
+    rows = 1
+  ) |>
+  tab_row_group(
+    label = "Large DNA Viruses",
+    rows = c(2,3)
+  ) |>
+  tab_row_group(
+    label = "RNA Viruses",
+    rows = c(4,5,6)
+  ) |>
+  # Apply grey color to all row group headers
+  tab_style(
+    style = list(
+      cell_fill(color = "lightgrey"),
+      cell_text(weight = "bold")
+    ),
+    locations = cells_row_groups()
+  )%>%
+  opt_align_table_header(align = "left") %>%
+  tab_options(
+    data_row.padding = px(2),
+    summary_row.padding = px(3),
+    row_group.padding = px(4)
+  ) %>%
+  opt_stylize(style = 4) %>%
+  tab_options(
+    heading.title.font.size = px(20)
+  )
+
+gtsave(tablo,"taubert_ident_stats.png",path = "output/TaubertDatacombined/")
+
+
+
+######################################################################################
+
+
+
+combined_ident <- rbind(taubert_small_p3$summary_stats,taubert_large_p3$summary_stats,taubert_rna_p3$summary_stats)
+
+
+tablo <- VhgTabularRasa(combined_ident,title = NULL,names_ = c("Viral reference taxonomy","Median","Q1","Q3",
+                                                               "Mean","SD","Min","Max"))
+
+
+
+tablo <- tablo  |>
+  tab_row_group(
+    label = "Small DNA Viruses",
+    rows = 1
+  ) |>
+  tab_row_group(
+    label = "Large DNA Viruses",
+    rows = c(2,3)
+  ) |>
+  tab_row_group(
+    label = "RNA Viruses",
+    rows = c(4,5,6)
+  ) |>
+  # Apply grey color to all row group headers
+  tab_style(
+    style = list(
+      cell_fill(color = "lightgrey"),
+      cell_text(weight = "bold")
+    ),
+    locations = cells_row_groups()
+  )%>%
+  opt_align_table_header(align = "left") %>%
+  tab_options(
+    data_row.padding = px(2),
+    summary_row.padding = px(3),
+    row_group.padding = px(4)
+  ) %>%
+  opt_stylize(style = 4) %>%
+  tab_options(
+    heading.title.font.size = px(20)
+  )
+
+gtsave(tablo,"taubert_con_stats.png",path = "output/TaubertDatacombined/")

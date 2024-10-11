@@ -4,6 +4,7 @@ library(Virusparies)
 library(ggplot2)
 library(patchwork)
 library(gt)
+library(dplyr)
 
 taubert_largedna <- ImportVirusTable("data/hittables_taubert/largedna/combined_virushunter.tsv")
 
