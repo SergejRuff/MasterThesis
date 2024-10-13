@@ -4,6 +4,11 @@
 # seperate into ridge plot
 
 
+# TODO: Option to show contigs from gatherer - it uses num of rows, not a specific column
+# change vhSumHitBar for that
+# TODO: provide option to select between profile E-value and ViralRefSeq-Evalue
+
+
 rm(list = ls())
 
 library(Virusparies)
