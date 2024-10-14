@@ -2,7 +2,7 @@ rm(list=ls())
 
 library(Virusparies)
 library(tidyverse)
-
+library(gt)
 
 top_csv <- read.delim("/media/sergej/EXTERNAL_US/git_clone/RscriptsMasterthesis/output/mammals/longest_con_gvtable.tsv")
 
@@ -29,6 +29,7 @@ subjects <- subjects %>%
 
 subjects <- subjects[order(subjects$contig_len,decreasing = TRUE), ]
 
+subjects$ViralRefSeq_ident <- round(subjects$ViralRefSeq_ident,2)
 sub_table <- VhgTabularRasa(subjects,title = NULL,names_ = c("SRA experiment","Phylum","Viral reference taxonomy","viral subject","Host","contig length",
                                                 "Sequence Identity [%]"))
 
