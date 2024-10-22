@@ -67,7 +67,7 @@ ggsave("class_v-unclassified_22sep.png",plot = class_vs_noclass,path ="output/ma
 
 # title = "Mammal sequence data (Gatherer)\nDistribution of viral groups detected across query sequences"
 sra <- VhgRunsBarplot(combined_ga,groupby = "ViralRefSeq_taxonomy",theme_choice = "linedraw_dotted",
-                      plot_text = 1,title = NULL,group_unwanted_phyla = "rna",reorder_criteria = "phylum_max",xlabel = "RNA viruses")
+                      plot_text = 1,title = NULL,group_unwanted_phyla = "rna",reorder_criteria = "phylum_max",xlabel = "RNA viruses",legend_position = "right")
 
 # title = "Mammal sequence data (Gatherer)\nBoxplot of viral reference E-values for each group"
 boxplot_ <- VhgBoxplot(combined_ga,x_column = "ViralRefSeq_taxonomy",y_column = "ViralRefSeq_E",
@@ -75,10 +75,10 @@ boxplot_ <- VhgBoxplot(combined_ga,x_column = "ViralRefSeq_taxonomy",y_column = 
                        title = NULL,group_unwanted_phyla = "rna",reorder_criteria = "phylum_median",xlabel = "RNA viruses")
 
 boxplot_iden <- VhgBoxplot(combined_ga,x_column = "ViralRefSeq_taxonomy",y_column = "ViralRefSeq_ident",
-                           theme_choice = "linedraw_dotted",group_unwanted_phyla = "rna",reorder_criteria = "phylum_median",title = NULL,xlabel = "RNA viruses")
+                           theme_choice = "linedraw_dotted",group_unwanted_phyla = "rna",reorder_criteria = "phylum_median",title = NULL,xlabel = "RNA viruses",legend_position = "right")
 
 boxplot_con <-VhgBoxplot(combined_ga,x_column = "ViralRefSeq_taxonomy",y_column = "contig_len",contiglen_log10_scale = TRUE,
-                         theme_choice = "linedraw_dotted",group_unwanted_phyla = "rna",reorder_criteria = "phylum_median",title = NULL,xlabel = "RNA viruses")
+                         theme_choice = "linedraw_dotted",group_unwanted_phyla = "rna",reorder_criteria = "phylum_median",title = NULL,xlabel = "RNA viruses",legend_position = "right")
 
 eval_stats <- VhgTabularRasa(boxplot_ $summary_stats,title = NULL,names_ = c("Viral reference taxonomy","Median","Q1","Q3",
                                                                              "Mean","SD","Min","Max"),col_everyrow = TRUE,cell_colour = "white")
