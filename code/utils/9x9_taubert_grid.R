@@ -4,11 +4,11 @@ library(Virusparies)
 library(ggplot2)
 library(patchwork)
 
-taubert_small <- ImportVirusTable("data/hittables_taubert/smalldna/combined_virusgatherer-cap3.tsv")
+taubert_small <- ImportVirusTable("data/hittables_taubert/smalldna/combined_virushunter.tsv")
 
-taubert_large <- ImportVirusTable("data/hittables_taubert/largedna/combined_virusgatherer-cap3.tsv")
+taubert_large <- ImportVirusTable("data/hittables_taubert/largedna/combined_virushunter.tsv")
 
-taubert_rna <- ImportVirusTable("data/hittables_taubert/rnavirus/combined_virusgatherer-cap3.tsv")
+taubert_rna <- ImportVirusTable("data/hittables_taubert/rnavirus/combined_virushunter.tsv")
 
 export_path <- "output/TaubertDatacombined/plots/"
 
